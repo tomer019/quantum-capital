@@ -200,8 +200,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // Target Price & Upside
             const targetEl = document.getElementById('stat-target-price');
             const upsideEl = document.getElementById('stat-upside-badge');
-            if (f.target_price && f.target_price !== '-') {
-                targetEl.textContent = `$${f.target_price}`;
+            const hasTarget = f.target_price && f.target_price !== '-' && parseFloat(f.target_price) > 0;
+            if (hasTarget) {
+                targetEl.textContent = `$${parseFloat(f.target_price).toFixed(2)}`;
+                targetEl.style.fontSize = '20px';
+                targetEl.style.color = '#00B8FF';
                 if (f.upside_pct !== null && f.upside_pct !== undefined) {
                     const upPos = f.upside_pct >= 0;
                     upsideEl.textContent = `${upPos ? '+' : ''}${f.upside_pct}% פוטנציאל`;
@@ -212,7 +215,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     upsideEl.style.display = 'none';
                 }
             } else {
-                targetEl.textContent = "-";
+                targetEl.textContent = "אין כיסוי בוול-סטריט";
+                targetEl.style.fontSize = '14px';
+                targetEl.style.color = 'var(--text-secondary)';
                 upsideEl.style.display = 'none';
             }
 

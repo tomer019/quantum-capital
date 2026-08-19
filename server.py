@@ -194,8 +194,12 @@ def get_portfolio_prices(req: PortfolioRequest):
         
     return prices
 
-MOMENTUM_CACHE = {}
-MOMENTUM_CACHE_TTL = 1800  # 30 minutes
+def load_momentum_from_file(index_name: str):
+    file_path = Path(__file__).parent / "data" / f"momentum_data_{index_name}.json"
+    if file_path.exists():
+        with open(file_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return []
 
 class MomentumRequest(BaseModel):
     capital: float = 10000.0
@@ -204,9 +208,33 @@ class MomentumRequest(BaseModel):
 
 @app.post("/api/screen_momentum")
 def screen_momentum(req: MomentumRequest):
-    import math
-    import time
-    from datetime import datetime, timedelta
+    data = load_momentum_from_file(req.index_name)
+    if data:
+        # Sort by highest momentum score
+        data.sort(key=lambda x: x.get("score", 0), reverse=True)
+        top_stocks = data[:req.top_n]
+        
+        allocation_per_stock = req.capital / len(top_stocks) if top_stocks else 0
+        total_allocated = 0.0
+        
+        for stock in top_stocks:
+            p = stock.get("price", 0)
+            if p and p > 0:
+                shares = int(allocation_per_stock / p)
+                if shares == 0:
+                    shares = 1
+                stock["shares_to_buy"] = shares
+                stock["allocation_value"] = round(shares * p, 2)
+                total_allocated += stock["allocation_value"]
+            else:
+                stock["shares_to_buy"] = 1
+                stock["allocation_value"] = 0.0
+                
+        return {
+            "results": top_stocks,
+            "allocation_per_stock": allocation_per_stock,
+            "total_allocated": round(total_allocated, 2)
+        }
 
     market_data = load_data_from_file(req.index_name)
     if not market_data:
@@ -360,6 +388,8 @@ def get_stock_details(symbol: str):
         sym = symbol.strip().upper()
         ticker = yf.Ticker(sym)
         hist = ticker.history(period="2y", auto_adjust=True)
+        if hist.empty:
+            raise HTTPException(status_code=404, detail=f"Stock '{sym}' not found or has no price history")
         
         candlesticks = []
         volumes = []
@@ -433,8 +463,21 @@ def get_stock_details(symbol: str):
         prev_close = float(hist['Close'].iloc[-2]) if len(hist) >= 2 else (float(finfo.get('previousClose', 0)) or cur_price)
         change_pct = round(((cur_price / prev_close) - 1) * 100, 2) if prev_close else 0.0
 
-        target_price = float(info.get('targetMeanPrice') or 0)
-        upside_pct = round(((target_price / cur_price) - 1) * 100, 1) if (target_price and cur_price) else None
+        raw_target = (
+            info.get('targetMeanPrice') or
+            info.get('targetMedianPrice') or
+            info.get('targetHighPrice')
+        )
+        if not raw_target:
+            try:
+                apt = ticker.analyst_price_targets
+                if isinstance(apt, dict):
+                    raw_target = apt.get('mean') or apt.get('current') or apt.get('median')
+            except Exception:
+                pass
+
+        target_price = round(float(raw_target), 2) if (raw_target and not math.isnan(float(raw_target))) else 0.0
+        upside_pct = round(((target_price / cur_price) - 1) * 100, 1) if (target_price > 0 and cur_price > 0) else None
 
         # Resolve stats with fallback
         raw_mcap = info.get("marketCap") or finfo.get("marketCap") or finfo.get("market_cap")
