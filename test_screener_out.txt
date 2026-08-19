@@ -1,0 +1,13 @@
+[SP500] Loading ticker list from cache...
+Testing with first 50 tickers...
+
+[Screener] Scanning 1/50 — MMM   [Screener] Scanning 2/50 — AOS   [Screener] Scanning 3/50 — ABT   [Screener] Scanning 4/50 — ABBV  [Screener] Scanning 5/50 — ACN   [Screener] Scanning 6/50 — ADBE  [Screener] Scanning 7/50 — AMD   [Screener] Scanning 8/50 — AES   [Screener] Scanning 9/50 — AFL   [Screener] Scanning 10/50 — A     [Screener] Scanning 11/50 — APD   [Screener] Scanning 12/50 — ABNB  [Screener] Scanning 13/50 — AKAM  [Screener] Scanning 14/50 — ALB   [Screener] Scanning 15/50 — ARE   [Screener] Scanning 16/50 — ALGN  [Screener] Scanning 17/50 — ALLE  [Screener] Scanning 18/50 — LNT   [Screener] Scanning 19/50 — ALL   [Screener] Scanning 20/50 — GOOGL [Screener] Scanning 21/50 — GOOG  [Screener] Scanning 22/50 — MO    [Screener] Scanning 23/50 — AMZN  [Screener] Scanning 24/50 — AMCR  [Screener] Scanning 25/50 — AEE   [Screener] Scanning 26/50 — AEP   [Screener] Scanning 27/50 — AXP   [Screener] Scanning 28/50 — AIG   [Screener] Scanning 29/50 — AMT   [Screener] Scanning 30/50 — AWK   [Screener] Scanning 31/50 — AMP   [Screener] Scanning 32/50 — AME   [Screener] Scanning 33/50 — AMGN  [Screener] Scanning 34/50 — APH   [Screener] Scanning 35/50 — ADI   [Screener] Scanning 36/50 — AON   [Screener] Scanning 37/50 — APA   [Screener] Scanning 38/50 — APO   [Screener] Scanning 39/50 — AAPL  [Screener] Scanning 40/50 — AMAT  [Screener] Scanning 41/50 — APP   [Screener] Scanning 42/50 — APTV  [Screener] Scanning 43/50 — ACGL  [Screener] Scanning 44/50 — ADM   [Screener] Scanning 45/50 — ARES  [Screener] Scanning 46/50 — ANET  [Screener] Scanning 47/50 — AJG   [Screener] Scanning 48/50 — AIZ   [Screener] Scanning 49/50 — T     [Screener] Scanning 50/50 — ATO   
+
+Found 5 stocks:
+
+Symbol                       Name  Price ($)  P/E Ratio  Debt/Equity Profit Margin             Sector
+   ALL Allstate Corporation (The)     263.84        5.3        22.26         19.0% Financial Services
+  ACGL    Arch Capital Group Ltd.      99.78        7.8        17.84         24.4% Financial Services
+   APA            APA Corporation      41.84        8.8        48.85         19.6%             Energy
+   AFL         AFLAC Incorporated     121.95       13.2        53.37         26.9% Financial Services
+   AIZ             Assurant, Inc.     283.12       13.6        36.21          7.9% Financial Services

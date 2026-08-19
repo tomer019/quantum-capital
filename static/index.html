@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Cap | Robot Portfolio</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-icon">Q</span>
+                <span class="logo-text">Quantum Cap</span>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item" id="nav-dashboard">
+                    <span class="icon">📊</span>
+                    דשבורד
+                </a>
+                <a href="#" class="nav-item active" id="nav-screener">
+                    <span class="icon">🤖</span>
+                    סורק אלגוריתמי
+                    <span class="badge">ACTIVE</span>
+                </a>
+                <a href="#" class="nav-item" id="nav-backtest">
+                    <span class="icon">🧪</span>
+                    <span>מעבדת בקטסטינג</span>
+                </a>
+                <a href="#" class="nav-item" id="nav-watchlist">
+                    <span class="nav-icon">⭐</span>
+                    <span>רשימת מעקב</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Data status: <span class="status-dot"></span> Live (Cached 30m)</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <!-- VIEW: SCREENER -->
+        <main class="main-content" id="view-screener">
+            <header class="top-header">
+                <h1>Algorithmic Screener <span class="highlight">| סורק אלגוריתמי</span></h1>
+                <div class="header-actions">
+                    <button class="btn-primary" id="btn-open-methodology" style="background: rgba(0, 184, 255, 0.1); color: var(--accent-blue); border: 1px solid rgba(0, 184, 255, 0.3); width: auto; padding: 8px 16px; font-size: 13px;">🧠 איך האלגוריתם עובד?</button>
+                    <div class="mode-toggle">
+                        <button class="mode-btn mode-value active" id="btn-mode-value">⚖️ ערך (ארוך)</button>
+                        <button class="mode-btn mode-momentum" id="btn-mode-momentum">⚡ מומנטום (קצר)</button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Onboarding Quick Guide Banner -->
+            <div class="guide-banner" id="onboarding-banner">
+                <div style="display: flex; gap: 32px; align-items: center; flex-wrap: wrap;">
+                    <div style="font-weight: 700; color: var(--accent-blue); font-size: 15px;">🎯 מדריך מהיר:</div>
+                    <div class="guide-step">
+                        <span class="step-num">1</span>
+                        <span style="font-size: 13px; color: var(--text-primary);"><strong>בחר אסטרטגיה:</strong> ערך (פונדמנטלי) או מומנטום (תנופה טכנית).</span>
+                    </div>
+                    <div class="guide-step">
+                        <span class="step-num">2</span>
+                        <span style="font-size: 13px; color: var(--text-primary);"><strong>כוונן פרמטרים:</strong> בחר מדד שוק (S&P 500, Nasdaq, ת״א 125) וכמות מניות.</span>
+                    </div>
+                    <div class="guide-step">
+                        <span class="step-num">3</span>
+                        <span style="font-size: 13px; color: var(--text-primary);"><strong>הרץ בקטסט:</strong> בדוק ביצועים היסטוריים מול השוק ב-1 קליק.</span>
+                    </div>
+                </div>
+                <button id="btn-dismiss-banner" style="background: none; border: none; color: var(--text-secondary); cursor: pointer; font-size: 16px;" title="הסתר מדריך">&times;</button>
+            </div>
+
+            <div class="content-grid">
+                <!-- Left Column (Results) -->
+                <div class="screener-results card">
+                    <div class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <h2 id="screener-title">תוצאות הסריקה (S&P 500)</h2>
+                            <p class="subtitle" id="results-count">נמצאו 0 מניות מנצחות</p>
+                        </div>
+                        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                            <input type="text" id="table-search" class="table-search-input" placeholder="🔍 חיפוש מניה / סקטור...">
+                            <button class="btn-primary" id="btn-sync-portfolio" style="background: rgba(245, 158, 11, 0.15); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.3); width: auto; padding: 8px 14px; font-size: 13px;" title="ייבא את כל המניות שנמצאו בסריקה לתיק האישי שלך">💼 ייבא תוצאות לתיק</button>
+                            <button class="btn-primary" id="btn-quick-backtest" style="background: linear-gradient(135deg, #00E676, #00B8FF); color: #000; font-weight: 700; border: none; width: auto; padding: 8px 16px; font-size: 14px;">🧪 הרץ בקטסט לתוצאות</button>
+                            <button class="btn-primary" id="btn-export-csv" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-color); width: auto; padding: 8px 16px; font-size: 14px;">ייצוא לאקסל 📥</button>
+                        </div>
+                    </div>
+                    
+                    <div class="table-container">
+                        <table id="results-table">
+                            <thead>
+                                <tr>
+                                    <th data-sort="symbol" class="sortable" title="לחץ למיון">מניה ↕</th>
+                                    <th data-sort="name" class="sortable" title="לחץ למיון">חברה ↕</th>
+                                    <th data-sort="sector" class="sortable" title="לחץ למיון">סקטור ↕</th>
+                                    <th data-sort="price" class="sortable" title="לחץ למיון">מחיר ($) ↕</th>
+                                    <th data-sort="pe_ratio" class="sortable" title="לחץ למיון">P/E ↕</th>
+                                    <th data-sort="profit_margin" class="sortable" title="לחץ למיון">שולי רווח ↕</th>
+                                    <th data-sort="dividend_yield" class="sortable" title="לחץ למיון">דיבידנד שנתי ↕</th>
+                                    <th>מעקב</th>
+                                </tr>
+                            </thead>
+                            <tbody id="results-body">
+                                <!-- Data will be injected here via JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Right Column (Controls) -->
+                <div class="portfolio-controls">
+                    <div class="card strategy-card">
+                        <div class="card-header">
+                            <h2>הגדרות השקעה</h2>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label style="display:block; margin-bottom:8px; font-size:13px; font-weight:600; color:var(--text-secondary);">בחר מדד שוק</label>
+                            <select id="index-select" class="dropdown-select">
+                                <option value="SP500">S&P 500 (ארה"ב - כללי)</option>
+                                <option value="NASDAQ">Nasdaq 100 (ארה"ב - טכנולוגיה)</option>
+                                <option value="DJI30">Dow Jones 30 (ארה"ב - ענקיות)</option>
+                                <option value="EUROSTOXX50">Euro Stoxx 50 (אירופה)</option>
+                                <option value="TA125">TA-125 (ישראל - תל אביב)</option>
+                            </select>
+                        </div>
+
+                        <div class="control-group">
+                            <div class="control-header">
+                                <label>הון השקעה ($)</label>
+                                <input type="number" id="capital-input" class="manual-input-badge" min="0" max="1000000" step="1000" value="10000" dir="ltr">
+                            </div>
+                            <input type="range" id="capital-slider" class="range-slider" min="0" max="1000000" step="1000" value="10000">
+                        </div>
+
+                        <div class="control-group">
+                            <div class="control-header">
+                                <label>כמות מניות מבוקשת</label>
+                                <span class="control-badge" id="top-n-value">10</span>
+                            </div>
+                            <input type="range" id="top-n-slider" class="range-slider" min="1" max="100" step="1" value="10">
+                        </div>
+                        
+                        <div class="control-group">
+                            <div class="control-header">
+                                <label>מכפיל רווח מקסימלי (P/E)</label>
+                                <span class="control-badge" id="pe-value">25.0</span>
+                            </div>
+                            <input type="range" id="pe-slider" class="range-slider" min="5" max="50" step="1" value="25">
+                        </div>
+
+                        <div class="control-group">
+                            <div class="control-header">
+                                <label>תשואת דיבידנד מינימלית</label>
+                                <span class="control-badge" id="dividend-value">0.0%</span>
+                            </div>
+                            <input type="range" id="dividend-slider" class="range-slider" min="0" max="10" step="0.5" value="0">
+                        </div>
+                        
+                        <button class="btn-primary" id="btn-scan" style="margin-top: 8px;">הרץ סריקת רובוט 🚀</button>
+                    </div>
+
+                    <!-- MOMENTUM CONTROLS (hidden by default) -->
+                    <div class="card strategy-card" id="momentum-controls" style="display:none;">
+                        <div class="card-header">
+                            <h2>⚡ הגדרות מומנטום</h2>
+                            <p class="subtitle" style="margin-top:4px;">סינון טכני כמותי אוטומטי</p>
+                        </div>
+
+                        <div class="control-group">
+                            <label style="display:block; margin-bottom:8px; font-size:13px; font-weight:600; color:var(--text-secondary);">בחר מדד שוק</label>
+                            <select id="momentum-index-select" class="dropdown-select">
+                                <option value="SP500">S&P 500 (ארה"ב - כללי)</option>
+                                <option value="NASDAQ">Nasdaq 100 (ארה"ב - טכנולוגיה)</option>
+                                <option value="DJI30">Dow Jones 30 (ארה"ב - ענקיות)</option>
+                                <option value="EUROSTOXX50">Euro Stoxx 50 (אירופה)</option>
+                                <option value="TA125">TA-125 (ישראל)</option>
+                            </select>
+                        </div>
+
+                        <div class="control-group">
+                            <div class="control-header">
+                                <label>הון השקעה ($)</label>
+                                <input type="number" id="momentum-capital-input" class="manual-input-badge" min="0" max="1000000" step="1000" value="10000" dir="ltr">
+                            </div>
+                            <input type="range" id="momentum-capital-slider" class="range-slider" min="0" max="1000000" step="1000" value="10000">
+                        </div>
+
+                        <div class="control-group">
+                            <div class="control-header">
+                                <label>כמות מניות מובילות</label>
+                                <span class="control-badge" id="momentum-top-n-value">10</span>
+                            </div>
+                            <input type="range" id="momentum-top-n" class="range-slider" min="5" max="50" step="1" value="10">
+                        </div>
+
+                        <div style="background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.2); border-radius: 8px; padding: 14px; font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.8;">
+                            <p>📈 <strong style="color: #F59E0B;">מדדי האלגוריתם:</strong></p>
+                            <p>• שינוי חודשי &times; 50%</p>
+                            <p>• שינוי שבועי &times; 30%</p>
+                            <p>• פאלס נפח מסחר &times; 20%</p>
+                        </div>
+
+                        <button class="btn-primary" id="btn-momentum-scan" style="background: linear-gradient(135deg, #F59E0B, #D97706); border: none; margin-top: 8px;">⚡ סרוק מומנטום</button>
+                    </div>
+
+                    <!-- Portfolio Summary Card removed and made horizontal -->
+                </div>
+            </div>
+        </main>
+
+        <!-- VIEW: DASHBOARD -->
+        <main class="main-content" id="view-dashboard" style="display: none;">
+            <header class="top-header">
+                <h1>Dashboard <span class="highlight">| מעקב חי</span></h1>
+            </header>
+
+            <div class="content-grid">
+                <!-- Left Column (Main Data) -->
+                <div class="screener-results card" style="display: flex; flex-direction: column; gap: 24px;">
+                    
+                    <!-- Top section: Total Value & Chart -->
+                    <div style="display: flex; gap: 32px; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 32px;">
+                        <div style="flex: 1;">
+                            <h2 style="font-size: 24px; margin-bottom: 12px; color: var(--text-primary);">הקצאת נכסים (Allocation)</h2>
+                            <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 14px;">הפילוג החי של התיק הוירטואלי שלך, מעודכן בזמן אמת לפי מחירי השוק.</p>
+                            
+                            <div class="stat-box" style="background: rgba(0, 184, 255, 0.05); border: 1px solid rgba(0, 184, 255, 0.1);">
+                                <span class="stat-label">שווי תיק נוכחי</span>
+                                <span class="stat-value text-success" id="dash-total-value" style="font-size: 32px;">$0.00</span>
+                            </div>
+                        </div>
+                        
+                        <div style="position: relative; width: 250px; height: 250px; flex-shrink: 0;">
+                            <canvas id="portfolioChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Bottom section: Table -->
+                    <div>
+                        <h2 style="font-size: 20px; margin-bottom: 20px;">ההחזקות שלי</h2>
+                        <div class="table-container">
+                            <table id="portfolio-table">
+                                <thead>
+                                    <tr>
+                                        <th>מניה</th>
+                                        <th>כמות</th>
+                                        <th>מחיר עדכני</th>
+                                        <th>שווי כולל</th>
+                                        <th>% מהתיק</th>
+                                        <th>פעולה</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="portfolio-body">
+                                    <tr><td colspan="6"><div class="empty-state"><div class="empty-state-icon">📂</div><p>התיק שלך ריק. הוסף מניות מהתפריט משמאל!</p></div></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column (Controls) -->
+                <div class="portfolio-controls">
+                    <div class="card strategy-card">
+                        <div class="card-header">
+                            <h2>ניהול תיק</h2>
+                        </div>
+                        
+                        <div class="control-group" style="position: relative;">
+                            <label>סימול מניה (למשל AAPL)</label>
+                            <input type="text" id="add-symbol" class="manual-input" style="width: 100%; text-align: left; padding: 12px; font-weight: bold; background: rgba(0,0,0,0.2);" dir="ltr" placeholder="התחל להקליד שם או סימול..." autocomplete="off">
+                            <div id="autocomplete-list" class="autocomplete-suggestions" style="display:none;"></div>
+                        </div>
+
+                        <div class="control-group">
+                            <label>כמות מניות</label>
+                            <input type="number" id="add-qty" class="manual-input" min="0.1" step="0.1" style="width: 100%; text-align: left; padding: 12px; background: rgba(0,0,0,0.2);" dir="ltr" placeholder="10">
+                        </div>
+                        
+                        <button class="btn-primary" id="btn-add-stock" style="margin-top: 12px;">➕ הוסף למעקב</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- VIEW: BACKTESTING & QUANT LAB -->
+        <main class="main-content" id="view-backtest" style="display: none;">
+            <header class="top-header">
+                <div>
+                    <h1>מעבדת בקטסטינג כמותי <span class="highlight">| Quant Lab</span></h1>
+                    <p class="subtitle">סימולציה היסטורית, ניתוח יחסי שארפ, צלילות מקסימליות והשוואה מול ה-S&P 500</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-primary" id="btn-export-tearsheet" style="background: linear-gradient(135deg, #00B8FF, #3B82F6); color: #fff; font-weight: 700; border: none; width: auto; padding: 10px 20px; font-size: 14px;">📄 הפק דוח ביצועים מלא (Tear Sheet)</button>
+                </div>
+            </header>
+
+            <!-- Backtest Control Bar -->
+            <div class="card" style="margin-bottom: 24px; padding: 18px 24px;">
+                <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr auto; gap: 16px; align-items: flex-end;">
+                    <div class="control-group" style="margin-bottom: 0;">
+                        <label>מניות לבדיקה (מופרדות בפסיקים)</label>
+                        <input type="text" id="bt-symbols-input" class="manual-input" style="width: 100%; text-align: left; padding: 10px 14px; font-weight: bold; background: rgba(0,0,0,0.25);" dir="ltr" value="NVDA, MSFT, AAPL, AMZN, GOOGL">
+                    </div>
+                    <div class="control-group" style="margin-bottom: 0;">
+                        <label>תקופת היסטוריה</label>
+                        <select id="bt-timeframe" class="dropdown-select" style="padding: 10px 14px;">
+                            <option value="6M">6 חודשים</option>
+                            <option value="1Y" selected>שנה 1 (1Y)</option>
+                            <option value="2Y">שנתיים (2Y)</option>
+                            <option value="3Y">3 שנים (3Y)</option>
+                            <option value="5Y">5 שנים (5Y)</option>
+                        </select>
+                    </div>
+                    <div class="control-group" style="margin-bottom: 0;">
+                        <label>הון התחלתי ($)</label>
+                        <input type="number" id="bt-capital" class="manual-input" style="width: 100%; text-align: left; padding: 10px 14px; background: rgba(0,0,0,0.25);" dir="ltr" value="10000" step="1000">
+                    </div>
+                    <div class="control-group" style="margin-bottom: 0;">
+                        <label>מדד ייחוס</label>
+                        <select id="bt-benchmark" class="dropdown-select" style="padding: 10px 14px;">
+                            <option value="SPY">S&P 500 (SPY)</option>
+                            <option value="QQQ">Nasdaq 100 (QQQ)</option>
+                            <option value="DIA">Dow Jones (DIA)</option>
+                        </select>
+                    </div>
+                    <button class="btn-primary" id="btn-run-backtest" style="height: 42px; padding: 0 24px; font-weight: 700; background: #00B8FF; color: #000; border: none; white-space: nowrap;">⚡ הרץ סימולציה</button>
+                </div>
+            </div>
+
+            <!-- KPI Metric Cards Grid -->
+            <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; margin-bottom: 24px;" id="bt-kpis">
+                <div class="card" style="padding: 16px; text-align: center;" title="הרווח המצטבר באחוזים של התיק מיום ההתחלה ועד סוף התקופה">
+                    <div style="font-size: 13px; color: var(--text-secondary); margin-bottom: 6px; font-weight: 600;">תשואה כוללת</div>
+                    <div style="font-size: 24px; font-weight: 800;" class="text-good" id="bt-total-return">--</div>
+                    <div style="font-size: 11px; color: var(--text-secondary);" id="bt-bench-total">בנצ'מרק: --</div>
+                </div>
+                <div class="card" style="padding: 16px; text-align: center;" title="קצב צמיחה שנתי ממוצע משוקלל (ריבית דריבית שנתית)">
+                    <div style="font-size: 13px; color: var(--text-secondary); margin-bottom: 6px; font-weight: 600;">תשואה שנתית (CAGR)</div>
+                    <div style="font-size: 24px; font-weight: 800;" class="text-good" id="bt-cagr">--</div>
+                    <div style="font-size: 11px; color: var(--text-secondary);" id="bt-bench-cagr">בנצ'מרק: --</div>
+                </div>
+                <div class="card" style="padding: 16px; text-align: center;" title="תשואה עודפת מעל ריבית חסרת סיכון חלקי תנודתיות התיק. מעל 1.0 נחשב מצוין">
+                    <div style="font-size: 13px; color: var(--text-secondary); margin-bottom: 6px; font-weight: 600;">יחס שארפ (Sharpe)</div>
+                    <div style="font-size: 24px; font-weight: 800; color: #00B8FF;" id="bt-sharpe">--</div>
+                    <div style="font-size: 11px; color: var(--text-secondary);" id="bt-sortino">Sortino: --</div>
+                </div>
+                <div class="card" style="padding: 16px; text-align: center;" title="עומק הנפילה המקסימלית שנרשמה מהשיא לשפל בתוך התקופה">
+                    <div style="font-size: 13px; color: var(--text-secondary); margin-bottom: 6px; font-weight: 600;">צלילה מקסימלית</div>
+                    <div style="font-size: 24px; font-weight: 800;" class="text-bad" id="bt-max-dd">--</div>
+                    <div style="font-size: 11px; color: var(--text-secondary);" id="bt-bench-max-dd">בנצ'מרק: --</div>
+                </div>
+                <div class="card" style="padding: 16px; text-align: center;" title="אחוז ימי המסחר שבהם התיק סיים בעלייה חיובית">
+                    <div style="font-size: 13px; color: var(--text-secondary); margin-bottom: 6px; font-weight: 600;">אחוז ימים מנצחים</div>
+                    <div style="font-size: 24px; font-weight: 800; color: #00E676;" id="bt-win-rate">--</div>
+                    <div style="font-size: 11px; color: var(--text-secondary);">Win Rate</div>
+                </div>
+                <div class="card" style="padding: 16px; text-align: center;" title="אלפא (α): תשואה עודפת מעל השוק. ביתא (β): מדד לרגישות ותנודתיות ביחס לשוק">
+                    <div style="font-size: 13px; color: var(--text-secondary); margin-bottom: 6px; font-weight: 600;">אלפא / ביתא (α / β)</div>
+                    <div style="font-size: 20px; font-weight: 800; color: #F59E0B;" id="bt-alpha-beta">--</div>
+                    <div style="font-size: 11px; color: var(--text-secondary);">תשואה עודפת מול שוק</div>
+                </div>
+            </div>
+
+            <!-- Charts and Heatmap Grid -->
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px; margin-bottom: 24px;">
+                <!-- Equity Curve Chart -->
+                <div class="card">
+                    <div class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <h2>עקומת צמיחת הון (Equity Curve)</h2>
+                            <p class="subtitle" style="font-size: 13px;">השוואת שווי התיק בדולרים לאורך זמן</p>
+                        </div>
+                        <div style="display: flex; gap: 16px; font-size: 13px;">
+                            <span style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #00E676; border-radius: 2px; display: inline-block;"></span> תיק האלגו</span>
+                            <span style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #F59E0B; border-radius: 2px; display: inline-block;"></span> מדד ייחוס (SPY)</span>
+                        </div>
+                    </div>
+                    <div id="bt-equity-chart" style="height: 380px; width: 100%;"></div>
+                </div>
+
+                <!-- Monthly Heatmap & Stats Summary -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2>תשואות לפי חודשים (%)</h2>
+                        <p class="subtitle" style="font-size: 13px;">מפת חום של ביצועים היסטוריים</p>
+                    </div>
+                    <div class="table-container" style="max-height: 380px;">
+                        <table id="bt-monthly-table" style="font-size: 12px; text-align: center;">
+                            <thead>
+                                <tr>
+                                    <th>שנה</th>
+                                    <th>ינו</th><th>פבר</th><th>מרץ</th><th>אפר</th><th>מאי</th><th>יונ</th>
+                                    <th>יול</th><th>אוג</th><th>ספט</th><th>אוק</th><th>נוב</th><th>דצמ</th>
+                                    <th>סה״כ</th>
+                                </tr>
+                            </thead>
+                            <tbody id="bt-monthly-body">
+                                <tr><td colspan="14" style="color: var(--text-secondary); padding: 20px;">הרץ סימולציה כדי לצפות בנתונים</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- VIEW: WATCHLIST -->
+        <main class="main-content" id="view-watchlist" style="display: none;">
+            <header class="top-header">
+                <h1>רשימת מעקב <span class="highlight">| מועדפים</span></h1>
+            </header>
+            
+            <div class="content-grid" style="grid-template-columns: 1fr;">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>המניות המועדפות שלי (⭐)</h2>
+                    </div>
+                    <div class="table-container">
+                        <table id="watchlist-table">
+                            <thead>
+                                <tr>
+                                    <th>מניה ↕</th>
+                                    <th>חברה ↕</th>
+                                    <th>סקטור ↕</th>
+                                    <th>מחיר ($) ↕</th>
+                                    <th>P/E ↕</th>
+                                    <th>שולי רווח ↕</th>
+                                    <th>דיבידנד שנתי ↕</th>
+                                    <th>הסר</th>
+                                </tr>
+                            </thead>
+                            <tbody id="watchlist-body">
+                                <tr><td colspan="8" style="text-align: center;">אין מניות ברשימת המעקב. סמן כוכב בסורק!</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Legal Disclaimer -->
+    <footer style="text-align: center; padding: 16px; color: var(--text-secondary); font-size: 12px; border-top: 1px solid var(--border-color); margin-top: 24px;">
+        <p>פרויקט תיק עבודות אישי. הנתונים נשאבים ממקורות ציבוריים (Yahoo Finance) לצרכים לימודיים והדגמה בלבד. <strong>אין באמור המלצה לפעולה פיננסית.</strong></p>
+    </footer>
+
+    <!-- Stock Details Deep-Dive Modal -->
+    <div id="stock-modal" class="modal">
+        <div class="modal-content" style="max-width: 1050px; width: 92%; max-height: 92vh; overflow-y: auto;">
+            <span class="close-btn" id="close-modal">&times;</span>
+            
+            <!-- Modal Header with Live Profile -->
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap; gap: 16px; border-bottom: 1px solid var(--border-color); padding-bottom: 16px;">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <h2 id="modal-symbol" style="font-size: 26px; font-weight: 800; color: #fff; letter-spacing: 0.5px;">--</h2>
+                        <span id="modal-company-name" style="color: var(--text-secondary); font-size: 15px;">טוען נתונים...</span>
+                        <span id="modal-sector-badge" class="control-badge" style="font-size: 11px;">-</span>
+                    </div>
+                    <div style="display: flex; align-items: baseline; gap: 12px; margin-top: 6px;">
+                        <span id="modal-price" style="font-size: 28px; font-weight: 800; color: #fff;">$0.00</span>
+                        <span id="modal-change" style="font-size: 14px; font-weight: 700;" class="text-good">0.00%</span>
+                    </div>
+                </div>
+
+                <!-- Quick Action Buttons -->
+                <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                    <button class="btn-primary" id="btn-modal-add-portfolio" style="background: rgba(0, 184, 255, 0.15); color: var(--accent-blue); border: 1px solid rgba(0, 184, 255, 0.3); width: auto; padding: 8px 14px; font-size: 13px;">➕ הוסף לתיק האישי</button>
+                    <button class="btn-primary" id="btn-modal-backtest" style="background: rgba(0, 230, 118, 0.15); color: #00E676; border: 1px solid rgba(0, 230, 118, 0.3); width: auto; padding: 8px 14px; font-size: 13px;">🧪 בקטסט למניה זו</button>
+                    <button class="btn-primary" id="btn-modal-watchlist" style="background: var(--bg-main); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.3); width: auto; padding: 8px 14px; font-size: 13px;">⭐ שמור למעקב</button>
+                </div>
+            </div>
+            
+            <!-- Modal Body: 2 Columns (Chart + Metrics) -->
+            <div style="display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 20px;">
+                
+                <!-- Left: Chart & Indicators -->
+                <div>
+                    <!-- Chart Overlays Toggle -->
+                    <div style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 12px; gap: 16px; font-size: 12px; color: var(--text-secondary);">
+                        <label style="cursor: pointer; display: flex; align-items: center; gap: 6px;">
+                            <input type="checkbox" id="toggle-sma50" checked> <span style="color: #00B8FF; font-weight: 600;">SMA 50</span>
+                        </label>
+                        <label style="cursor: pointer; display: flex; align-items: center; gap: 6px;">
+                            <input type="checkbox" id="toggle-sma200" checked> <span style="color: #F59E0B; font-weight: 600;">SMA 200</span>
+                        </label>
+                    </div>
+
+                    <!-- Candlestick Chart Area -->
+                    <div id="modal-candlestick-chart" style="height: 380px; width: 100%; border: 1px solid var(--border-color); border-radius: 8px; background: #0B0E14;"></div>
+                </div>
+
+                <!-- Right: Valuation & Key Stats + News -->
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    
+                    <!-- Fundamental Health Matrix -->
+                    <div class="card" style="padding: 16px; background: rgba(0,0,0,0.25);">
+                        <h3 style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;">📊 מדדי מפתח והערכת שווי</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 13px;">
+                            <div style="background: rgba(255,255,255,0.03); padding: 8px 10px; border-radius: 6px;">
+                                <div style="color: var(--text-secondary); font-size: 11px;">שווי שוק</div>
+                                <div id="stat-mcap" style="font-weight: 700; color: #fff;">-</div>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.03); padding: 8px 10px; border-radius: 6px;">
+                                <div style="color: var(--text-secondary); font-size: 11px;">מכפיל רווח (P/E)</div>
+                                <div id="stat-pe" style="font-weight: 700; color: #00B8FF;">-</div>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.03); padding: 8px 10px; border-radius: 6px;">
+                                <div style="color: var(--text-secondary); font-size: 11px;">שולי רווח נקי</div>
+                                <div id="stat-margin" style="font-weight: 700; color: #00E676;">-</div>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.03); padding: 8px 10px; border-radius: 6px;">
+                                <div style="color: var(--text-secondary); font-size: 11px;">דיבידנד שנתי</div>
+                                <div id="stat-div" style="font-weight: 700; color: #fff;">-</div>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.03); padding: 8px 10px; border-radius: 6px;">
+                                <div style="color: var(--text-secondary); font-size: 11px;">טווח 52 שבועות</div>
+                                <div id="stat-52w" style="font-weight: 700; font-size: 11px; color: #fff;" dir="ltr">-</div>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.03); padding: 8px 10px; border-radius: 6px;">
+                                <div style="color: var(--text-secondary); font-size: 11px;">קונצנזוס אנליסטים</div>
+                                <div id="stat-rec" style="font-weight: 700; color: #F59E0B;">-</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Target Price & Upside -->
+                    <div style="background: rgba(0, 184, 255, 0.06); border: 1px solid rgba(0, 184, 255, 0.2); border-radius: 8px; padding: 12px; display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <div style="font-size: 11px; color: var(--text-secondary);">יעד מחיר אנליסטים ממוצע (ל-12 חודשים)</div>
+                            <div id="stat-target-price" style="font-size: 18px; font-weight: 800; color: #00B8FF;">-</div>
+                        </div>
+                        <div id="stat-upside-badge" style="font-size: 12px; font-weight: 700; background: rgba(0, 230, 118, 0.15); color: #00E676; padding: 4px 8px; border-radius: 4px;">-</div>
+                    </div>
+
+                    <!-- Recent News Feed -->
+                    <div>
+                        <h3 style="font-size: 13px; color: var(--text-secondary); margin-bottom: 8px;">📰 חדשות אחרונות</h3>
+                        <div id="news-list" class="news-list" style="display: flex; flex-direction: column; gap: 8px; max-height: 120px; overflow-y: auto;"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Methodology & Quant Strategy Modal -->
+    <div id="methodology-modal" class="modal">
+        <div class="modal-content" style="max-width: 800px;">
+            <span class="close-btn" id="close-methodology">&times;</span>
+            <div class="modal-header">
+                <h2>🧠 מתודולוגיה כמותית ומודלי האלגוריתם</h2>
+            </div>
+            
+            <div style="padding: 10px 0; line-height: 1.8; color: var(--text-primary);">
+                <!-- Strategy 1: Value -->
+                <div style="background: rgba(0, 184, 255, 0.05); border: 1px solid rgba(0, 184, 255, 0.2); border-radius: 8px; padding: 18px; margin-bottom: 20px;">
+                    <h3 style="color: var(--accent-blue); margin-bottom: 8px; font-size: 18px;">⚖️ 1. מודל השקעות ערך (Fundamental Value Model)</h3>
+                    <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 12px;">מיועד למשקיעים לטווח ארוך המחפשים חברות רווחיות, יציבות ומתומחרות בחסר (Under-valued) מתוך מדדי הליבה.</p>
+                    <div style="background: #0B0E14; padding: 12px; border-radius: 6px; font-family: monospace; font-size: 13px; color: #00FF88; margin-bottom: 10px; direction: ltr; text-align: left;">
+                        Value_Score = ( (1 / P/E_Ratio) * 40% ) + ( Profit_Margin * 30% ) + ( Dividend_Yield * 30% )
+                    </div>
+                    <ul style="font-size: 13px; color: var(--text-secondary); padding-right: 20px; list-style-type: square;">
+                        <li><strong>מכפיל רווח (P/E):</strong> עדיפות למכפילים נמוכים (מניות זולות יחסית לרווחיותן).</li>
+                        <li><strong>שולי רווח (Profit Margin):</strong> סינון של חברות עם שולי רווח נקי מעל 5%.</li>
+                        <li><strong>תשואת דיבידנד (Dividend):</strong> תגמול לחברות המחלקות תזרים מזומנים שוטף לבעלי המניות.</li>
+                    </ul>
+                </div>
+
+                <!-- Strategy 2: Momentum -->
+                <div style="background: rgba(245, 158, 11, 0.05); border: 1px solid rgba(245, 158, 11, 0.2); border-radius: 8px; padding: 18px; margin-bottom: 20px;">
+                    <h3 style="color: #F59E0B; margin-bottom: 8px; font-size: 18px;">⚡ 2. מודל מומנטום ותנופה טכנית (Quantitative Momentum Model)</h3>
+                    <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 12px;">מיועד למסחר לטווח קצר-בינוני, מזהה פריצות מחיר, כניסת כסף מוסדי וחוזק יחסי (Relative Strength).</p>
+                    <div style="background: #0B0E14; padding: 12px; border-radius: 6px; font-family: monospace; font-size: 13px; color: #F59E0B; margin-bottom: 10px; direction: ltr; text-align: left;">
+                        Momentum_Score = ( Monthly_Return * 50% ) + ( Weekly_Return * 30% ) + ( Volume_Spike * 20% )
+                    </div>
+                    <ul style="font-size: 13px; color: var(--text-secondary); padding-right: 20px; list-style-type: square;">
+                        <li><strong>תשואה חודשית ושבועית:</strong> מדידת קצב עליית המחיר (Rate of Change).</li>
+                        <li><strong>פאלס נפח מסחר (Volume Pulse):</strong> זיהוי כניסת מחזורי מסחר חריגים (מעל ממוצע 30 יום) המעידים על עניין מוסדי.</li>
+                        <li><strong>סינון מגמה (Trend Filter):</strong> אימות שהמחיר מעל ממוצע נע 50 יום (50-Day SMA).</li>
+                        <li><strong>RSI (Relative Strength Index):</strong> מניעת כניסה למניות הנמצאות בקניית יתר קיצונית (RSI > 80).</li>
+                    </ul>
+                </div>
+
+                <!-- Quant Metrics -->
+                <div style="background: rgba(0, 255, 136, 0.05); border: 1px solid rgba(0, 255, 136, 0.2); border-radius: 8px; padding: 18px;">
+                    <h3 style="color: var(--accent-green); margin-bottom: 8px; font-size: 18px;">📊 3. מנוע הבקטסטינג ומדדי ביצוע מוסדיים</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 13px; color: var(--text-secondary);">
+                        <div><strong>Sharpe Ratio:</strong> יחס התשואה העודפת לתנודתיות הכללית. מעל 1.0 = מצוין.</div>
+                        <div><strong>Sortino Ratio:</strong> התמקדות בתנודתיות שלילית בלבד (עונש רק על ירידות).</div>
+                        <div><strong>Max Drawdown:</strong> אחוז הנפילה המקסימלי שנרשם מהשיא לשפל בתקופה.</div>
+                        <div><strong>Alpha & Beta:</strong> תשואה עודפת מעל השוק (אלפא) ורגישות לתנודות השוק (ביתא).</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>

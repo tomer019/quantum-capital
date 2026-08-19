@@ -1,0 +1,292 @@
+[
+  {
+    "symbol": "POLI.TA",
+    "name": "BANK HAPOALIM B.M.",
+    "price": 7712.0,
+    "pe_ratio": 10.726008,
+    "debt_equity": null,
+    "profit_margin": 0.40263,
+    "sector": "Financial Services",
+    "dividend_yield": 4.02
+  },
+  {
+    "symbol": "NICE.TA",
+    "name": "NICE LTD",
+    "price": 30060.0,
+    "pe_ratio": 14.807882,
+    "debt_equity": 2.335,
+    "profit_margin": 0.13861,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "TEVA.TA",
+    "name": "TEVA PHARMA IND",
+    "price": 11080.0,
+    "pe_ratio": 62.598873,
+    "debt_equity": 217.79,
+    "profit_margin": 0.04077,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "ICL.TA",
+    "name": "ICL GROUP LTD",
+    "price": 1617.0,
+    "pe_ratio": 22.774649,
+    "debt_equity": 51.172,
+    "profit_margin": 0.03955,
+    "sector": "Basic Materials",
+    "dividend_yield": 3.88
+  },
+  {
+    "symbol": "DISI.TA",
+    "name": "DISCOUNT INV CORP",
+    "price": 785.0,
+    "pe_ratio": 7.1363635,
+    "debt_equity": 192.886,
+    "profit_margin": 0.01131,
+    "sector": "Real Estate",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "FIBI.TA",
+    "name": "FIRST INTER BK ISR",
+    "price": 23790.0,
+    "pe_ratio": 10.803814,
+    "debt_equity": null,
+    "profit_margin": 0.31631002,
+    "sector": "Financial Services",
+    "dividend_yield": 9.6
+  },
+  {
+    "symbol": "ESLT.TA",
+    "name": "ELBIT SYSTEMS LTD",
+    "price": 232790.0,
+    "pe_ratio": 59.33979,
+    "debt_equity": 19.325,
+    "profit_margin": 0.07442,
+    "sector": "Industrials",
+    "dividend_yield": 0.51
+  },
+  {
+    "symbol": "DANE.TA",
+    "name": "DANEL-ADIR YEHOSHU",
+    "price": 41680.0,
+    "pe_ratio": 16.936203,
+    "debt_equity": 60.887,
+    "profit_margin": 0.04326,
+    "sector": "Healthcare",
+    "dividend_yield": 5.18
+  },
+  {
+    "symbol": "AZRG.TA",
+    "name": "AZRIELI GROUP",
+    "price": 38960.0,
+    "pe_ratio": 24.00493,
+    "debt_equity": 109.969,
+    "profit_margin": 0.48310003,
+    "sector": "Real Estate",
+    "dividend_yield": 1.78
+  },
+  {
+    "symbol": "PHOE.TA",
+    "name": "PHOENIX FINANC LTD",
+    "price": 17210.0,
+    "pe_ratio": 12.959338,
+    "debt_equity": 120.729,
+    "profit_margin": 0.17355,
+    "sector": "Financial Services",
+    "dividend_yield": 3.22
+  },
+  {
+    "symbol": "BEZQ.TA",
+    "name": "BEZEQ ISRAEL TELCM",
+    "price": 756.0,
+    "pe_ratio": 5.90625,
+    "debt_equity": 326.854,
+    "profit_margin": 0.1393,
+    "sector": "Communication Services",
+    "dividend_yield": 4.04
+  },
+  {
+    "symbol": "TSEM.TA",
+    "name": "TOWER SEMICONDUCTO",
+    "price": 73700.0,
+    "pe_ratio": 98.13582,
+    "debt_equity": 4.613,
+    "profit_margin": 0.16939,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "AMOT.TA",
+    "name": "AMOT INVESTMENTS",
+    "price": 1890.0,
+    "pe_ratio": 11.454545,
+    "debt_equity": 105.629,
+    "profit_margin": 0.6707,
+    "sector": "Real Estate",
+    "dividend_yield": 5.86
+  },
+  {
+    "symbol": "ALHE.TA",
+    "name": "ALONY HETZ",
+    "price": 3027.0,
+    "pe_ratio": 504.50003,
+    "debt_equity": 214.248,
+    "profit_margin": 0.0067000003,
+    "sector": "Real Estate",
+    "dividend_yield": 3.27
+  },
+  {
+    "symbol": "PTNR.TA",
+    "name": "PARTNER COMMUNICAT",
+    "price": 3562.0,
+    "pe_ratio": 21.45783,
+    "debt_equity": 68.769,
+    "profit_margin": 0.09937,
+    "sector": "Communication Services",
+    "dividend_yield": 7.03
+  },
+  {
+    "symbol": "CEL.TA",
+    "name": "CELLCOM ISRAEL LTD",
+    "price": 3288.0,
+    "pe_ratio": 9.727811,
+    "debt_equity": 70.955,
+    "profit_margin": 0.13896,
+    "sector": "Communication Services",
+    "dividend_yield": 7.36
+  },
+  {
+    "symbol": "ARPT.TA",
+    "name": "AIRPORT CITY",
+    "price": 5050.0,
+    "pe_ratio": 8.319604,
+    "debt_equity": 61.61,
+    "profit_margin": 0.61734,
+    "sector": "Real Estate",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "NVMI.TA",
+    "name": "NOVA LTD",
+    "price": 118440.0,
+    "pe_ratio": 50.01689,
+    "debt_equity": 54.838,
+    "profit_margin": 0.2884,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "SPEN.TA",
+    "name": "SHAPIR ENGINEERING",
+    "price": 4158.0,
+    "pe_ratio": 55.440002,
+    "debt_equity": 263.116,
+    "profit_margin": 0.04377,
+    "sector": "Industrials",
+    "dividend_yield": 0.56
+  },
+  {
+    "symbol": "MVNE.TA",
+    "name": "MIVNE REAL ESTATE",
+    "price": 1226.0,
+    "pe_ratio": 14.091954,
+    "debt_equity": 103.704,
+    "profit_margin": 0.47798002,
+    "sector": "Real Estate",
+    "dividend_yield": 1.99
+  },
+  {
+    "symbol": "MLSR.TA",
+    "name": "MELISRON",
+    "price": 39300.0,
+    "pe_ratio": 10.778936,
+    "debt_equity": 108.73,
+    "profit_margin": 0.78836995,
+    "sector": "Real Estate",
+    "dividend_yield": 1.86
+  },
+  {
+    "symbol": "DIFI.TA",
+    "name": "DIRECT FINANCE OF",
+    "price": 64620.0,
+    "pe_ratio": 9.522547,
+    "debt_equity": 594.352,
+    "profit_margin": 0.18173,
+    "sector": "Financial Services",
+    "dividend_yield": 10.18
+  },
+  {
+    "symbol": "HLAN.TA",
+    "name": "HILAN LTD",
+    "price": 22490.0,
+    "pe_ratio": 19.47186,
+    "debt_equity": 18.512,
+    "profit_margin": 0.08708,
+    "sector": "Technology",
+    "dividend_yield": 1.35
+  },
+  {
+    "symbol": "ONE.TA",
+    "name": "ONE SOFTWARE TECHN",
+    "price": 6566.0,
+    "pe_ratio": 17.509335,
+    "debt_equity": 30.672,
+    "profit_margin": 0.0559,
+    "sector": "Technology",
+    "dividend_yield": 4.02
+  },
+  {
+    "symbol": "MTRX.TA",
+    "name": "MATRIX IT LTD",
+    "price": 9544.0,
+    "pe_ratio": 19.437883,
+    "debt_equity": 65.852,
+    "profit_margin": 0.05335,
+    "sector": "Technology",
+    "dividend_yield": 4.52
+  },
+  {
+    "symbol": "ILCO.TA",
+    "name": "THE ISRAEL CORP",
+    "price": 7910.0,
+    "pe_ratio": 17.461367,
+    "debt_equity": 56.337,
+    "profit_margin": 0.016210001,
+    "sector": "Basic Materials",
+    "dividend_yield": 0.67
+  },
+  {
+    "symbol": "BLSR.TA",
+    "name": "BLUE SQUARE REAL",
+    "price": 29580.0,
+    "pe_ratio": 4.5009127,
+    "debt_equity": 140.245,
+    "profit_margin": 1.35724,
+    "sector": "Real Estate",
+    "dividend_yield": 5.05
+  },
+  {
+    "symbol": "FIBI.TA",
+    "name": "FIRST INTER BK ISR",
+    "price": 23790.0,
+    "pe_ratio": 10.803814,
+    "debt_equity": null,
+    "profit_margin": 0.31631002,
+    "sector": "Financial Services",
+    "dividend_yield": 9.6
+  },
+  {
+    "symbol": "POLI.TA",
+    "name": "BANK HAPOALIM B.M.",
+    "price": 7712.0,
+    "pe_ratio": 10.726008,
+    "debt_equity": null,
+    "profit_margin": 0.40263,
+    "sector": "Financial Services",
+    "dividend_yield": 4.02
+  }
+]

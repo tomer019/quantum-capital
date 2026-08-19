@@ -1,0 +1,40 @@
+
+=== Algo-Trading Backtester ===
+    Strategy : SMA Crossover (50/200)
+    Symbol   : NVDA
+    Period   : 2014-01-01 -> 2024-12-31
+    Capital  : $27,000
+
+[Data] מוריד נתונים: NVDA (2014-01-01 → 2024-12-31)
+[Data] נשמר ל-cache: NVDA_2014-01-01_2024-12-31.csv
+
+====================================================
+  Strategy : SMA Crossover (50/200)
+  Symbol   : NVDA
+  Period   : 2014-01-02 -> 2024-12-30
+  Capital  : $27,000.00
+====================================================
+
+  BUY  [2015-09-11] $0.55 x 49065.7878 shares | commission: $27.00
+  SELL [2018-11-13] $4.93 | PnL: +$214454.23 (+796.9%)
+  BUY  [2019-08-22] $4.26 x 56734.6302 shares | commission: $241.67
+  SELL [2022-04-20] $21.42 | PnL: +$971284.51 (+403.3%)
+  BUY  [2023-01-24] $19.22 x 63088.8971 shares | commission: $1213.93
+  SELL [2024-12-30] $137.28 | PnL: +$7431120.11 (+614.2%)
+
+====================================================
+  RESULTS: SMA Crossover (50/200)
+====================================================
+  Symbol        : NVDA
+  Initial cash  : $   27,000.00
+  Final value   : $8,661,155.62
+  Total return  : +31978.35%
+  Max Drawdown  : -37.55%
+  Sharpe Ratio  : 1.507
+  Total trades  : 3
+  Win Rate      : 100.0%
+  Winners       : 3
+  Losers        : 0
+====================================================
+
+[Chart] Saved to: C:\Users\tomer\OneDrive\שולחן העבודה\גרסה ראשונית לאלגו-טריידינג\results\NVDA_results.png

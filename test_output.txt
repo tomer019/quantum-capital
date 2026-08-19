@@ -1,0 +1,40 @@
+
+=== Algo-Trading Backtester ===
+    Strategy : SMA Crossover (50/200)
+    Symbol   : AAPL
+    Period   : 2019-01-01 -> 2024-12-31
+    Capital  : $10,000
+
+[Data] מוריד נתונים: AAPL (2019-01-01 → 2024-12-31)
+[Data] נשמר ל-cache: AAPL_2019-01-01_2024-12-31.csv
+
+====================================================
+  Strategy : SMA Crossover (50/200)
+  Symbol   : AAPL
+  Period   : 2019-01-02 -> 2024-12-30
+  Capital  : $10,000.00
+====================================================
+
+  BUY  [2022-09-26] $147.88 x 67.5544 shares | commission: $10.00
+  SELL [2022-10-07] $137.41 | PnL: $-726.22 (-7.1%)
+  BUY  [2023-03-22] $155.30 x 59.6513 shares | commission: $9.27
+  SELL [2024-03-14] $171.13 | PnL: +$924.18 (+10.2%)
+  BUY  [2024-06-13] $212.22 x 48.0074 shares | commission: $10.20
+  SELL [2024-12-30] $250.38 | PnL: +$1808.20 (+18.0%)
+
+====================================================
+  RESULTS: SMA Crossover (50/200)
+====================================================
+  Symbol        : AAPL
+  Initial cash  : $   10,000.00
+  Final value   : $   12,020.22
+  Total return  : +20.20%
+  Max Drawdown  : -15.59%
+  Sharpe Ratio  : 0.347
+  Total trades  : 3
+  Win Rate      : 66.7%
+  Winners       : 2
+  Losers        : 1
+====================================================
+
+[Chart] Saved to: C:\Users\tomer\OneDrive\שולחן העבודה\גרסה ראשונית לאלגו-טריידינג\results\AAPL_results.png

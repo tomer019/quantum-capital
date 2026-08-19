@@ -1,0 +1,4732 @@
+[
+  {
+    "symbol": "MMM",
+    "name": "3M Company",
+    "price": 180.96,
+    "pe_ratio": 32.19929,
+    "debt_equity": 437.937,
+    "profit_margin": 0.11902001,
+    "sector": "Industrials",
+    "dividend_yield": 1.73
+  },
+  {
+    "symbol": "AOS",
+    "name": "A.O. Smith Corporation",
+    "price": 61.075,
+    "pe_ratio": 17.012535,
+    "debt_equity": 36.766,
+    "profit_margin": 0.13149,
+    "sector": "Industrials",
+    "dividend_yield": 2.35
+  },
+  {
+    "symbol": "ABT",
+    "name": "Abbott Laboratories",
+    "price": 113.115,
+    "pe_ratio": 36.606796,
+    "debt_equity": 63.212,
+    "profit_margin": 0.116450004,
+    "sector": "Healthcare",
+    "dividend_yield": 2.28
+  },
+  {
+    "symbol": "ABBV",
+    "name": "AbbVie Inc.",
+    "price": 257.48,
+    "pe_ratio": 72.94051,
+    "debt_equity": null,
+    "profit_margin": 0.098000005,
+    "sector": "Healthcare",
+    "dividend_yield": 2.76
+  },
+  {
+    "symbol": "ACN",
+    "name": "Accenture plc",
+    "price": 175.73,
+    "pe_ratio": 14.02474,
+    "debt_equity": 25.035,
+    "profit_margin": 0.10656,
+    "sector": "Technology",
+    "dividend_yield": 3.84
+  },
+  {
+    "symbol": "ADBE",
+    "name": "Adobe Inc.",
+    "price": 265.54,
+    "pe_ratio": 15.191076,
+    "debt_equity": 61.443,
+    "profit_margin": 0.28689,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "AMD",
+    "name": "Advanced Micro Devices, Inc.",
+    "price": 479.95,
+    "pe_ratio": 123.0641,
+    "debt_equity": 6.361,
+    "profit_margin": 0.15577,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "AES",
+    "name": "The AES Corporation",
+    "price": 14.745,
+    "pe_ratio": 5.522472,
+    "debt_equity": 256.886,
+    "profit_margin": 0.1434,
+    "sector": "Utilities",
+    "dividend_yield": 4.77
+  },
+  {
+    "symbol": "AFL",
+    "name": "AFLAC Incorporated",
+    "price": 121.86,
+    "pe_ratio": 13.145631,
+    "debt_equity": 53.365,
+    "profit_margin": 0.26908,
+    "sector": "Financial Services",
+    "dividend_yield": 2.02
+  },
+  {
+    "symbol": "A",
+    "name": "Agilent Technologies, Inc.",
+    "price": 149.01,
+    "pe_ratio": 29.981892,
+    "debt_equity": 49.733,
+    "profit_margin": 0.19552,
+    "sector": "Healthcare",
+    "dividend_yield": 0.69
+  },
+  {
+    "symbol": "ABNB",
+    "name": "Airbnb, Inc.",
+    "price": 184.9,
+    "pe_ratio": 42.31121,
+    "debt_equity": 32.004,
+    "profit_margin": 0.2045,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "AKAM",
+    "name": "Akamai Technologies, Inc.",
+    "price": 116.845,
+    "pe_ratio": 42.48909,
+    "debt_equity": 196.672,
+    "profit_margin": 0.09507,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "ALB",
+    "name": "Albemarle Corporation",
+    "price": 132.01,
+    "pe_ratio": 488.92587,
+    "debt_equity": 18.976,
+    "profit_margin": 0.03795,
+    "sector": "Basic Materials",
+    "dividend_yield": 1.22
+  },
+  {
+    "symbol": "ALGN",
+    "name": "Align Technology, Inc.",
+    "price": 168.915,
+    "pe_ratio": 29.274696,
+    "debt_equity": 2.855,
+    "profit_margin": 0.09991,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "ALLE",
+    "name": "Allegion plc",
+    "price": 161.05,
+    "pe_ratio": 21.135172,
+    "debt_equity": 104.895,
+    "profit_margin": 0.15357,
+    "sector": "Industrials",
+    "dividend_yield": 1.31
+  },
+  {
+    "symbol": "LNT",
+    "name": "Alliant Energy Corporation",
+    "price": 70.2,
+    "pe_ratio": 22.215189,
+    "debt_equity": 160.951,
+    "profit_margin": 0.18447,
+    "sector": "Utilities",
+    "dividend_yield": 3.04
+  },
+  {
+    "symbol": "ALL",
+    "name": "Allstate Corporation (The)",
+    "price": 262.3999,
+    "pe_ratio": 5.2543035,
+    "debt_equity": 22.261,
+    "profit_margin": 0.18971,
+    "sector": "Financial Services",
+    "dividend_yield": 1.67
+  },
+  {
+    "symbol": "GOOGL",
+    "name": "Alphabet Inc.",
+    "price": 342.94,
+    "pe_ratio": 17.215864,
+    "debt_equity": 18.859,
+    "profit_margin": 0.54771,
+    "sector": "Communication Services",
+    "dividend_yield": 0.26
+  },
+  {
+    "symbol": "GOOG",
+    "name": "Alphabet Inc.",
+    "price": 340.51,
+    "pe_ratio": 17.07673,
+    "debt_equity": 18.859,
+    "profit_margin": 0.54771,
+    "sector": "Communication Services",
+    "dividend_yield": 0.26
+  },
+  {
+    "symbol": "MO",
+    "name": "Altria Group, Inc.",
+    "price": 64.88,
+    "pe_ratio": 13.658947,
+    "debt_equity": null,
+    "profit_margin": 0.38999,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 6.63
+  },
+  {
+    "symbol": "AMZN",
+    "name": "Amazon.com, Inc.",
+    "price": 260.325,
+    "pe_ratio": 20.926449,
+    "debt_equity": 45.617,
+    "profit_margin": 0.1744,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "AMCR",
+    "name": "Amcor plc",
+    "price": 46.085,
+    "pe_ratio": 19.363443,
+    "debt_equity": 128.294,
+    "profit_margin": 0.04705,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 5.71
+  },
+  {
+    "symbol": "AEE",
+    "name": "Ameren Corporation",
+    "price": 109.58,
+    "pe_ratio": 19.292253,
+    "debt_equity": 157.846,
+    "profit_margin": 0.18583,
+    "sector": "Utilities",
+    "dividend_yield": 2.74
+  },
+  {
+    "symbol": "AEP",
+    "name": "American Electric Power Company",
+    "price": 126.22,
+    "pe_ratio": 21.875217,
+    "debt_equity": 160.789,
+    "profit_margin": 0.13781999,
+    "sector": "Utilities",
+    "dividend_yield": 3.0
+  },
+  {
+    "symbol": "AXP",
+    "name": "American Express Company",
+    "price": 338.38,
+    "pe_ratio": 20.545235,
+    "debt_equity": 172.38,
+    "profit_margin": 0.16141,
+    "sector": "Financial Services",
+    "dividend_yield": 1.13
+  },
+  {
+    "symbol": "AIG",
+    "name": "American International Group, I",
+    "price": 76.3397,
+    "pe_ratio": 13.930602,
+    "debt_equity": 22.466,
+    "profit_margin": 0.11089,
+    "sector": "Financial Services",
+    "dividend_yield": 2.64
+  },
+  {
+    "symbol": "AMT",
+    "name": "American Tower Corporation (REI",
+    "price": 173.995,
+    "pe_ratio": 28.06371,
+    "debt_equity": 438.721,
+    "profit_margin": 0.31083,
+    "sector": "Real Estate",
+    "dividend_yield": 4.05
+  },
+  {
+    "symbol": "AWK",
+    "name": "American Water Works Company, I",
+    "price": 136.7325,
+    "pe_ratio": 23.73828,
+    "debt_equity": 137.745,
+    "profit_margin": 0.21347,
+    "sector": "Utilities",
+    "dividend_yield": 2.66
+  },
+  {
+    "symbol": "AMP",
+    "name": "Ameriprise Financial, Inc.",
+    "price": 566.87,
+    "pe_ratio": 13.69582,
+    "debt_equity": 67.578,
+    "profit_margin": 0.199,
+    "sector": "Financial Services",
+    "dividend_yield": 1.21
+  },
+  {
+    "symbol": "AME",
+    "name": "AMETEK, Inc.",
+    "price": 249.82,
+    "pe_ratio": 36.52339,
+    "debt_equity": 20.522,
+    "profit_margin": 0.20044,
+    "sector": "Industrials",
+    "dividend_yield": 0.54
+  },
+  {
+    "symbol": "AMGN",
+    "name": "Amgen Inc.",
+    "price": 426.23,
+    "pe_ratio": 26.473913,
+    "debt_equity": 490.281,
+    "profit_margin": 0.22951001,
+    "sector": "Healthcare",
+    "dividend_yield": 2.4
+  },
+  {
+    "symbol": "APH",
+    "name": "Amphenol Corporation",
+    "price": 158.82,
+    "pe_ratio": 39.705,
+    "debt_equity": 120.415,
+    "profit_margin": 0.17729001,
+    "sector": "Technology",
+    "dividend_yield": 0.59
+  },
+  {
+    "symbol": "ADI",
+    "name": "Analog Devices, Inc.",
+    "price": 372.34,
+    "pe_ratio": 55.49031,
+    "debt_equity": 25.81,
+    "profit_margin": 0.26007998,
+    "sector": "Technology",
+    "dividend_yield": 1.13
+  },
+  {
+    "symbol": "AON",
+    "name": "Aon plc",
+    "price": 345.76,
+    "pe_ratio": 19.081676,
+    "debt_equity": 163.481,
+    "profit_margin": 0.22268,
+    "sector": "Financial Services",
+    "dividend_yield": 0.94
+  },
+  {
+    "symbol": "APA",
+    "name": "APA Corporation",
+    "price": 42.05,
+    "pe_ratio": 8.871308,
+    "debt_equity": 48.854,
+    "profit_margin": 0.19564,
+    "sector": "Energy",
+    "dividend_yield": 2.4
+  },
+  {
+    "symbol": "APO",
+    "name": "Apollo Global Management, Inc. ",
+    "price": 134.32,
+    "pe_ratio": 47.800716,
+    "debt_equity": 100.969,
+    "profit_margin": 0.052670002,
+    "sector": "Financial Services",
+    "dividend_yield": 1.67
+  },
+  {
+    "symbol": "AAPL",
+    "name": "Apple Inc.",
+    "price": 310.53,
+    "pe_ratio": 35.652122,
+    "debt_equity": 78.445,
+    "profit_margin": 0.27618998,
+    "sector": "Technology",
+    "dividend_yield": 0.35
+  },
+  {
+    "symbol": "AMAT",
+    "name": "Applied Materials, Inc.",
+    "price": 508.0,
+    "pe_ratio": 43.717728,
+    "debt_equity": 25.537,
+    "profit_margin": 0.30052,
+    "sector": "Technology",
+    "dividend_yield": 0.4
+  },
+  {
+    "symbol": "APP",
+    "name": "Applovin Corporation",
+    "price": 308.2614,
+    "pe_ratio": 23.69419,
+    "debt_equity": 111.13,
+    "profit_margin": 0.64575994,
+    "sector": "Communication Services",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "APTV",
+    "name": "Aptiv PLC",
+    "price": 49.23,
+    "pe_ratio": 22.276018,
+    "debt_equity": 64.938,
+    "profit_margin": 0.010720001,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "ACGL",
+    "name": "Arch Capital Group Ltd.",
+    "price": 99.17,
+    "pe_ratio": 7.759781,
+    "debt_equity": 17.836,
+    "profit_margin": 0.24396999,
+    "sector": "Financial Services",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "ADM",
+    "name": "Archer-Daniels-Midland Company",
+    "price": 82.45,
+    "pe_ratio": 22.52732,
+    "debt_equity": 39.134,
+    "profit_margin": 0.021559998,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 2.56
+  },
+  {
+    "symbol": "ARES",
+    "name": "Ares Management Corporation",
+    "price": 140.81,
+    "pe_ratio": 64.59174,
+    "debt_equity": 172.378,
+    "profit_margin": 0.10628,
+    "sector": "Financial Services",
+    "dividend_yield": 3.82
+  },
+  {
+    "symbol": "ANET",
+    "name": "Arista Networks, Inc.",
+    "price": 194.72,
+    "pe_ratio": 61.425865,
+    "debt_equity": null,
+    "profit_margin": 0.38371,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "AJG",
+    "name": "Arthur J. Gallagher & Co.",
+    "price": 251.355,
+    "pe_ratio": 41.68408,
+    "debt_equity": 59.401,
+    "profit_margin": 0.10378,
+    "sector": "Financial Services",
+    "dividend_yield": 1.13
+  },
+  {
+    "symbol": "AIZ",
+    "name": "Assurant, Inc.",
+    "price": 280.7,
+    "pe_ratio": 13.437052,
+    "debt_equity": 36.211,
+    "profit_margin": 0.07903,
+    "sector": "Financial Services",
+    "dividend_yield": 1.25
+  },
+  {
+    "symbol": "T",
+    "name": "AT&T Inc.",
+    "price": 25.0701,
+    "pe_ratio": 8.273961,
+    "debt_equity": 129.054,
+    "profit_margin": 0.16943,
+    "sector": "Communication Services",
+    "dividend_yield": 4.5
+  },
+  {
+    "symbol": "ATO",
+    "name": "Atmos Energy Corporation",
+    "price": 170.82,
+    "pe_ratio": 20.359953,
+    "debt_equity": 67.662,
+    "profit_margin": 0.28496,
+    "sector": "Utilities",
+    "dividend_yield": 2.35
+  },
+  {
+    "symbol": "ADSK",
+    "name": "Autodesk, Inc.",
+    "price": 250.97,
+    "pe_ratio": 36.69152,
+    "debt_equity": 85.419,
+    "profit_margin": 0.19488001,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "ADP",
+    "name": "Automatic Data Processing, Inc.",
+    "price": 271.495,
+    "pe_ratio": 24.816729,
+    "debt_equity": 91.436,
+    "profit_margin": 0.20109,
+    "sector": "Technology",
+    "dividend_yield": 2.56
+  },
+  {
+    "symbol": "AZO",
+    "name": "AutoZone, Inc.",
+    "price": 3114.0,
+    "pe_ratio": 21.406515,
+    "debt_equity": null,
+    "profit_margin": 0.12399,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "AVB",
+    "name": "AvalonBay Communities, Inc.",
+    "price": 184.06,
+    "pe_ratio": 25.248285,
+    "debt_equity": 75.129,
+    "profit_margin": 0.33321998,
+    "sector": "Real Estate",
+    "dividend_yield": 3.87
+  },
+  {
+    "symbol": "AVY",
+    "name": "Avery Dennison Corporation",
+    "price": 178.21,
+    "pe_ratio": 19.519169,
+    "debt_equity": 158.653,
+    "profit_margin": 0.076220006,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 2.26
+  },
+  {
+    "symbol": "AXON",
+    "name": "Axon Enterprise, Inc.",
+    "price": 623.66,
+    "pe_ratio": 257.71072,
+    "debt_equity": 50.363,
+    "profit_margin": 0.06191,
+    "sector": "Industrials",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "BKR",
+    "name": "Baker Hughes Company",
+    "price": 64.535,
+    "pe_ratio": 20.750805,
+    "debt_equity": 80.925,
+    "profit_margin": 0.111669995,
+    "sector": "Energy",
+    "dividend_yield": 1.42
+  },
+  {
+    "symbol": "BALL",
+    "name": "Ball Corporation",
+    "price": 61.57,
+    "pe_ratio": 17.641834,
+    "debt_equity": 131.495,
+    "profit_margin": 0.0661,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 1.31
+  },
+  {
+    "symbol": "BAC",
+    "name": "Bank of America Corporation",
+    "price": 64.075,
+    "pe_ratio": 14.797921,
+    "debt_equity": null,
+    "profit_margin": 0.29524,
+    "sector": "Financial Services",
+    "dividend_yield": 2.0
+  },
+  {
+    "symbol": "BDX",
+    "name": "Becton, Dickinson and Company",
+    "price": 182.73,
+    "pe_ratio": 31.668978,
+    "debt_equity": 68.84,
+    "profit_margin": 0.0419,
+    "sector": "Healthcare",
+    "dividend_yield": 2.31
+  },
+  {
+    "symbol": "BRK-B",
+    "name": "Berkshire Hathaway Inc. New",
+    "price": 503.22,
+    "pe_ratio": 12.656439,
+    "debt_equity": 17.142,
+    "profit_margin": 0.22296,
+    "sector": "Financial Services",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "BBY",
+    "name": "Best Buy Co., Inc.",
+    "price": 87.825,
+    "pe_ratio": 16.263887,
+    "debt_equity": 134.09,
+    "profit_margin": 0.027309999,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 4.49
+  },
+  {
+    "symbol": "TECH",
+    "name": "Bio-Techne Corp",
+    "price": 72.345,
+    "pe_ratio": 62.366383,
+    "debt_equity": 13.712,
+    "profit_margin": 0.14968,
+    "sector": "Healthcare",
+    "dividend_yield": 0.44
+  },
+  {
+    "symbol": "BIIB",
+    "name": "Biogen Inc.",
+    "price": 213.45,
+    "pe_ratio": 37.912964,
+    "debt_equity": 44.329,
+    "profit_margin": 0.083229996,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "BLK",
+    "name": "BlackRock, Inc.",
+    "price": 1160.595,
+    "pe_ratio": 27.798681,
+    "debt_equity": 23.192,
+    "profit_margin": 0.24089001,
+    "sector": "Financial Services",
+    "dividend_yield": 2.0
+  },
+  {
+    "symbol": "BX",
+    "name": "Blackstone Inc.",
+    "price": 141.085,
+    "pe_ratio": 31.562643,
+    "debt_equity": 68.185,
+    "profit_margin": 0.22728,
+    "sector": "Financial Services",
+    "dividend_yield": 3.72
+  },
+  {
+    "symbol": "XYZ",
+    "name": "Block, Inc.",
+    "price": 80.12,
+    "pe_ratio": 143.07143,
+    "debt_equity": 32.58,
+    "profit_margin": 0.01426,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "BNY",
+    "name": "The Bank of New York Mellon Cor",
+    "price": 163.97,
+    "pe_ratio": 19.133022,
+    "debt_equity": null,
+    "profit_margin": 0.29413998,
+    "sector": "Financial Services",
+    "dividend_yield": 1.35
+  },
+  {
+    "symbol": "BA",
+    "name": "Boeing Company (The)",
+    "price": 223.73,
+    "pe_ratio": 80.47842,
+    "debt_equity": 790.875,
+    "profit_margin": 0.025910001,
+    "sector": "Industrials",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "BKNG",
+    "name": "Booking Holdings Inc. Common St",
+    "price": 210.55,
+    "pe_ratio": 23.369034,
+    "debt_equity": null,
+    "profit_margin": 0.25527,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.82
+  },
+  {
+    "symbol": "BSX",
+    "name": "Boston Scientific Corporation",
+    "price": 51.325,
+    "pe_ratio": 20.779352,
+    "debt_equity": 50.151,
+    "profit_margin": 0.17499,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "BMY",
+    "name": "Bristol-Myers Squibb Company",
+    "price": 66.305,
+    "pe_ratio": 14.604626,
+    "debt_equity": 201.859,
+    "profit_margin": 0.18871,
+    "sector": "Healthcare",
+    "dividend_yield": 3.9
+  },
+  {
+    "symbol": "AVGO",
+    "name": "Broadcom Inc.",
+    "price": 378.565,
+    "pe_ratio": 63.094166,
+    "debt_equity": 74.018,
+    "profit_margin": 0.38848,
+    "sector": "Technology",
+    "dividend_yield": 0.66
+  },
+  {
+    "symbol": "BR",
+    "name": "Broadridge Financial Solutions,",
+    "price": 171.15,
+    "pe_ratio": 17.828123,
+    "debt_equity": 123.939,
+    "profit_margin": 0.15037,
+    "sector": "Technology",
+    "dividend_yield": 2.6
+  },
+  {
+    "symbol": "BRO",
+    "name": "Brown & Brown, Inc.",
+    "price": 70.265,
+    "pe_ratio": 22.448881,
+    "debt_equity": 63.975,
+    "profit_margin": 0.18084998,
+    "sector": "Financial Services",
+    "dividend_yield": 0.96
+  },
+  {
+    "symbol": "BF-B",
+    "name": "Brown Forman Inc",
+    "price": 27.64,
+    "pe_ratio": 18.06536,
+    "debt_equity": 64.95,
+    "profit_margin": 0.18202999,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 3.35
+  },
+  {
+    "symbol": "BLDR",
+    "name": "Builders FirstSource, Inc.",
+    "price": 68.26,
+    "pe_ratio": 74.195656,
+    "debt_equity": 130.786,
+    "profit_margin": 0.0070999996,
+    "sector": "Industrials",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "BG",
+    "name": "Bunge Limited",
+    "price": 114.65,
+    "pe_ratio": 24.709053,
+    "debt_equity": 97.995,
+    "profit_margin": 0.01097,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 2.51
+  },
+  {
+    "symbol": "BXP",
+    "name": "BXP, Inc.",
+    "price": 66.3,
+    "pe_ratio": 35.645164,
+    "debt_equity": 211.631,
+    "profit_margin": 0.09304,
+    "sector": "Real Estate",
+    "dividend_yield": 4.2
+  },
+  {
+    "symbol": "CHRW",
+    "name": "C.H. Robinson Worldwide, Inc.",
+    "price": 145.76,
+    "pe_ratio": 27.816793,
+    "debt_equity": 121.188,
+    "profit_margin": 0.03726,
+    "sector": "Industrials",
+    "dividend_yield": 1.74
+  },
+  {
+    "symbol": "CDNS",
+    "name": "Cadence Design Systems, Inc.",
+    "price": 318.13,
+    "pe_ratio": 62.996037,
+    "debt_equity": 38.661,
+    "profit_margin": 0.23605,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "CPT",
+    "name": "Camden Property Trust",
+    "price": 108.0,
+    "pe_ratio": 35.643566,
+    "debt_equity": 125.648,
+    "profit_margin": 0.20622,
+    "sector": "Real Estate",
+    "dividend_yield": 3.92
+  },
+  {
+    "symbol": "COF",
+    "name": "Capital One Financial Corporati",
+    "price": 222.65,
+    "pe_ratio": 12.260463,
+    "debt_equity": null,
+    "profit_margin": 0.21867001,
+    "sector": "Financial Services",
+    "dividend_yield": 1.45
+  },
+  {
+    "symbol": "CAH",
+    "name": "Cardinal Health, Inc.",
+    "price": 235.12,
+    "pe_ratio": 32.520054,
+    "debt_equity": null,
+    "profit_margin": 0.00674,
+    "sector": "Healthcare",
+    "dividend_yield": 0.88
+  },
+  {
+    "symbol": "CCL",
+    "name": "Carnival Corporation Ltd.",
+    "price": 27.335,
+    "pe_ratio": 12.313063,
+    "debt_equity": 201.556,
+    "profit_margin": 0.11237001,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 1.62
+  },
+  {
+    "symbol": "CARR",
+    "name": "Carrier Global Corporation",
+    "price": 61.04,
+    "pe_ratio": 43.600002,
+    "debt_equity": 91.998,
+    "profit_margin": 0.055180002,
+    "sector": "Industrials",
+    "dividend_yield": 1.53
+  },
+  {
+    "symbol": "CVNA",
+    "name": "Carvana Co.",
+    "price": 65.01,
+    "pe_ratio": 34.396828,
+    "debt_equity": 110.88,
+    "profit_margin": 0.06257,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "CASY",
+    "name": "Caseys General Stores, Inc.",
+    "price": 853.77,
+    "pe_ratio": 44.606586,
+    "debt_equity": 73.514,
+    "profit_margin": 0.04068,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.3
+  },
+  {
+    "symbol": "CAT",
+    "name": "Caterpillar, Inc.",
+    "price": 837.12,
+    "pe_ratio": 36.104,
+    "debt_equity": 232.783,
+    "profit_margin": 0.14511,
+    "sector": "Industrials",
+    "dividend_yield": 0.74
+  },
+  {
+    "symbol": "CBOE",
+    "name": "Cboe Global Markets, Inc.",
+    "price": 294.925,
+    "pe_ratio": 22.987139,
+    "debt_equity": 28.09,
+    "profit_margin": 0.26734,
+    "sector": "Financial Services",
+    "dividend_yield": 1.17
+  },
+  {
+    "symbol": "CBRE",
+    "name": "CBRE Group Inc",
+    "price": 149.07,
+    "pe_ratio": 34.19037,
+    "debt_equity": 117.789,
+    "profit_margin": 0.029760001,
+    "sector": "Real Estate",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "CDW",
+    "name": "CDW Corporation",
+    "price": 136.31,
+    "pe_ratio": 16.383413,
+    "debt_equity": 263.278,
+    "profit_margin": 0.04597,
+    "sector": "Technology",
+    "dividend_yield": 1.86
+  },
+  {
+    "symbol": "COR",
+    "name": "Cencora, Inc.",
+    "price": 318.1825,
+    "pe_ratio": 23.621565,
+    "debt_equity": 446.516,
+    "profit_margin": 0.00789,
+    "sector": "Healthcare",
+    "dividend_yield": 0.77
+  },
+  {
+    "symbol": "CNP",
+    "name": "CenterPoint Energy, Inc (Holdin",
+    "price": 40.665,
+    "pe_ratio": 24.208332,
+    "debt_equity": 210.256,
+    "profit_margin": 0.11611,
+    "sector": "Utilities",
+    "dividend_yield": 2.36
+  },
+  {
+    "symbol": "CF",
+    "name": "CF Industries Holdings, Inc.",
+    "price": 120.23,
+    "pe_ratio": 8.912528,
+    "debt_equity": 40.504,
+    "profit_margin": 0.27122,
+    "sector": "Basic Materials",
+    "dividend_yield": 2.04
+  },
+  {
+    "symbol": "SCHW",
+    "name": "Charles Schwab Corporation (The",
+    "price": 111.675,
+    "pe_ratio": 20.37865,
+    "debt_equity": 151.106,
+    "profit_margin": 0.38793,
+    "sector": "Financial Services",
+    "dividend_yield": 1.16
+  },
+  {
+    "symbol": "CHTR",
+    "name": "Charter Communications, Inc.",
+    "price": 151.51,
+    "pe_ratio": 3.9424927,
+    "debt_equity": 441.578,
+    "profit_margin": 0.09052,
+    "sector": "Communication Services",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "CVX",
+    "name": "Chevron Corporation",
+    "price": 205.26,
+    "pe_ratio": 19.736538,
+    "debt_equity": 18.959,
+    "profit_margin": 0.09834,
+    "sector": "Energy",
+    "dividend_yield": 3.51
+  },
+  {
+    "symbol": "CMG",
+    "name": "Chipotle Mexican Grill, Inc.",
+    "price": 33.535,
+    "pe_ratio": 31.050924,
+    "debt_equity": 246.35,
+    "profit_margin": 0.114250004,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "CB",
+    "name": "Chubb Limited",
+    "price": 345.28,
+    "pe_ratio": 12.235294,
+    "debt_equity": 30.941,
+    "profit_margin": 0.18070999,
+    "sector": "Financial Services",
+    "dividend_yield": 1.2
+  },
+  {
+    "symbol": "CHD",
+    "name": "Church & Dwight Company, Inc.",
+    "price": 99.2,
+    "pe_ratio": 31.794872,
+    "debt_equity": 55.851,
+    "profit_margin": 0.119569995,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 1.26
+  },
+  {
+    "symbol": "CIEN",
+    "name": "Ciena Corporation",
+    "price": 397.9,
+    "pe_ratio": 133.52348,
+    "debt_equity": 54.649,
+    "profit_margin": 0.0787,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "CI",
+    "name": "The Cigna Group",
+    "price": 280.5463,
+    "pe_ratio": 11.607211,
+    "debt_equity": 74.29,
+    "profit_margin": 0.022720002,
+    "sector": "Healthcare",
+    "dividend_yield": 2.27
+  },
+  {
+    "symbol": "CINF",
+    "name": "Cincinnati Financial Corporatio",
+    "price": 171.63,
+    "pe_ratio": 8.103399,
+    "debt_equity": 5.255,
+    "profit_margin": 0.23843001,
+    "sector": "Financial Services",
+    "dividend_yield": 2.2
+  },
+  {
+    "symbol": "CTAS",
+    "name": "Cintas Corporation",
+    "price": 200.26,
+    "pe_ratio": 40.78615,
+    "debt_equity": 52.646,
+    "profit_margin": 0.17754,
+    "sector": "Industrials",
+    "dividend_yield": 1.05
+  },
+  {
+    "symbol": "CSCO",
+    "name": "Cisco Systems, Inc.",
+    "price": 112.0395,
+    "pe_ratio": 33.645496,
+    "debt_equity": 58.731,
+    "profit_margin": 0.20951,
+    "sector": "Technology",
+    "dividend_yield": 1.49
+  },
+  {
+    "symbol": "C",
+    "name": "Citigroup, Inc.",
+    "price": 137.38,
+    "pe_ratio": 14.803881,
+    "debt_equity": null,
+    "profit_margin": 0.21832001,
+    "sector": "Financial Services",
+    "dividend_yield": 1.93
+  },
+  {
+    "symbol": "CFG",
+    "name": "Citizens Financial Group, Inc.",
+    "price": 73.57,
+    "pe_ratio": 16.027233,
+    "debt_equity": null,
+    "profit_margin": 0.26051,
+    "sector": "Financial Services",
+    "dividend_yield": 2.48
+  },
+  {
+    "symbol": "CLX",
+    "name": "Clorox Company (The)",
+    "price": 105.94,
+    "pe_ratio": 22.024948,
+    "debt_equity": 2221.429,
+    "profit_margin": 0.087349996,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 4.72
+  },
+  {
+    "symbol": "CME",
+    "name": "CME Group Inc.",
+    "price": 272.42,
+    "pe_ratio": 23.106024,
+    "debt_equity": 14.587,
+    "profit_margin": 0.63443,
+    "sector": "Financial Services",
+    "dividend_yield": 1.94
+  },
+  {
+    "symbol": "CMS",
+    "name": "CMS Energy Corporation",
+    "price": 71.29,
+    "pe_ratio": 21.40841,
+    "debt_equity": 185.604,
+    "profit_margin": 0.11642,
+    "sector": "Utilities",
+    "dividend_yield": 3.19
+  },
+  {
+    "symbol": "KO",
+    "name": "Coca-Cola Company (The)",
+    "price": 88.93,
+    "pe_ratio": 26.705706,
+    "debt_equity": 115.519,
+    "profit_margin": 0.28558,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 2.44
+  },
+  {
+    "symbol": "CTSH",
+    "name": "Cognizant Technology Solutions ",
+    "price": 58.5,
+    "pe_ratio": 12.553649,
+    "debt_equity": 14.479,
+    "profit_margin": 0.10258,
+    "sector": "Technology",
+    "dividend_yield": 2.33
+  },
+  {
+    "symbol": "COHR",
+    "name": "Coherent Corp.",
+    "price": 308.07,
+    "pe_ratio": 74.95621,
+    "debt_equity": 31.612,
+    "profit_margin": 0.11309,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "CL",
+    "name": "Colgate-Palmolive Company",
+    "price": 91.86,
+    "pe_ratio": 36.165356,
+    "debt_equity": 1388.163,
+    "profit_margin": 0.096829996,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 2.35
+  },
+  {
+    "symbol": "CMCSA",
+    "name": "Comcast Corporation",
+    "price": 26.155,
+    "pe_ratio": 8.383014,
+    "debt_equity": 100.474,
+    "profit_margin": 0.08966,
+    "sector": "Communication Services",
+    "dividend_yield": 5.16
+  },
+  {
+    "symbol": "FIX",
+    "name": "Comfort Systems USA, Inc.",
+    "price": 1731.7001,
+    "pe_ratio": 42.621216,
+    "debt_equity": 45.489,
+    "profit_margin": 0.12775,
+    "sector": "Industrials",
+    "dividend_yield": 0.19
+  },
+  {
+    "symbol": "COP",
+    "name": "ConocoPhillips",
+    "price": 129.795,
+    "pe_ratio": 17.168652,
+    "debt_equity": 35.639,
+    "profit_margin": 0.144,
+    "sector": "Energy",
+    "dividend_yield": 2.63
+  },
+  {
+    "symbol": "ED",
+    "name": "Consolidated Edison, Inc.",
+    "price": 108.9525,
+    "pe_ratio": 17.919819,
+    "debt_equity": 110.113,
+    "profit_margin": 0.12533,
+    "sector": "Utilities",
+    "dividend_yield": 3.22
+  },
+  {
+    "symbol": "STZ",
+    "name": "Constellation Brands, Inc.",
+    "price": 131.815,
+    "pe_ratio": 13.395833,
+    "debt_equity": 123.205,
+    "profit_margin": 0.20143999,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 3.16
+  },
+  {
+    "symbol": "CEG",
+    "name": "Constellation Energy Corporatio",
+    "price": 265.69,
+    "pe_ratio": 25.94629,
+    "debt_equity": 76.419,
+    "profit_margin": 0.110810004,
+    "sector": "Utilities",
+    "dividend_yield": 0.61
+  },
+  {
+    "symbol": "COO",
+    "name": "The Cooper Companies, Inc.",
+    "price": 76.515,
+    "pe_ratio": 64.84322,
+    "debt_equity": 33.093,
+    "profit_margin": 0.05573,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "CPRT",
+    "name": "Copart, Inc.",
+    "price": 32.1498,
+    "pe_ratio": 19.968819,
+    "debt_equity": 1.059,
+    "profit_margin": 0.33481997,
+    "sector": "Industrials",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "GLW",
+    "name": "Corning Incorporated",
+    "price": 159.1,
+    "pe_ratio": 73.31797,
+    "debt_equity": 71.448,
+    "profit_margin": 0.111999996,
+    "sector": "Technology",
+    "dividend_yield": 0.65
+  },
+  {
+    "symbol": "CPAY",
+    "name": "Corpay, Inc.",
+    "price": 409.99,
+    "pe_ratio": 24.953743,
+    "debt_equity": 275.291,
+    "profit_margin": 0.22723,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "CTVA",
+    "name": "Corteva, Inc.",
+    "price": 77.99,
+    "pe_ratio": 47.266666,
+    "debt_equity": 19.191,
+    "profit_margin": 0.056649998,
+    "sector": "Basic Materials",
+    "dividend_yield": 0.95
+  },
+  {
+    "symbol": "CSGP",
+    "name": "CoStar Group, Inc.",
+    "price": 32.075,
+    "pe_ratio": 178.19444,
+    "debt_equity": 14.537,
+    "profit_margin": 0.02081,
+    "sector": "Real Estate",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "COST",
+    "name": "Costco Wholesale Corporation",
+    "price": 965.4,
+    "pe_ratio": 48.683815,
+    "debt_equity": 60.257,
+    "profit_margin": 0.0301,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 0.62
+  },
+  {
+    "symbol": "CRH",
+    "name": "CRH PLC",
+    "price": 93.55,
+    "pe_ratio": 16.528269,
+    "debt_equity": 77.592,
+    "profit_margin": 0.099350005,
+    "sector": "Basic Materials",
+    "dividend_yield": 1.62
+  },
+  {
+    "symbol": "CCI",
+    "name": "Crown Castle Inc.",
+    "price": 74.445,
+    "pe_ratio": 30.385714,
+    "debt_equity": null,
+    "profit_margin": 0.20716,
+    "sector": "Real Estate",
+    "dividend_yield": 5.71
+  },
+  {
+    "symbol": "CSX",
+    "name": "CSX Corporation",
+    "price": 50.355,
+    "pe_ratio": 29.276161,
+    "debt_equity": 138.068,
+    "profit_margin": 0.22208999,
+    "sector": "Industrials",
+    "dividend_yield": 1.11
+  },
+  {
+    "symbol": "CMI",
+    "name": "Cummins Inc.",
+    "price": 619.69,
+    "pe_ratio": 31.681494,
+    "debt_equity": 59.586,
+    "profit_margin": 0.07822,
+    "sector": "Industrials",
+    "dividend_yield": 1.37
+  },
+  {
+    "symbol": "CVS",
+    "name": "CVS Health Corporation",
+    "price": 94.77,
+    "pe_ratio": 25.005276,
+    "debt_equity": 95.503,
+    "profit_margin": 0.011849999,
+    "sector": "Healthcare",
+    "dividend_yield": 2.83
+  },
+  {
+    "symbol": "DHR",
+    "name": "Danaher Corporation",
+    "price": 201.105,
+    "pe_ratio": 35.84759,
+    "debt_equity": 52.97,
+    "profit_margin": 0.15948,
+    "sector": "Healthcare",
+    "dividend_yield": 0.79
+  },
+  {
+    "symbol": "DRI",
+    "name": "Darden Restaurants, Inc.",
+    "price": 221.38,
+    "pe_ratio": 21.204983,
+    "debt_equity": 364.507,
+    "profit_margin": 0.09134,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 2.71
+  },
+  {
+    "symbol": "DDOG",
+    "name": "Datadog, Inc.",
+    "price": 248.1,
+    "pe_ratio": 506.32654,
+    "debt_equity": 29.259,
+    "profit_margin": 0.044770002,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "DVA",
+    "name": "DaVita Inc.",
+    "price": 177.93,
+    "pe_ratio": 15.078813,
+    "debt_equity": 1241.986,
+    "profit_margin": 0.060489997,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "DECK",
+    "name": "Deckers Outdoor Corporation",
+    "price": 90.43,
+    "pe_ratio": 12.863442,
+    "debt_equity": 20.521,
+    "profit_margin": 0.18361,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "DE",
+    "name": "Deere & Company",
+    "price": 592.625,
+    "pe_ratio": 33.595524,
+    "debt_equity": 376.022,
+    "profit_margin": 0.10104,
+    "sector": "Industrials",
+    "dividend_yield": 1.08
+  },
+  {
+    "symbol": "DELL",
+    "name": "Dell Technologies Inc.",
+    "price": 468.99,
+    "pe_ratio": 37.31026,
+    "debt_equity": null,
+    "profit_margin": 0.062750004,
+    "sector": "Technology",
+    "dividend_yield": 0.53
+  },
+  {
+    "symbol": "DAL",
+    "name": "Delta Air Lines, Inc.",
+    "price": 86.3,
+    "pe_ratio": 14.311774,
+    "debt_equity": 96.649,
+    "profit_margin": 0.05784,
+    "sector": "Industrials",
+    "dividend_yield": 0.89
+  },
+  {
+    "symbol": "DVN",
+    "name": "Devon Energy Corporation",
+    "price": 47.79,
+    "pe_ratio": 10.389131,
+    "debt_equity": 28.488,
+    "profit_margin": 0.17464,
+    "sector": "Energy",
+    "dividend_yield": 2.69
+  },
+  {
+    "symbol": "DXCM",
+    "name": "DexCom, Inc.",
+    "price": 90.7,
+    "pe_ratio": 35.8498,
+    "debt_equity": 53.346,
+    "profit_margin": 0.20118,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "FANG",
+    "name": "Diamondback Energy, Inc.",
+    "price": 209.805,
+    "pe_ratio": 40.039124,
+    "debt_equity": 28.678,
+    "profit_margin": 0.09029,
+    "sector": "Energy",
+    "dividend_yield": 2.13
+  },
+  {
+    "symbol": "DLR",
+    "name": "Digital Realty Trust, Inc.",
+    "price": 196.205,
+    "pe_ratio": 248.36075,
+    "debt_equity": 67.944,
+    "profit_margin": 0.11825,
+    "sector": "Real Estate",
+    "dividend_yield": 2.47
+  },
+  {
+    "symbol": "DG",
+    "name": "Dollar General Corporation",
+    "price": 121.93,
+    "pe_ratio": 17.246109,
+    "debt_equity": 178.649,
+    "profit_margin": 0.03632,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 1.97
+  },
+  {
+    "symbol": "DLTR",
+    "name": "Dollar Tree, Inc.",
+    "price": 131.02,
+    "pe_ratio": 21.030499,
+    "debt_equity": 216.518,
+    "profit_margin": 0.06514,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "D",
+    "name": "Dominion Energy, Inc.",
+    "price": 68.86,
+    "pe_ratio": 23.826988,
+    "debt_equity": 160.459,
+    "profit_margin": 0.13984999,
+    "sector": "Utilities",
+    "dividend_yield": 3.88
+  },
+  {
+    "symbol": "DPZ",
+    "name": "Domino's Pizza Inc",
+    "price": 339.53,
+    "pe_ratio": 19.247732,
+    "debt_equity": null,
+    "profit_margin": 0.118640006,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 2.37
+  },
+  {
+    "symbol": "DASH",
+    "name": "DoorDash, Inc.",
+    "price": 216.36,
+    "pe_ratio": 113.27749,
+    "debt_equity": 33.276,
+    "profit_margin": 0.05292,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "DOV",
+    "name": "Dover Corporation",
+    "price": 203.4375,
+    "pe_ratio": 24.569748,
+    "debt_equity": 42.316,
+    "profit_margin": 0.13475999,
+    "sector": "Industrials",
+    "dividend_yield": 1.02
+  },
+  {
+    "symbol": "DHI",
+    "name": "D.R. Horton, Inc.",
+    "price": 146.51,
+    "pe_ratio": 13.966635,
+    "debt_equity": 29.451,
+    "profit_margin": 0.09154,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 1.21
+  },
+  {
+    "symbol": "DTE",
+    "name": "DTE Energy Company",
+    "price": 140.395,
+    "pe_ratio": 22.2144,
+    "debt_equity": 229.06,
+    "profit_margin": 0.07999,
+    "sector": "Utilities",
+    "dividend_yield": 3.3
+  },
+  {
+    "symbol": "DUK",
+    "name": "Duke Energy Corporation (Holdin",
+    "price": 124.17,
+    "pe_ratio": 18.700302,
+    "debt_equity": 162.155,
+    "profit_margin": 0.15995,
+    "sector": "Utilities",
+    "dividend_yield": 3.51
+  },
+  {
+    "symbol": "DD",
+    "name": "DuPont de Nemours, Inc.",
+    "price": 139.03,
+    "pe_ratio": 59.66953,
+    "debt_equity": 22.902,
+    "profit_margin": 0.00787,
+    "sector": "Basic Materials",
+    "dividend_yield": 1.68
+  },
+  {
+    "symbol": "ETN",
+    "name": "Eaton Corporation, PLC",
+    "price": 429.75,
+    "pe_ratio": 43.67378,
+    "debt_equity": 105.059,
+    "profit_margin": 0.12752,
+    "sector": "Industrials",
+    "dividend_yield": 0.97
+  },
+  {
+    "symbol": "EBAY",
+    "name": "eBay Inc.",
+    "price": 103.04,
+    "pe_ratio": 21.647058,
+    "debt_equity": 153.012,
+    "profit_margin": 0.18571,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 1.23
+  },
+  {
+    "symbol": "ECL",
+    "name": "Ecolab Inc.",
+    "price": 280.675,
+    "pe_ratio": 37.674496,
+    "debt_equity": 138.023,
+    "profit_margin": 0.12566,
+    "sector": "Basic Materials",
+    "dividend_yield": 1.06
+  },
+  {
+    "symbol": "EIX",
+    "name": "Edison International",
+    "price": 73.93,
+    "pe_ratio": 7.6373963,
+    "debt_equity": 228.042,
+    "profit_margin": 0.19281,
+    "sector": "Utilities",
+    "dividend_yield": 4.92
+  },
+  {
+    "symbol": "EW",
+    "name": "Edwards Lifesciences Corporatio",
+    "price": 91.48,
+    "pe_ratio": 54.452385,
+    "debt_equity": 6.568,
+    "profit_margin": 0.15431,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "ELV",
+    "name": "Elevance Health, Inc.",
+    "price": 401.1475,
+    "pe_ratio": 17.757746,
+    "debt_equity": 68.953,
+    "profit_margin": 0.02468,
+    "sector": "Healthcare",
+    "dividend_yield": 1.76
+  },
+  {
+    "symbol": "EME",
+    "name": "EMCOR Group, Inc.",
+    "price": 822.035,
+    "pe_ratio": 25.616547,
+    "debt_equity": 13.432,
+    "profit_margin": 0.07738,
+    "sector": "Industrials",
+    "dividend_yield": 0.19
+  },
+  {
+    "symbol": "EMR",
+    "name": "Emerson Electric Company",
+    "price": 158.635,
+    "pe_ratio": 34.71225,
+    "debt_equity": 67.677,
+    "profit_margin": 0.13828,
+    "sector": "Industrials",
+    "dividend_yield": 1.37
+  },
+  {
+    "symbol": "ETR",
+    "name": "Entergy Corporation",
+    "price": 108.35,
+    "pe_ratio": 27.710997,
+    "debt_equity": 186.77,
+    "profit_margin": 0.13329001,
+    "sector": "Utilities",
+    "dividend_yield": 2.36
+  },
+  {
+    "symbol": "EOG",
+    "name": "EOG Resources, Inc.",
+    "price": 148.41,
+    "pe_ratio": 11.549417,
+    "debt_equity": 25.891,
+    "profit_margin": 0.25733,
+    "sector": "Energy",
+    "dividend_yield": 2.79
+  },
+  {
+    "symbol": "EQT",
+    "name": "EQT Corporation",
+    "price": 53.08,
+    "pe_ratio": 12.315546,
+    "debt_equity": 19.595,
+    "profit_margin": 0.29176,
+    "sector": "Energy",
+    "dividend_yield": 1.25
+  },
+  {
+    "symbol": "EFX",
+    "name": "Equifax, Inc.",
+    "price": 182.335,
+    "pe_ratio": 32.044815,
+    "debt_equity": 120.956,
+    "profit_margin": 0.10729,
+    "sector": "Industrials",
+    "dividend_yield": 1.27
+  },
+  {
+    "symbol": "EQIX",
+    "name": "Equinix, Inc.",
+    "price": 1087.89,
+    "pe_ratio": 69.78127,
+    "debt_equity": 162.217,
+    "profit_margin": 0.15479,
+    "sector": "Real Estate",
+    "dividend_yield": 1.88
+  },
+  {
+    "symbol": "EQR",
+    "name": "Equity Residential",
+    "price": 63.66,
+    "pe_ratio": 28.675674,
+    "debt_equity": 78.679,
+    "profit_margin": 0.27974,
+    "sector": "Real Estate",
+    "dividend_yield": 4.26
+  },
+  {
+    "symbol": "ERIE",
+    "name": "Erie Indemnity Company",
+    "price": 258.63,
+    "pe_ratio": 23.490463,
+    "debt_equity": 2.56,
+    "profit_margin": 0.14007,
+    "sector": "Financial Services",
+    "dividend_yield": 2.36
+  },
+  {
+    "symbol": "ESS",
+    "name": "Essex Property Trust, Inc.",
+    "price": 286.13,
+    "pe_ratio": 44.499226,
+    "debt_equity": 122.409,
+    "profit_margin": 0.20893,
+    "sector": "Real Estate",
+    "dividend_yield": 3.66
+  },
+  {
+    "symbol": "EG",
+    "name": "Everest Group, Ltd.",
+    "price": 369.9225,
+    "pe_ratio": 7.817466,
+    "debt_equity": 23.26,
+    "profit_margin": 0.11376,
+    "sector": "Financial Services",
+    "dividend_yield": 2.19
+  },
+  {
+    "symbol": "EVRG",
+    "name": "Evergy, Inc.",
+    "price": 83.44,
+    "pe_ratio": 21.231552,
+    "debt_equity": 160.554,
+    "profit_margin": 0.15192,
+    "sector": "Utilities",
+    "dividend_yield": 3.31
+  },
+  {
+    "symbol": "ES",
+    "name": "Eversource Energy (D/B/A)",
+    "price": 72.195,
+    "pe_ratio": 15.459314,
+    "debt_equity": 180.7,
+    "profit_margin": 0.10354,
+    "sector": "Utilities",
+    "dividend_yield": 4.38
+  },
+  {
+    "symbol": "EXC",
+    "name": "Exelon Corporation",
+    "price": 45.42,
+    "pe_ratio": 16.698528,
+    "debt_equity": 177.362,
+    "profit_margin": 0.10989001,
+    "sector": "Utilities",
+    "dividend_yield": 3.69
+  },
+  {
+    "symbol": "EXE",
+    "name": "Expand Energy Corporation",
+    "price": 95.02,
+    "pe_ratio": 8.24111,
+    "debt_equity": 19.207,
+    "profit_margin": 0.2197,
+    "sector": "Energy",
+    "dividend_yield": 2.44
+  },
+  {
+    "symbol": "EXPE",
+    "name": "Expedia Group, Inc.",
+    "price": 324.635,
+    "pe_ratio": 20.430145,
+    "debt_equity": 230.271,
+    "profit_margin": 0.12968001,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.6
+  },
+  {
+    "symbol": "EXPD",
+    "name": "Expeditors International of Was",
+    "price": 187.07,
+    "pe_ratio": 27.229986,
+    "debt_equity": 26.745,
+    "profit_margin": 0.07634,
+    "sector": "Industrials",
+    "dividend_yield": 0.86
+  },
+  {
+    "symbol": "EXR",
+    "name": "Extra Space Storage Inc",
+    "price": 148.04,
+    "pe_ratio": 32.752213,
+    "debt_equity": 101.674,
+    "profit_margin": 0.2728,
+    "sector": "Real Estate",
+    "dividend_yield": 4.41
+  },
+  {
+    "symbol": "XOM",
+    "name": "ExxonMobil Holdings Corporation",
+    "price": 165.14,
+    "pe_ratio": 21.25354,
+    "debt_equity": 15.921,
+    "profit_margin": 0.09072,
+    "sector": "Energy",
+    "dividend_yield": 2.55
+  },
+  {
+    "symbol": "FFIV",
+    "name": "F5, Inc.",
+    "price": 396.84,
+    "pe_ratio": 31.645933,
+    "debt_equity": 6.546,
+    "profit_margin": 0.21952999,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "FDS",
+    "name": "FactSet Research Systems Inc.",
+    "price": 288.665,
+    "pe_ratio": 19.028675,
+    "debt_equity": 77.284,
+    "profit_margin": 0.2321,
+    "sector": "Financial Services",
+    "dividend_yield": 1.68
+  },
+  {
+    "symbol": "FICO",
+    "name": "Fair Isaac Corporation",
+    "price": 1086.6,
+    "pe_ratio": 31.504782,
+    "debt_equity": null,
+    "profit_margin": 0.3405,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "FAST",
+    "name": "Fastenal Company",
+    "price": 51.505,
+    "pe_ratio": 44.02137,
+    "debt_equity": 10.851,
+    "profit_margin": 0.15454,
+    "sector": "Industrials",
+    "dividend_yield": 1.87
+  },
+  {
+    "symbol": "FRT",
+    "name": "Federal Realty Investment Trust",
+    "price": 117.435,
+    "pe_ratio": 23.724243,
+    "debt_equity": 134.114,
+    "profit_margin": 0.32663,
+    "sector": "Real Estate",
+    "dividend_yield": 3.93
+  },
+  {
+    "symbol": "FDX",
+    "name": "FedEx Corporation",
+    "price": 329.77,
+    "pe_ratio": 17.76778,
+    "debt_equity": 135.697,
+    "profit_margin": 0.0468,
+    "sector": "Industrials",
+    "dividend_yield": 1.47
+  },
+  {
+    "symbol": "FDXF",
+    "name": "FedEx Freight Holding Company, ",
+    "price": 140.35,
+    "pe_ratio": 31.97039,
+    "debt_equity": null,
+    "profit_margin": 0.07447,
+    "sector": "Industrials",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "FERG",
+    "name": "Ferguson Enterprises Inc.",
+    "price": 245.6,
+    "pe_ratio": 24.14946,
+    "debt_equity": 111.063,
+    "profit_margin": 0.063200004,
+    "sector": "Industrials",
+    "dividend_yield": 1.45
+  },
+  {
+    "symbol": "FIS",
+    "name": "Fidelity National Information S",
+    "price": 41.53,
+    "pe_ratio": 6.379416,
+    "debt_equity": 132.51,
+    "profit_margin": 0.27648002,
+    "sector": "Technology",
+    "dividend_yield": 4.27
+  },
+  {
+    "symbol": "FITB",
+    "name": "Fifth Third Bancorp",
+    "price": 57.34,
+    "pe_ratio": 19.306396,
+    "debt_equity": null,
+    "profit_margin": 0.23239,
+    "sector": "Financial Services",
+    "dividend_yield": 2.78
+  },
+  {
+    "symbol": "FSLR",
+    "name": "First Solar, Inc.",
+    "price": 217.39,
+    "pe_ratio": 22.182653,
+    "debt_equity": 1.88,
+    "profit_margin": 0.32465,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "FE",
+    "name": "FirstEnergy Corp.",
+    "price": 47.325,
+    "pe_ratio": 25.307487,
+    "debt_equity": 200.908,
+    "profit_margin": 0.06939,
+    "sector": "Utilities",
+    "dividend_yield": 3.92
+  },
+  {
+    "symbol": "FLEX",
+    "name": "Flex Ltd.",
+    "price": 119.74,
+    "pe_ratio": 46.231663,
+    "debt_equity": 107.818,
+    "profit_margin": 0.03325,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "FTNT",
+    "name": "Fortinet, Inc.",
+    "price": 158.2471,
+    "pe_ratio": 55.72081,
+    "debt_equity": 36.194,
+    "profit_margin": 0.28173,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "FTV",
+    "name": "Fortive Corporation",
+    "price": 59.82,
+    "pe_ratio": 31.650793,
+    "debt_equity": 59.283,
+    "profit_margin": 0.12382,
+    "sector": "Technology",
+    "dividend_yield": 0.4
+  },
+  {
+    "symbol": "FOXA",
+    "name": "Fox Corporation",
+    "price": 70.03,
+    "pe_ratio": 18.234375,
+    "debt_equity": 64.06,
+    "profit_margin": 0.09839,
+    "sector": "Communication Services",
+    "dividend_yield": 0.84
+  },
+  {
+    "symbol": "FOX",
+    "name": "Fox Corporation",
+    "price": 62.13,
+    "pe_ratio": 16.179688,
+    "debt_equity": 64.06,
+    "profit_margin": 0.09839,
+    "sector": "Communication Services",
+    "dividend_yield": 0.94
+  },
+  {
+    "symbol": "BEN",
+    "name": "Franklin Resources, Inc.",
+    "price": 33.99,
+    "pe_ratio": 23.12245,
+    "debt_equity": 24.805,
+    "profit_margin": 0.08717,
+    "sector": "Financial Services",
+    "dividend_yield": 3.86
+  },
+  {
+    "symbol": "FCX",
+    "name": "Freeport-McMoRan, Inc.",
+    "price": 66.315,
+    "pe_ratio": 32.507355,
+    "debt_equity": 32.149,
+    "profit_margin": 0.113850005,
+    "sector": "Basic Materials",
+    "dividend_yield": 0.88
+  },
+  {
+    "symbol": "GRMN",
+    "name": "Garmin Ltd.",
+    "price": 298.325,
+    "pe_ratio": 30.786896,
+    "debt_equity": 2.513,
+    "profit_margin": 0.24471001,
+    "sector": "Technology",
+    "dividend_yield": 1.37
+  },
+  {
+    "symbol": "IT",
+    "name": "Gartner, Inc.",
+    "price": 185.685,
+    "pe_ratio": 16.683289,
+    "debt_equity": null,
+    "profit_margin": 0.11996,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "GE",
+    "name": "GE Aerospace",
+    "price": 373.3375,
+    "pe_ratio": 43.92206,
+    "debt_equity": 113.225,
+    "profit_margin": 0.17716,
+    "sector": "Industrials",
+    "dividend_yield": 0.51
+  },
+  {
+    "symbol": "GEHC",
+    "name": "GE HealthCare Technologies Inc.",
+    "price": 73.08,
+    "pe_ratio": 16.838709,
+    "debt_equity": 93.965,
+    "profit_margin": 0.093339995,
+    "sector": "Healthcare",
+    "dividend_yield": 0.19
+  },
+  {
+    "symbol": "GEV",
+    "name": "GE Vernova Inc.",
+    "price": 997.5,
+    "pe_ratio": 28.62267,
+    "debt_equity": 28.364,
+    "profit_margin": 0.23035,
+    "sector": "Industrials",
+    "dividend_yield": 0.19
+  },
+  {
+    "symbol": "GEN",
+    "name": "Gen Digital Inc.",
+    "price": 27.885,
+    "pe_ratio": 16.307016,
+    "debt_equity": 307.831,
+    "profit_margin": 0.20732,
+    "sector": "Technology",
+    "dividend_yield": 1.82
+  },
+  {
+    "symbol": "GNRC",
+    "name": "Generac Holdlings Inc.",
+    "price": 212.965,
+    "pe_ratio": 48.84518,
+    "debt_equity": 49.003,
+    "profit_margin": 0.05817,
+    "sector": "Industrials",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "GD",
+    "name": "General Dynamics Corporation",
+    "price": 394.19,
+    "pe_ratio": 24.050642,
+    "debt_equity": 35.335,
+    "profit_margin": 0.08179,
+    "sector": "Industrials",
+    "dividend_yield": 1.63
+  },
+  {
+    "symbol": "GM",
+    "name": "General Motors Company",
+    "price": 84.095,
+    "pe_ratio": 37.54241,
+    "debt_equity": 202.341,
+    "profit_margin": 0.01051,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.85
+  },
+  {
+    "symbol": "GPC",
+    "name": "Genuine Parts Company",
+    "price": 133.13,
+    "pe_ratio": 532.52,
+    "debt_equity": 146.415,
+    "profit_margin": 0.00131,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 3.21
+  },
+  {
+    "symbol": "GPN",
+    "name": "Global Payments Inc.",
+    "price": 91.56,
+    "pe_ratio": 43.393368,
+    "debt_equity": 98.273,
+    "profit_margin": -0.091529995,
+    "sector": "Industrials",
+    "dividend_yield": 1.11
+  },
+  {
+    "symbol": "GL",
+    "name": "Globe Life Inc.",
+    "price": 179.23,
+    "pe_ratio": 11.924817,
+    "debt_equity": 55.675,
+    "profit_margin": 0.19577,
+    "sector": "Financial Services",
+    "dividend_yield": 0.74
+  },
+  {
+    "symbol": "GDDY",
+    "name": "GoDaddy Inc.",
+    "price": 97.235,
+    "pe_ratio": 14.447994,
+    "debt_equity": 57334.33,
+    "profit_margin": 0.17834999,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "GS",
+    "name": "Goldman Sachs Group, Inc. (The)",
+    "price": 1035.39,
+    "pe_ratio": 15.98811,
+    "debt_equity": 725.381,
+    "profit_margin": 0.31039,
+    "sector": "Financial Services",
+    "dividend_yield": 1.9
+  },
+  {
+    "symbol": "HAL",
+    "name": "Halliburton Company",
+    "price": 34.66,
+    "pe_ratio": 18.143978,
+    "debt_equity": 74.186,
+    "profit_margin": 0.0716,
+    "sector": "Energy",
+    "dividend_yield": 1.96
+  },
+  {
+    "symbol": "HIG",
+    "name": "The Hartford Insurance Group, I",
+    "price": 138.62,
+    "pe_ratio": 9.573204,
+    "debt_equity": 22.33,
+    "profit_margin": 0.1489,
+    "sector": "Financial Services",
+    "dividend_yield": 1.76
+  },
+  {
+    "symbol": "HAS",
+    "name": "Hasbro, Inc.",
+    "price": 95.39,
+    "pe_ratio": 16.97331,
+    "debt_equity": 531.042,
+    "profit_margin": 0.15968001,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 2.95
+  },
+  {
+    "symbol": "HCA",
+    "name": "HCA Healthcare, Inc.",
+    "price": 414.71,
+    "pe_ratio": 13.911775,
+    "debt_equity": null,
+    "profit_margin": 0.08768,
+    "sector": "Healthcare",
+    "dividend_yield": 0.77
+  },
+  {
+    "symbol": "DOC",
+    "name": "Healthpeak Properties, Inc.",
+    "price": 20.41,
+    "pe_ratio": 58.314285,
+    "debt_equity": 108.653,
+    "profit_margin": 0.08248,
+    "sector": "Real Estate",
+    "dividend_yield": 5.93
+  },
+  {
+    "symbol": "HSIC",
+    "name": "Henry Schein, Inc.",
+    "price": 89.12,
+    "pe_ratio": 25.982508,
+    "debt_equity": 80.733,
+    "profit_margin": 0.02963,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "HSY",
+    "name": "The Hershey Company",
+    "price": 183.52,
+    "pe_ratio": 25.105335,
+    "debt_equity": 129.821,
+    "profit_margin": 0.12242,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 3.21
+  },
+  {
+    "symbol": "HPE",
+    "name": "Hewlett Packard Enterprise Comp",
+    "price": 55.54,
+    "pe_ratio": 51.90654,
+    "debt_equity": 84.03,
+    "profit_margin": 0.040110003,
+    "sector": "Technology",
+    "dividend_yield": 0.99
+  },
+  {
+    "symbol": "HLT",
+    "name": "Hilton Worldwide Holdings Inc.",
+    "price": 329.19,
+    "pe_ratio": 48.26686,
+    "debt_equity": null,
+    "profit_margin": 0.31034002,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.18
+  },
+  {
+    "symbol": "HD",
+    "name": "Home Depot, Inc. (The)",
+    "price": 338.295,
+    "pe_ratio": 24.009583,
+    "debt_equity": 459.356,
+    "profit_margin": 0.08411,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 2.76
+  },
+  {
+    "symbol": "HONA",
+    "name": "Honeywell Aerospace Inc.",
+    "price": 161.3,
+    "pe_ratio": 49.225613,
+    "debt_equity": null,
+    "profit_margin": 0.10862,
+    "sector": "Industrials",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "HON",
+    "name": "Honeywell International Inc.",
+    "price": 228.08,
+    "pe_ratio": 8.765565,
+    "debt_equity": 185.369,
+    "profit_margin": 0.21581,
+    "sector": "Industrials",
+    "dividend_yield": 1.22
+  },
+  {
+    "symbol": "HRL",
+    "name": "Hormel Foods Corporation",
+    "price": 24.37,
+    "pe_ratio": 29.361448,
+    "debt_equity": 4.244,
+    "profit_margin": 0.03821,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 4.87
+  },
+  {
+    "symbol": "HST",
+    "name": "Host Hotels & Resorts, Inc.",
+    "price": 23.0251,
+    "pe_ratio": 15.453088,
+    "debt_equity": 85.298,
+    "profit_margin": 0.16474001,
+    "sector": "Real Estate",
+    "dividend_yield": 3.51
+  },
+  {
+    "symbol": "HWM",
+    "name": "Howmet Aerospace Inc.",
+    "price": 288.44,
+    "pe_ratio": 62.298054,
+    "debt_equity": 81.368,
+    "profit_margin": 0.20522,
+    "sector": "Industrials",
+    "dividend_yield": 0.19
+  },
+  {
+    "symbol": "HPQ",
+    "name": "HP Inc.",
+    "price": 30.225,
+    "pe_ratio": 11.194445,
+    "debt_equity": null,
+    "profit_margin": 0.044460002,
+    "sector": "Technology",
+    "dividend_yield": 4.08
+  },
+  {
+    "symbol": "HUBB",
+    "name": "Hubbell Inc",
+    "price": 485.99,
+    "pe_ratio": 28.77383,
+    "debt_equity": 141.642,
+    "profit_margin": 0.14491999,
+    "sector": "Industrials",
+    "dividend_yield": 1.13
+  },
+  {
+    "symbol": "HUM",
+    "name": "Humana Inc.",
+    "price": 383.41,
+    "pe_ratio": 36.27342,
+    "debt_equity": 76.485,
+    "profit_margin": 0.00878,
+    "sector": "Healthcare",
+    "dividend_yield": 0.92
+  },
+  {
+    "symbol": "HBAN",
+    "name": "Huntington Bancshares Incorpora",
+    "price": 17.67,
+    "pe_ratio": 13.592308,
+    "debt_equity": null,
+    "profit_margin": 0.26131,
+    "sector": "Financial Services",
+    "dividend_yield": 3.45
+  },
+  {
+    "symbol": "HII",
+    "name": "Huntington Ingalls Industries, ",
+    "price": 319.6,
+    "pe_ratio": 19.046484,
+    "debt_equity": 55.252,
+    "profit_margin": 0.05013,
+    "sector": "Industrials",
+    "dividend_yield": 1.73
+  },
+  {
+    "symbol": "IBM",
+    "name": "International Business Machines",
+    "price": 233.935,
+    "pe_ratio": 20.775755,
+    "debt_equity": 188.97,
+    "profit_margin": 0.15522,
+    "sector": "Technology",
+    "dividend_yield": 2.95
+  },
+  {
+    "symbol": "IEX",
+    "name": "IDEX Corporation",
+    "price": 234.505,
+    "pe_ratio": 33.74173,
+    "debt_equity": 47.06,
+    "profit_margin": 0.1449,
+    "sector": "Industrials",
+    "dividend_yield": 1.21
+  },
+  {
+    "symbol": "IDXX",
+    "name": "IDEXX Laboratories, Inc.",
+    "price": 557.09,
+    "pe_ratio": 39.094036,
+    "debt_equity": 67.971,
+    "profit_margin": 0.25030002,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "ITW",
+    "name": "Illinois Tool Works Inc.",
+    "price": 285.03,
+    "pe_ratio": 25.841343,
+    "debt_equity": 334.853,
+    "profit_margin": 0.19393998,
+    "sector": "Industrials",
+    "dividend_yield": 2.39
+  },
+  {
+    "symbol": "INCY",
+    "name": "Incyte Corporation",
+    "price": 123.64,
+    "pe_ratio": 15.750319,
+    "debt_equity": 0.603,
+    "profit_margin": 0.27706,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "IR",
+    "name": "Ingersoll Rand Inc.",
+    "price": 80.9,
+    "pe_ratio": 33.429752,
+    "debt_equity": 47.903,
+    "profit_margin": 0.12076,
+    "sector": "Industrials",
+    "dividend_yield": 0.1
+  },
+  {
+    "symbol": "PODD",
+    "name": "Insulet Corporation",
+    "price": 147.32,
+    "pe_ratio": 27.588017,
+    "debt_equity": 66.685,
+    "profit_margin": 0.12291,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "IBKR",
+    "name": "Interactive Brokers Group, Inc.",
+    "price": 90.635,
+    "pe_ratio": 35.96627,
+    "debt_equity": 205.748,
+    "profit_margin": 0.16474001,
+    "sector": "Financial Services",
+    "dividend_yield": 0.37
+  },
+  {
+    "symbol": "ICE",
+    "name": "Intercontinental Exchange Inc.",
+    "price": 157.605,
+    "pe_ratio": 22.260593,
+    "debt_equity": 69.226,
+    "profit_margin": 0.38246,
+    "sector": "Financial Services",
+    "dividend_yield": 1.35
+  },
+  {
+    "symbol": "INTU",
+    "name": "Intuit Inc.",
+    "price": 354.43,
+    "pe_ratio": 21.637974,
+    "debt_equity": 33.448,
+    "profit_margin": 0.21907,
+    "sector": "Technology",
+    "dividend_yield": 1.43
+  },
+  {
+    "symbol": "ISRG",
+    "name": "Intuitive Surgical, Inc.",
+    "price": 396.77,
+    "pe_ratio": 45.605747,
+    "debt_equity": null,
+    "profit_margin": 0.28445998,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "INVH",
+    "name": "Invitation Homes Inc.",
+    "price": 29.87,
+    "pe_ratio": 27.40367,
+    "debt_equity": 94.425,
+    "profit_margin": 0.23197001,
+    "sector": "Real Estate",
+    "dividend_yield": 4.04
+  },
+  {
+    "symbol": "IQV",
+    "name": "IQVIA Holdings, Inc.",
+    "price": 242.62,
+    "pe_ratio": 30.214197,
+    "debt_equity": 257.975,
+    "profit_margin": 0.08096,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "IRM",
+    "name": "Iron Mountain Incorporated (Del",
+    "price": 126.93,
+    "pe_ratio": 89.38733,
+    "debt_equity": null,
+    "profit_margin": 0.055359997,
+    "sector": "Real Estate",
+    "dividend_yield": 2.66
+  },
+  {
+    "symbol": "JBHT",
+    "name": "J.B. Hunt Transport Services, I",
+    "price": 275.37,
+    "pe_ratio": 38.729958,
+    "debt_equity": 38.373,
+    "profit_margin": 0.05311,
+    "sector": "Industrials",
+    "dividend_yield": 0.64
+  },
+  {
+    "symbol": "JBL",
+    "name": "Jabil Inc.",
+    "price": 339.02,
+    "pe_ratio": 42.43054,
+    "debt_equity": 297.136,
+    "profit_margin": 0.02566,
+    "sector": "Technology",
+    "dividend_yield": 0.09
+  },
+  {
+    "symbol": "JKHY",
+    "name": "Jack Henry & Associates, Inc.",
+    "price": 154.86,
+    "pe_ratio": 21.628492,
+    "debt_equity": 6.398,
+    "profit_margin": 0.20637,
+    "sector": "Technology",
+    "dividend_yield": 1.59
+  },
+  {
+    "symbol": "J",
+    "name": "Jacobs Solutions Inc.",
+    "price": 143.89,
+    "pe_ratio": 47.645695,
+    "debt_equity": 124.734,
+    "profit_margin": 0.0238,
+    "sector": "Industrials",
+    "dividend_yield": 1.0
+  },
+  {
+    "symbol": "JNJ",
+    "name": "Johnson & Johnson",
+    "price": 270.56,
+    "pe_ratio": 31.3511,
+    "debt_equity": 57.709,
+    "profit_margin": 0.21482,
+    "sector": "Healthcare",
+    "dividend_yield": 2.04
+  },
+  {
+    "symbol": "JCI",
+    "name": "Johnson Controls International ",
+    "price": 149.26,
+    "pe_ratio": 41.926964,
+    "debt_equity": 70.107,
+    "profit_margin": 0.14319,
+    "sector": "Industrials",
+    "dividend_yield": 1.04
+  },
+  {
+    "symbol": "JPM",
+    "name": "JP Morgan Chase & Co.",
+    "price": 362.1,
+    "pe_ratio": 15.507495,
+    "debt_equity": null,
+    "profit_margin": 0.34921002,
+    "sector": "Financial Services",
+    "dividend_yield": 1.66
+  },
+  {
+    "symbol": "KVUE",
+    "name": "Kenvue Inc.",
+    "price": 18.915,
+    "pe_ratio": 22.252941,
+    "debt_equity": 81.617,
+    "profit_margin": 0.107609995,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 4.47
+  },
+  {
+    "symbol": "KDP",
+    "name": "Keurig Dr Pepper Inc.",
+    "price": 30.945,
+    "pe_ratio": 31.257576,
+    "debt_equity": 99.649,
+    "profit_margin": 0.07103,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 3.04
+  },
+  {
+    "symbol": "KEY",
+    "name": "KeyCorp",
+    "price": 22.81,
+    "pe_ratio": 13.339181,
+    "debt_equity": null,
+    "profit_margin": 0.2754,
+    "sector": "Financial Services",
+    "dividend_yield": 3.56
+  },
+  {
+    "symbol": "KEYS",
+    "name": "Keysight Technologies Inc.",
+    "price": 336.03,
+    "pe_ratio": 54.11715,
+    "debt_equity": 43.642,
+    "profit_margin": 0.17312999,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "KMB",
+    "name": "Kimberly-Clark Corporation",
+    "price": 108.335,
+    "pe_ratio": 21.41008,
+    "debt_equity": 348.933,
+    "profit_margin": 0.1179,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 4.74
+  },
+  {
+    "symbol": "KIM",
+    "name": "Kimco Realty Corporation (HC)",
+    "price": 24.265,
+    "pe_ratio": 28.215115,
+    "debt_equity": 84.993,
+    "profit_margin": 0.27759,
+    "sector": "Real Estate",
+    "dividend_yield": 4.6
+  },
+  {
+    "symbol": "KMI",
+    "name": "Kinder Morgan, Inc.",
+    "price": 32.835,
+    "pe_ratio": 21.18387,
+    "debt_equity": 98.619,
+    "profit_margin": 0.19305,
+    "sector": "Energy",
+    "dividend_yield": 3.65
+  },
+  {
+    "symbol": "KKR",
+    "name": "KKR & Co. Inc.",
+    "price": 107.805,
+    "pe_ratio": 34.44249,
+    "debt_equity": 69.812,
+    "profit_margin": 0.12201,
+    "sector": "Financial Services",
+    "dividend_yield": 0.72
+  },
+  {
+    "symbol": "KLAC",
+    "name": "KLA Corporation",
+    "price": 193.01,
+    "pe_ratio": 52.739067,
+    "debt_equity": 96.88,
+    "profit_margin": 0.35574,
+    "sector": "Technology",
+    "dividend_yield": 0.45
+  },
+  {
+    "symbol": "KR",
+    "name": "Kroger Company (The)",
+    "price": 56.775,
+    "pe_ratio": 33.201756,
+    "debt_equity": 373.449,
+    "profit_margin": 0.00708,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 2.57
+  },
+  {
+    "symbol": "LHX",
+    "name": "L3Harris Technologies, Inc.",
+    "price": 281.92,
+    "pe_ratio": 28.448034,
+    "debt_equity": 34.574,
+    "profit_margin": 0.103690006,
+    "sector": "Industrials",
+    "dividend_yield": 1.8
+  },
+  {
+    "symbol": "LH",
+    "name": "Labcorp Holdings Inc.",
+    "price": 326.25,
+    "pe_ratio": 26.985111,
+    "debt_equity": 79.124,
+    "profit_margin": 0.069860004,
+    "sector": "Healthcare",
+    "dividend_yield": 0.89
+  },
+  {
+    "symbol": "LRCX",
+    "name": "Lam Research Corporation",
+    "price": 324.215,
+    "pe_ratio": 56.092556,
+    "debt_equity": 33.049,
+    "profit_margin": 0.31272,
+    "sector": "Technology",
+    "dividend_yield": 0.3
+  },
+  {
+    "symbol": "LVS",
+    "name": "Las Vegas Sands Corp.",
+    "price": 45.655,
+    "pe_ratio": 17.695736,
+    "debt_equity": 1703.902,
+    "profit_margin": 0.12588,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 2.64
+  },
+  {
+    "symbol": "LDOS",
+    "name": "Leidos Holdings, Inc.",
+    "price": 144.595,
+    "pe_ratio": 13.500934,
+    "debt_equity": 123.276,
+    "profit_margin": 0.07803,
+    "sector": "Technology",
+    "dividend_yield": 1.21
+  },
+  {
+    "symbol": "LEN",
+    "name": "Lennar Corporation",
+    "price": 85.515,
+    "pe_ratio": 13.4036045,
+    "debt_equity": 28.692,
+    "profit_margin": 0.04934,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 2.31
+  },
+  {
+    "symbol": "LII",
+    "name": "Lennox International, Inc.",
+    "price": 410.32,
+    "pe_ratio": 18.228344,
+    "debt_equity": 156.082,
+    "profit_margin": 0.14871,
+    "sector": "Industrials",
+    "dividend_yield": 1.31
+  },
+  {
+    "symbol": "LLY",
+    "name": "Eli Lilly and Company",
+    "price": 1220.74,
+    "pe_ratio": 40.936954,
+    "debt_equity": 162.071,
+    "profit_margin": 0.33528998,
+    "sector": "Healthcare",
+    "dividend_yield": 0.58
+  },
+  {
+    "symbol": "LIN",
+    "name": "Linde plc",
+    "price": 479.87,
+    "pe_ratio": 30.939394,
+    "debt_equity": 68.947,
+    "profit_margin": 0.20435,
+    "sector": "Basic Materials",
+    "dividend_yield": 1.35
+  },
+  {
+    "symbol": "LMT",
+    "name": "Lockheed Martin Corporation",
+    "price": 608.44,
+    "pe_ratio": 22.426834,
+    "debt_equity": 234.238,
+    "profit_margin": 0.08163,
+    "sector": "Industrials",
+    "dividend_yield": 2.32
+  },
+  {
+    "symbol": "L",
+    "name": "Loews Corporation",
+    "price": 112.75,
+    "pe_ratio": 13.834356,
+    "debt_equity": 44.609,
+    "profit_margin": 0.09024,
+    "sector": "Financial Services",
+    "dividend_yield": 0.22
+  },
+  {
+    "symbol": "LOW",
+    "name": "Lowe's Companies, Inc.",
+    "price": 217.09,
+    "pe_ratio": 18.350803,
+    "debt_equity": null,
+    "profit_margin": 0.075100005,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 2.32
+  },
+  {
+    "symbol": "LULU",
+    "name": "lululemon athletica inc.",
+    "price": 119.98,
+    "pe_ratio": 9.71498,
+    "debt_equity": 44.264,
+    "profit_margin": 0.13029,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "MTB",
+    "name": "M&T Bank Corporation",
+    "price": 252.335,
+    "pe_ratio": 13.358127,
+    "debt_equity": null,
+    "profit_margin": 0.32092,
+    "sector": "Financial Services",
+    "dividend_yield": 2.37
+  },
+  {
+    "symbol": "MPC",
+    "name": "Marathon Petroleum Corporation",
+    "price": 364.17,
+    "pe_ratio": 12.631634,
+    "debt_equity": 133.328,
+    "profit_margin": 0.05549,
+    "sector": "Energy",
+    "dividend_yield": 1.12
+  },
+  {
+    "symbol": "MAR",
+    "name": "Marriott International",
+    "price": 359.195,
+    "pe_ratio": 37.177536,
+    "debt_equity": null,
+    "profit_margin": 0.35029998,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.82
+  },
+  {
+    "symbol": "MRSH",
+    "name": "Marsh",
+    "price": 187.5825,
+    "pe_ratio": 22.875916,
+    "debt_equity": 145.027,
+    "profit_margin": 0.14241,
+    "sector": "Financial Services",
+    "dividend_yield": 2.15
+  },
+  {
+    "symbol": "MLM",
+    "name": "Martin Marietta Materials, Inc.",
+    "price": 525.375,
+    "pe_ratio": 34.09312,
+    "debt_equity": 54.945,
+    "profit_margin": 0.36737,
+    "sector": "Basic Materials",
+    "dividend_yield": 0.62
+  },
+  {
+    "symbol": "MRVL",
+    "name": "Marvell Technology, Inc.",
+    "price": 213.525,
+    "pe_ratio": 73.34708,
+    "debt_equity": 28.97,
+    "profit_margin": 0.28986,
+    "sector": "Technology",
+    "dividend_yield": 0.1
+  },
+  {
+    "symbol": "MAS",
+    "name": "Masco Corporation",
+    "price": 73.82,
+    "pe_ratio": 17.009216,
+    "debt_equity": null,
+    "profit_margin": 0.11614,
+    "sector": "Industrials",
+    "dividend_yield": 1.73
+  },
+  {
+    "symbol": "MA",
+    "name": "Mastercard Incorporated",
+    "price": 576.62,
+    "pe_ratio": 31.746696,
+    "debt_equity": 439.583,
+    "profit_margin": 0.46339,
+    "sector": "Financial Services",
+    "dividend_yield": 0.62
+  },
+  {
+    "symbol": "MKC",
+    "name": "McCormick & Company, Incorporat",
+    "price": 55.9555,
+    "pe_ratio": 9.310399,
+    "debt_equity": 65.143,
+    "profit_margin": 0.21912001,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 3.56
+  },
+  {
+    "symbol": "MCD",
+    "name": "McDonald's Corporation",
+    "price": 268.765,
+    "pe_ratio": 21.815342,
+    "debt_equity": null,
+    "profit_margin": 0.3172,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 2.8
+  },
+  {
+    "symbol": "MCK",
+    "name": "McKesson Corporation",
+    "price": 873.365,
+    "pe_ratio": 23.402063,
+    "debt_equity": null,
+    "profit_margin": 0.01117,
+    "sector": "Healthcare",
+    "dividend_yield": 0.44
+  },
+  {
+    "symbol": "MDT",
+    "name": "Medtronic plc.",
+    "price": 92.68,
+    "pe_ratio": 24.847185,
+    "debt_equity": 58.214,
+    "profit_margin": 0.13203,
+    "sector": "Healthcare",
+    "dividend_yield": 3.18
+  },
+  {
+    "symbol": "MRK",
+    "name": "Merck & Company, Inc.",
+    "price": 135.4188,
+    "pe_ratio": 108.33504,
+    "debt_equity": 128.408,
+    "profit_margin": 0.047659997,
+    "sector": "Healthcare",
+    "dividend_yield": 2.5
+  },
+  {
+    "symbol": "META",
+    "name": "Meta Platforms, Inc.",
+    "price": 545.285,
+    "pe_ratio": 20.520887,
+    "debt_equity": 42.997,
+    "profit_margin": 0.29834998,
+    "sector": "Communication Services",
+    "dividend_yield": 0.37
+  },
+  {
+    "symbol": "MET",
+    "name": "MetLife, Inc.",
+    "price": 97.255,
+    "pe_ratio": 18.631226,
+    "debt_equity": 179.933,
+    "profit_margin": 0.04567,
+    "sector": "Financial Services",
+    "dividend_yield": 2.45
+  },
+  {
+    "symbol": "MTD",
+    "name": "Mettler-Toledo International, I",
+    "price": 1404.0,
+    "pe_ratio": 31.643003,
+    "debt_equity": 16668.447,
+    "profit_margin": 0.21907,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "MGM",
+    "name": "MGM Resorts International",
+    "price": 43.535,
+    "pe_ratio": 26.38485,
+    "debt_equity": 893.311,
+    "profit_margin": 0.02398,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "MCHP",
+    "name": "Microchip Technology Incorporat",
+    "price": 76.94,
+    "pe_ratio": 113.147064,
+    "debt_equity": 83.688,
+    "profit_margin": 0.0934,
+    "sector": "Technology",
+    "dividend_yield": 2.27
+  },
+  {
+    "symbol": "MU",
+    "name": "Micron Technology, Inc.",
+    "price": 934.565,
+    "pe_ratio": 21.134584,
+    "debt_equity": 6.33,
+    "profit_margin": 0.55906,
+    "sector": "Technology",
+    "dividend_yield": 0.05
+  },
+  {
+    "symbol": "MSFT",
+    "name": "Microsoft Corporation",
+    "price": 482.41,
+    "pe_ratio": 26.845299,
+    "debt_equity": 29.118,
+    "profit_margin": 0.40305,
+    "sector": "Technology",
+    "dividend_yield": 0.76
+  },
+  {
+    "symbol": "MAA",
+    "name": "Mid-America Apartment Communiti",
+    "price": 131.12,
+    "pe_ratio": 38.33918,
+    "debt_equity": 102.377,
+    "profit_margin": 0.18173,
+    "sector": "Real Estate",
+    "dividend_yield": 4.67
+  },
+  {
+    "symbol": "MDLZ",
+    "name": "Mondelez International, Inc.",
+    "price": 62.91,
+    "pe_ratio": 38.359756,
+    "debt_equity": 82.643,
+    "profit_margin": 0.08862001,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 3.22
+  },
+  {
+    "symbol": "MPWR",
+    "name": "Monolithic Power Systems, Inc.",
+    "price": 1318.22,
+    "pe_ratio": 80.2325,
+    "debt_equity": 0.486,
+    "profit_margin": 0.24500999,
+    "sector": "Technology",
+    "dividend_yield": 0.56
+  },
+  {
+    "symbol": "MNST",
+    "name": "Monster Beverage Corporation",
+    "price": 47.305,
+    "pe_ratio": 43.800926,
+    "debt_equity": 0.992,
+    "profit_margin": 0.23079,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "MCO",
+    "name": "Moody's Corporation",
+    "price": 488.81,
+    "pe_ratio": 31.035555,
+    "debt_equity": 240.682,
+    "profit_margin": 0.34252,
+    "sector": "Financial Services",
+    "dividend_yield": 0.86
+  },
+  {
+    "symbol": "MS",
+    "name": "Morgan Stanley",
+    "price": 216.5,
+    "pe_ratio": 17.502022,
+    "debt_equity": 517.282,
+    "profit_margin": 0.25897,
+    "sector": "Financial Services",
+    "dividend_yield": 2.11
+  },
+  {
+    "symbol": "MSI",
+    "name": "Motorola Solutions, Inc.",
+    "price": 471.23,
+    "pe_ratio": 37.07553,
+    "debt_equity": 357.85,
+    "profit_margin": 0.17438999,
+    "sector": "Technology",
+    "dividend_yield": 1.06
+  },
+  {
+    "symbol": "MSCI",
+    "name": "MSCI Inc.",
+    "price": 564.835,
+    "pe_ratio": 30.89907,
+    "debt_equity": null,
+    "profit_margin": 0.40735,
+    "sector": "Financial Services",
+    "dividend_yield": 1.49
+  },
+  {
+    "symbol": "NDAQ",
+    "name": "Nasdaq, Inc.",
+    "price": 97.6,
+    "pe_ratio": 28.45481,
+    "debt_equity": 77.687,
+    "profit_margin": 0.35037,
+    "sector": "Financial Services",
+    "dividend_yield": 1.2
+  },
+  {
+    "symbol": "NTAP",
+    "name": "NetApp, Inc.",
+    "price": 205.4,
+    "pe_ratio": 32.35748,
+    "debt_equity": 202.295,
+    "profit_margin": 0.18426001,
+    "sector": "Technology",
+    "dividend_yield": 1.02
+  },
+  {
+    "symbol": "NFLX",
+    "name": "Netflix, Inc.",
+    "price": 78.625,
+    "pe_ratio": 24.724842,
+    "debt_equity": 55.236,
+    "profit_margin": 0.28219,
+    "sector": "Communication Services",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "NEM",
+    "name": "Newmont Corporation",
+    "price": 116.815,
+    "pe_ratio": 14.73077,
+    "debt_equity": 15.807,
+    "profit_margin": 0.33363998,
+    "sector": "Basic Materials",
+    "dividend_yield": 0.86
+  },
+  {
+    "symbol": "NWSA",
+    "name": "News Corporation",
+    "price": 29.52,
+    "pe_ratio": 28.660196,
+    "debt_equity": 31.561,
+    "profit_margin": 0.06347,
+    "sector": "Communication Services",
+    "dividend_yield": 0.7
+  },
+  {
+    "symbol": "NWS",
+    "name": "News Corporation",
+    "price": 33.64,
+    "pe_ratio": 32.660194,
+    "debt_equity": 31.561,
+    "profit_margin": 0.06347,
+    "sector": "Communication Services",
+    "dividend_yield": 0.61
+  },
+  {
+    "symbol": "NEE",
+    "name": "NextEra Energy, Inc.",
+    "price": 86.535,
+    "pe_ratio": 19.44607,
+    "debt_equity": 161.676,
+    "profit_margin": 0.32401,
+    "sector": "Utilities",
+    "dividend_yield": 2.89
+  },
+  {
+    "symbol": "NKE",
+    "name": "Nike, Inc.",
+    "price": 40.42,
+    "pe_ratio": 19.24762,
+    "debt_equity": 74.289,
+    "profit_margin": 0.066989996,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 4.2
+  },
+  {
+    "symbol": "NI",
+    "name": "NiSource Inc",
+    "price": 42.105,
+    "pe_ratio": 22.396276,
+    "debt_equity": 146.649,
+    "profit_margin": 0.13153,
+    "sector": "Utilities",
+    "dividend_yield": 2.83
+  },
+  {
+    "symbol": "NDSN",
+    "name": "Nordson Corporation",
+    "price": 305.62,
+    "pe_ratio": 32.65171,
+    "debt_equity": 61.637,
+    "profit_margin": 0.18188,
+    "sector": "Industrials",
+    "dividend_yield": 1.06
+  },
+  {
+    "symbol": "NSC",
+    "name": "Norfolk Southern Corporation",
+    "price": 340.57,
+    "pe_ratio": 29.034101,
+    "debt_equity": 105.519,
+    "profit_margin": 0.21021,
+    "sector": "Industrials",
+    "dividend_yield": 1.58
+  },
+  {
+    "symbol": "NTRS",
+    "name": "Northern Trust Corporation",
+    "price": 190.73,
+    "pe_ratio": 16.385738,
+    "debt_equity": null,
+    "profit_margin": 0.2467,
+    "sector": "Financial Services",
+    "dividend_yield": 1.71
+  },
+  {
+    "symbol": "NOC",
+    "name": "Northrop Grumman Corporation",
+    "price": 591.7301,
+    "pe_ratio": 18.797018,
+    "debt_equity": 95.348,
+    "profit_margin": 0.104820006,
+    "sector": "Industrials",
+    "dividend_yield": 1.65
+  },
+  {
+    "symbol": "NCLH",
+    "name": "Norwegian Cruise Line Holdings ",
+    "price": 17.8,
+    "pe_ratio": 10.787878,
+    "debt_equity": 621.051,
+    "profit_margin": 0.07492,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "NRG",
+    "name": "NRG Energy, Inc.",
+    "price": 116.08,
+    "pe_ratio": 30.229168,
+    "debt_equity": 483.357,
+    "profit_margin": 0.02563,
+    "sector": "Utilities",
+    "dividend_yield": 1.55
+  },
+  {
+    "symbol": "NUE",
+    "name": "Nucor Corporation",
+    "price": 264.455,
+    "pe_ratio": 21.088915,
+    "debt_equity": 30.512,
+    "profit_margin": 0.07989,
+    "sector": "Basic Materials",
+    "dividend_yield": 0.82
+  },
+  {
+    "symbol": "NVDA",
+    "name": "NVIDIA Corporation",
+    "price": 219.798,
+    "pe_ratio": 33.65848,
+    "debt_equity": 6.555,
+    "profit_margin": 0.62966,
+    "sector": "Technology",
+    "dividend_yield": 0.44
+  },
+  {
+    "symbol": "NVR",
+    "name": "NVR, Inc.",
+    "price": 6280.255,
+    "pe_ratio": 16.318285,
+    "debt_equity": 32.15,
+    "profit_margin": 0.1185,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "NXPI",
+    "name": "NXP Semiconductors N.V.",
+    "price": 226.02,
+    "pe_ratio": 44.93439,
+    "debt_equity": 93.325,
+    "profit_margin": 0.22564,
+    "sector": "Technology",
+    "dividend_yield": 1.74
+  },
+  {
+    "symbol": "ORLY",
+    "name": "O'Reilly Automotive, Inc.",
+    "price": 91.66,
+    "pe_ratio": 29.098413,
+    "debt_equity": null,
+    "profit_margin": 0.1427,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "OXY",
+    "name": "Occidental Petroleum Corporatio",
+    "price": 59.71,
+    "pe_ratio": 17.61357,
+    "debt_equity": 34.511,
+    "profit_margin": 0.30318,
+    "sector": "Energy",
+    "dividend_yield": 1.9
+  },
+  {
+    "symbol": "ODFL",
+    "name": "Old Dominion Freight Line, Inc.",
+    "price": 208.11,
+    "pe_ratio": 40.098267,
+    "debt_equity": 0.44,
+    "profit_margin": 0.19443001,
+    "sector": "Industrials",
+    "dividend_yield": 0.55
+  },
+  {
+    "symbol": "OMC",
+    "name": "Omnicom Group Inc.",
+    "price": 86.9,
+    "pe_ratio": 234.86487,
+    "debt_equity": 107.744,
+    "profit_margin": 0.017439999,
+    "sector": "Communication Services",
+    "dividend_yield": 3.74
+  },
+  {
+    "symbol": "ON",
+    "name": "ON Semiconductor Corporation",
+    "price": 78.54,
+    "pe_ratio": 51.333336,
+    "debt_equity": 65.055,
+    "profit_margin": 0.10168,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "OKE",
+    "name": "ONEOK, Inc.",
+    "price": 97.38,
+    "pe_ratio": 16.818653,
+    "debt_equity": 143.07,
+    "profit_margin": 0.09287,
+    "sector": "Energy",
+    "dividend_yield": 4.49
+  },
+  {
+    "symbol": "ORCL",
+    "name": "Oracle Corporation",
+    "price": 144.06,
+    "pe_ratio": 24.667807,
+    "debt_equity": 388.87,
+    "profit_margin": 0.25368,
+    "sector": "Technology",
+    "dividend_yield": 1.36
+  },
+  {
+    "symbol": "OTIS",
+    "name": "Otis Worldwide Corporation",
+    "price": 70.83,
+    "pe_ratio": 18.208225,
+    "debt_equity": null,
+    "profit_margin": 0.10167,
+    "sector": "Industrials",
+    "dividend_yield": 2.49
+  },
+  {
+    "symbol": "PCAR",
+    "name": "PACCAR Inc.",
+    "price": 128.665,
+    "pe_ratio": 27.087366,
+    "debt_equity": 72.91,
+    "profit_margin": 0.09003,
+    "sector": "Industrials",
+    "dividend_yield": 1.07
+  },
+  {
+    "symbol": "PKG",
+    "name": "Packaging Corporation of Americ",
+    "price": 251.8,
+    "pe_ratio": 32.743824,
+    "debt_equity": 94.474,
+    "profit_margin": 0.07256,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 2.37
+  },
+  {
+    "symbol": "PLTR",
+    "name": "Palantir Technologies Inc.",
+    "price": 172.63,
+    "pe_ratio": 147.54701,
+    "debt_equity": 2.139,
+    "profit_margin": 0.49005002,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "PANW",
+    "name": "Palo Alto Networks, Inc.",
+    "price": 373.7,
+    "pe_ratio": 330.70798,
+    "debt_equity": 7.698,
+    "profit_margin": 0.07947,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "PSKY",
+    "name": "Paramount Skydance Corporation",
+    "price": 10.3589,
+    "pe_ratio": 345.2967,
+    "debt_equity": 126.479,
+    "profit_margin": -0.021329999,
+    "sector": "Communication Services",
+    "dividend_yield": 1.95
+  },
+  {
+    "symbol": "PH",
+    "name": "Parker-Hannifin Corporation",
+    "price": 1042.0599,
+    "pe_ratio": 36.627766,
+    "debt_equity": 55.278,
+    "profit_margin": 0.16968,
+    "sector": "Industrials",
+    "dividend_yield": 0.76
+  },
+  {
+    "symbol": "PAYX",
+    "name": "Paychex, Inc.",
+    "price": 121.205,
+    "pe_ratio": 24.735714,
+    "debt_equity": 123.967,
+    "profit_margin": 0.26633,
+    "sector": "Technology",
+    "dividend_yield": 4.02
+  },
+  {
+    "symbol": "PYPL",
+    "name": "PayPal Holdings, Inc.",
+    "price": 60.7477,
+    "pe_ratio": 11.483498,
+    "debt_equity": 71.751,
+    "profit_margin": 0.14364,
+    "sector": "Financial Services",
+    "dividend_yield": 0.93
+  },
+  {
+    "symbol": "PNR",
+    "name": "Pentair plc.",
+    "price": 64.0462,
+    "pe_ratio": 16.506754,
+    "debt_equity": 47.067,
+    "profit_margin": 0.16237,
+    "sector": "Industrials",
+    "dividend_yield": 1.65
+  },
+  {
+    "symbol": "PEP",
+    "name": "Pepsico, Inc.",
+    "price": 140.5609,
+    "pe_ratio": 18.422136,
+    "debt_equity": 238.949,
+    "profit_margin": 0.10785,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 4.28
+  },
+  {
+    "symbol": "PFE",
+    "name": "Pfizer, Inc.",
+    "price": 27.245,
+    "pe_ratio": 35.848686,
+    "debt_equity": 74.253,
+    "profit_margin": 0.06804,
+    "sector": "Healthcare",
+    "dividend_yield": 6.4
+  },
+  {
+    "symbol": "PCG",
+    "name": "Pacific Gas & Electric Co.",
+    "price": 17.815,
+    "pe_ratio": 12.816547,
+    "debt_equity": 189.45,
+    "profit_margin": 0.11828,
+    "sector": "Utilities",
+    "dividend_yield": 1.14
+  },
+  {
+    "symbol": "PM",
+    "name": "Philip Morris International Inc",
+    "price": 187.475,
+    "pe_ratio": 25.716736,
+    "debt_equity": null,
+    "profit_margin": 0.25559,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 3.19
+  },
+  {
+    "symbol": "PSX",
+    "name": "Phillips 66",
+    "price": 241.93,
+    "pe_ratio": 13.816675,
+    "debt_equity": 62.884,
+    "profit_margin": 0.046609998,
+    "sector": "Energy",
+    "dividend_yield": 2.11
+  },
+  {
+    "symbol": "PNW",
+    "name": "Pinnacle West Capital Corporati",
+    "price": 100.35,
+    "pe_ratio": 19.261036,
+    "debt_equity": 233.288,
+    "profit_margin": 0.11525,
+    "sector": "Utilities",
+    "dividend_yield": 3.63
+  },
+  {
+    "symbol": "PNC",
+    "name": "PNC Financial Services Group, I",
+    "price": 254.92,
+    "pe_ratio": 14.045179,
+    "debt_equity": null,
+    "profit_margin": 0.31366,
+    "sector": "Financial Services",
+    "dividend_yield": 3.14
+  },
+  {
+    "symbol": "PPG",
+    "name": "PPG Industries, Inc.",
+    "price": 112.99,
+    "pe_ratio": 16.210903,
+    "debt_equity": 86.938,
+    "profit_margin": 0.09573,
+    "sector": "Basic Materials",
+    "dividend_yield": 2.61
+  },
+  {
+    "symbol": "PPL",
+    "name": "PPL Corporation",
+    "price": 35.625,
+    "pe_ratio": 21.079882,
+    "debt_equity": 135.434,
+    "profit_margin": 0.13471,
+    "sector": "Utilities",
+    "dividend_yield": 3.17
+  },
+  {
+    "symbol": "PFG",
+    "name": "Principal Financial Group Inc",
+    "price": 113.515,
+    "pe_ratio": 16.170227,
+    "debt_equity": 35.307,
+    "profit_margin": 0.09932999,
+    "sector": "Financial Services",
+    "dividend_yield": 2.97
+  },
+  {
+    "symbol": "PG",
+    "name": "Procter & Gamble Company (The)",
+    "price": 143.635,
+    "pe_ratio": 21.664404,
+    "debt_equity": 64.49,
+    "profit_margin": 0.18437,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 3.04
+  },
+  {
+    "symbol": "PGR",
+    "name": "Progressive Corporation (The)",
+    "price": 206.85,
+    "pe_ratio": 10.373621,
+    "debt_equity": 24.428,
+    "profit_margin": 0.12849,
+    "sector": "Financial Services",
+    "dividend_yield": 0.2
+  },
+  {
+    "symbol": "PLD",
+    "name": "Prologis, Inc.",
+    "price": 140.22,
+    "pe_ratio": 31.2294,
+    "debt_equity": 63.823,
+    "profit_margin": 0.43575,
+    "sector": "Real Estate",
+    "dividend_yield": 3.04
+  },
+  {
+    "symbol": "PRU",
+    "name": "Prudential Financial, Inc.",
+    "price": 125.2,
+    "pe_ratio": 11.340579,
+    "debt_equity": 163.891,
+    "profit_margin": 0.06007,
+    "sector": "Financial Services",
+    "dividend_yield": 4.5
+  },
+  {
+    "symbol": "PEG",
+    "name": "Public Service Enterprise Group",
+    "price": 75.68,
+    "pe_ratio": 18.82587,
+    "debt_equity": 142.409,
+    "profit_margin": 0.16041,
+    "sector": "Utilities",
+    "dividend_yield": 3.54
+  },
+  {
+    "symbol": "PTC",
+    "name": "PTC Inc.",
+    "price": 148.67,
+    "pe_ratio": 14.41998,
+    "debt_equity": 46.335,
+    "profit_margin": 0.41429,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "PSA",
+    "name": "Public Storage",
+    "price": 326.6877,
+    "pe_ratio": 31.172493,
+    "debt_equity": 109.632,
+    "profit_margin": 0.41632998,
+    "sector": "Real Estate",
+    "dividend_yield": 3.7
+  },
+  {
+    "symbol": "PHM",
+    "name": "PulteGroup, Inc.",
+    "price": 127.23,
+    "pe_ratio": 12.995914,
+    "debt_equity": 19.065,
+    "profit_margin": 0.1162,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.81
+  },
+  {
+    "symbol": "PWR",
+    "name": "Quanta Services, Inc.",
+    "price": 692.69,
+    "pe_ratio": 79.25515,
+    "debt_equity": 67.78,
+    "profit_margin": 0.04032,
+    "sector": "Industrials",
+    "dividend_yield": 0.06
+  },
+  {
+    "symbol": "QCOM",
+    "name": "QUALCOMM Incorporated",
+    "price": 159.66,
+    "pe_ratio": 18.226027,
+    "debt_equity": 55.21,
+    "profit_margin": 0.21013,
+    "sector": "Technology",
+    "dividend_yield": 2.27
+  },
+  {
+    "symbol": "DGX",
+    "name": "Quest Diagnostics Incorporated",
+    "price": 236.98,
+    "pe_ratio": 25.157112,
+    "debt_equity": 81.074,
+    "profit_margin": 0.09187,
+    "sector": "Healthcare",
+    "dividend_yield": 1.46
+  },
+  {
+    "symbol": "Q",
+    "name": "Qnity Electronics, Inc.",
+    "price": 132.56,
+    "pe_ratio": 47.342857,
+    "debt_equity": 59.992,
+    "profit_margin": 0.11248,
+    "sector": "Technology",
+    "dividend_yield": 0.23
+  },
+  {
+    "symbol": "RL",
+    "name": "Ralph Lauren Corporation",
+    "price": 378.4284,
+    "pe_ratio": 23.860556,
+    "debt_equity": 110.373,
+    "profit_margin": 0.117639996,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.99
+  },
+  {
+    "symbol": "RJF",
+    "name": "Raymond James Financial, Inc.",
+    "price": 180.3067,
+    "pe_ratio": 15.7198515,
+    "debt_equity": 47.594,
+    "profit_margin": 0.15131,
+    "sector": "Financial Services",
+    "dividend_yield": 1.2
+  },
+  {
+    "symbol": "RTX",
+    "name": "RTX Corporation",
+    "price": 224.47,
+    "pe_ratio": 39.589066,
+    "debt_equity": 57.02,
+    "profit_margin": 0.08276,
+    "sector": "Industrials",
+    "dividend_yield": 1.32
+  },
+  {
+    "symbol": "O",
+    "name": "Realty Income Corporation",
+    "price": 62.3401,
+    "pe_ratio": 45.503723,
+    "debt_equity": 74.722,
+    "profit_margin": 0.20898001,
+    "sector": "Real Estate",
+    "dividend_yield": 5.21
+  },
+  {
+    "symbol": "REG",
+    "name": "Regency Centers Corporation",
+    "price": 76.19,
+    "pe_ratio": 25.6532,
+    "debt_equity": 71.972,
+    "profit_margin": 0.32996,
+    "sector": "Real Estate",
+    "dividend_yield": 3.95
+  },
+  {
+    "symbol": "REGN",
+    "name": "Regeneron Pharmaceuticals, Inc.",
+    "price": 816.35,
+    "pe_ratio": 20.21669,
+    "debt_equity": 8.535,
+    "profit_margin": 0.27865,
+    "sector": "Healthcare",
+    "dividend_yield": 0.47
+  },
+  {
+    "symbol": "RF",
+    "name": "Regions Financial Corporation",
+    "price": 31.725,
+    "pe_ratio": 12.896341,
+    "debt_equity": null,
+    "profit_margin": 0.30837,
+    "sector": "Financial Services",
+    "dividend_yield": 3.45
+  },
+  {
+    "symbol": "RSG",
+    "name": "Republic Services, Inc.",
+    "price": 217.9,
+    "pe_ratio": 30.864021,
+    "debt_equity": 118.798,
+    "profit_margin": 0.12942,
+    "sector": "Industrials",
+    "dividend_yield": 1.25
+  },
+  {
+    "symbol": "RMD",
+    "name": "ResMed Inc.",
+    "price": 221.09,
+    "pe_ratio": 21.21785,
+    "debt_equity": 12.542,
+    "profit_margin": 0.26945,
+    "sector": "Healthcare",
+    "dividend_yield": 1.2
+  },
+  {
+    "symbol": "RVTY",
+    "name": "Revvity, Inc.",
+    "price": 114.5871,
+    "pe_ratio": 55.089954,
+    "debt_equity": 46.225,
+    "profit_margin": 0.08158,
+    "sector": "Healthcare",
+    "dividend_yield": 0.24
+  },
+  {
+    "symbol": "HOOD",
+    "name": "Robinhood Markets, Inc.",
+    "price": 92.82,
+    "pe_ratio": 41.070797,
+    "debt_equity": 240.279,
+    "profit_margin": 0.42011002,
+    "sector": "Financial Services",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "ROK",
+    "name": "Rockwell Automation, Inc.",
+    "price": 434.67,
+    "pe_ratio": 41.08412,
+    "debt_equity": 103.347,
+    "profit_margin": 0.13385001,
+    "sector": "Industrials",
+    "dividend_yield": 1.24
+  },
+  {
+    "symbol": "ROL",
+    "name": "Rollins, Inc.",
+    "price": 36.53,
+    "pe_ratio": 33.209087,
+    "debt_equity": 78.015,
+    "profit_margin": 0.1355,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 2.03
+  },
+  {
+    "symbol": "ROP",
+    "name": "Roper Technologies, Inc.",
+    "price": 399.095,
+    "pe_ratio": 16.622032,
+    "debt_equity": 60.531,
+    "profit_margin": 0.30244,
+    "sector": "Technology",
+    "dividend_yield": 0.93
+  },
+  {
+    "symbol": "ROST",
+    "name": "Ross Stores, Inc.",
+    "price": 237.79,
+    "pe_ratio": 33.25734,
+    "debt_equity": 74.911,
+    "profit_margin": 0.097399995,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.76
+  },
+  {
+    "symbol": "RCL",
+    "name": "Royal Caribbean Cruises Ltd.",
+    "price": 300.08,
+    "pe_ratio": 18.546352,
+    "debt_equity": 224.816,
+    "profit_margin": 0.23541,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 1.66
+  },
+  {
+    "symbol": "SPGI",
+    "name": "S&P Global Inc.",
+    "price": 421.54,
+    "pe_ratio": 25.672352,
+    "debt_equity": 42.98,
+    "profit_margin": 0.30536,
+    "sector": "Financial Services",
+    "dividend_yield": 0.95
+  },
+  {
+    "symbol": "CRM",
+    "name": "Salesforce, Inc.",
+    "price": 198.175,
+    "pe_ratio": 22.9635,
+    "debt_equity": 124.282,
+    "profit_margin": 0.18733,
+    "sector": "Technology",
+    "dividend_yield": 0.92
+  },
+  {
+    "symbol": "SNDK",
+    "name": "Sandisk Corporation",
+    "price": 1602.7301,
+    "pe_ratio": 21.717209,
+    "debt_equity": null,
+    "profit_margin": 0.56465,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "SBAC",
+    "name": "SBA Communications Corporation",
+    "price": 183.05,
+    "pe_ratio": 19.746494,
+    "debt_equity": null,
+    "profit_margin": 0.34512,
+    "sector": "Real Estate",
+    "dividend_yield": 2.75
+  },
+  {
+    "symbol": "SLB",
+    "name": "SLB Limited",
+    "price": 53.35,
+    "pe_ratio": 26.02439,
+    "debt_equity": 47.002,
+    "profit_margin": 0.08527,
+    "sector": "Energy",
+    "dividend_yield": 2.19
+  },
+  {
+    "symbol": "STX",
+    "name": "Seagate Technology Holdings PLC",
+    "price": 904.48,
+    "pe_ratio": 64.93037,
+    "debt_equity": 179.88,
+    "profit_margin": 0.26108998,
+    "sector": "Technology",
+    "dividend_yield": 0.3
+  },
+  {
+    "symbol": "SRE",
+    "name": "DBA Sempra",
+    "price": 87.02,
+    "pe_ratio": 25.223186,
+    "debt_equity": 84.663,
+    "profit_margin": 0.16824,
+    "sector": "Utilities",
+    "dividend_yield": 3.06
+  },
+  {
+    "symbol": "NOW",
+    "name": "ServiceNow, Inc.",
+    "price": 121.01,
+    "pe_ratio": 75.63125,
+    "debt_equity": 67.538,
+    "profit_margin": 0.11336,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "SHW",
+    "name": "Sherwin-Williams Company (The)",
+    "price": 347.885,
+    "pe_ratio": 32.063133,
+    "debt_equity": 389.958,
+    "profit_margin": 0.11013,
+    "sector": "Basic Materials",
+    "dividend_yield": 0.91
+  },
+  {
+    "symbol": "SPG",
+    "name": "Simon Property Group, Inc.",
+    "price": 221.41,
+    "pe_ratio": 15.6363,
+    "debt_equity": 503.504,
+    "profit_margin": 0.66571,
+    "sector": "Real Estate",
+    "dividend_yield": 4.01
+  },
+  {
+    "symbol": "SWKS",
+    "name": "Skyworks Solutions, Inc.",
+    "price": 67.87,
+    "pe_ratio": 35.165806,
+    "debt_equity": 11.869,
+    "profit_margin": 0.072270006,
+    "sector": "Technology",
+    "dividend_yield": 4.13
+  },
+  {
+    "symbol": "SW",
+    "name": "Smurfit WestRock plc",
+    "price": 47.565,
+    "pe_ratio": 50.601063,
+    "debt_equity": 78.427,
+    "profit_margin": 0.01587,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 3.78
+  },
+  {
+    "symbol": "SNA",
+    "name": "Snap-On Incorporated",
+    "price": 398.915,
+    "pe_ratio": 20.332058,
+    "debt_equity": 21.595,
+    "profit_margin": 0.19597,
+    "sector": "Industrials",
+    "dividend_yield": 2.43
+  },
+  {
+    "symbol": "SOLV",
+    "name": "Solventum Corporation",
+    "price": 87.92,
+    "pe_ratio": 10.748166,
+    "debt_equity": 110.313,
+    "profit_margin": 0.17256,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "SO",
+    "name": "Southern Company (The)",
+    "price": 92.24,
+    "pe_ratio": 22.226505,
+    "debt_equity": 182.058,
+    "profit_margin": 0.15435,
+    "sector": "Utilities",
+    "dividend_yield": 3.29
+  },
+  {
+    "symbol": "LUV",
+    "name": "Southwest Airlines Company",
+    "price": 42.615,
+    "pe_ratio": 26.634377,
+    "debt_equity": 97.275,
+    "profit_margin": 0.02783,
+    "sector": "Industrials",
+    "dividend_yield": 1.66
+  },
+  {
+    "symbol": "SWK",
+    "name": "Stanley Black & Decker, Inc.",
+    "price": 98.74,
+    "pe_ratio": 24.141808,
+    "debt_equity": 58.172,
+    "profit_margin": 0.040689997,
+    "sector": "Industrials",
+    "dividend_yield": 3.37
+  },
+  {
+    "symbol": "SBUX",
+    "name": "Starbucks Corporation",
+    "price": 107.155,
+    "pe_ratio": 61.939304,
+    "debt_equity": null,
+    "profit_margin": 0.05172,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 2.3
+  },
+  {
+    "symbol": "STT",
+    "name": "State Street Corporation",
+    "price": 192.01,
+    "pe_ratio": 16.947042,
+    "debt_equity": null,
+    "profit_margin": 0.23005,
+    "sector": "Financial Services",
+    "dividend_yield": 1.91
+  },
+  {
+    "symbol": "STLD",
+    "name": "Steel Dynamics, Inc.",
+    "price": 250.93,
+    "pe_ratio": 22.770416,
+    "debt_equity": 46.924,
+    "profit_margin": 0.07825,
+    "sector": "Basic Materials",
+    "dividend_yield": 0.82
+  },
+  {
+    "symbol": "STE",
+    "name": "STERIS plc (Ireland)",
+    "price": 233.46,
+    "pe_ratio": 28.540342,
+    "debt_equity": 28.312,
+    "profit_margin": 0.13333,
+    "sector": "Healthcare",
+    "dividend_yield": 1.12
+  },
+  {
+    "symbol": "SYK",
+    "name": "Stryker Corporation",
+    "price": 335.535,
+    "pe_ratio": 34.77047,
+    "debt_equity": 64.391,
+    "profit_margin": 0.14433,
+    "sector": "Healthcare",
+    "dividend_yield": 1.06
+  },
+  {
+    "symbol": "SMCI",
+    "name": "Super Micro Computer, Inc.",
+    "price": 37.415,
+    "pe_ratio": 11.4769945,
+    "debt_equity": 64.308,
+    "profit_margin": 0.0571,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "SYF",
+    "name": "Synchrony Financial",
+    "price": 81.37,
+    "pe_ratio": 8.345641,
+    "debt_equity": null,
+    "profit_margin": 0.35507,
+    "sector": "Financial Services",
+    "dividend_yield": 1.68
+  },
+  {
+    "symbol": "SNPS",
+    "name": "Synopsys, Inc.",
+    "price": 407.29,
+    "pe_ratio": 92.98859,
+    "debt_equity": 35.574,
+    "profit_margin": 0.089090005,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "SYY",
+    "name": "Sysco Corporation",
+    "price": 82.525,
+    "pe_ratio": 22.547813,
+    "debt_equity": 561.403,
+    "profit_margin": 0.02078,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 2.69
+  },
+  {
+    "symbol": "TMUS",
+    "name": "T-Mobile US, Inc.",
+    "price": 183.17,
+    "pe_ratio": 19.16004,
+    "debt_equity": 214.035,
+    "profit_margin": 0.11455,
+    "sector": "Communication Services",
+    "dividend_yield": 2.27
+  },
+  {
+    "symbol": "TROW",
+    "name": "T. Rowe Price Group, Inc.",
+    "price": 111.12,
+    "pe_ratio": 11.156627,
+    "debt_equity": 3.702,
+    "profit_margin": 0.29262,
+    "sector": "Financial Services",
+    "dividend_yield": 4.71
+  },
+  {
+    "symbol": "TPR",
+    "name": "Tapestry, Inc.",
+    "price": 133.62,
+    "pe_ratio": 18.404957,
+    "debt_equity": 571.608,
+    "profit_margin": 0.19086,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 1.43
+  },
+  {
+    "symbol": "TRGP",
+    "name": "Targa Resources, Inc.",
+    "price": 298.43,
+    "pe_ratio": 28.557894,
+    "debt_equity": 515.794,
+    "profit_margin": 0.13545,
+    "sector": "Energy",
+    "dividend_yield": 1.8
+  },
+  {
+    "symbol": "TGT",
+    "name": "Target Corporation",
+    "price": 153.74,
+    "pe_ratio": 20.309114,
+    "debt_equity": 117.548,
+    "profit_margin": 0.03243,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 3.07
+  },
+  {
+    "symbol": "TEL",
+    "name": "TE Connectivity plc",
+    "price": 207.5799,
+    "pe_ratio": 20.311144,
+    "debt_equity": 43.441,
+    "profit_margin": 0.15609,
+    "sector": "Technology",
+    "dividend_yield": 1.37
+  },
+  {
+    "symbol": "TDY",
+    "name": "Teledyne Technologies Incorpora",
+    "price": 668.925,
+    "pe_ratio": 32.37778,
+    "debt_equity": 18.565,
+    "profit_margin": 0.15292,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "TER",
+    "name": "Teradyne, Inc.",
+    "price": 397.435,
+    "pe_ratio": 54.667812,
+    "debt_equity": 2.883,
+    "profit_margin": 0.25766,
+    "sector": "Technology",
+    "dividend_yield": 0.12
+  },
+  {
+    "symbol": "TSLA",
+    "name": "Tesla, Inc.",
+    "price": 335.99,
+    "pe_ratio": 308.24768,
+    "debt_equity": 18.373,
+    "profit_margin": 0.03671,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "TXN",
+    "name": "Texas Instruments Incorporated",
+    "price": 270.77,
+    "pe_ratio": 41.08801,
+    "debt_equity": 78.036,
+    "profit_margin": 0.31111,
+    "sector": "Technology",
+    "dividend_yield": 2.01
+  },
+  {
+    "symbol": "TPL",
+    "name": "Texas Pacific Land Corporation",
+    "price": 361.9605,
+    "pe_ratio": 46.227398,
+    "debt_equity": 1.077,
+    "profit_margin": 0.60322,
+    "sector": "Energy",
+    "dividend_yield": 0.67
+  },
+  {
+    "symbol": "TXT",
+    "name": "Textron Inc.",
+    "price": 87.585,
+    "pe_ratio": 16.49435,
+    "debt_equity": 52.285,
+    "profit_margin": 0.06125,
+    "sector": "Industrials",
+    "dividend_yield": 0.09
+  },
+  {
+    "symbol": "TMO",
+    "name": "Thermo Fisher Scientific Inc",
+    "price": 590.27,
+    "pe_ratio": 31.803343,
+    "debt_equity": 80.575,
+    "profit_margin": 0.15036,
+    "sector": "Healthcare",
+    "dividend_yield": 0.32
+  },
+  {
+    "symbol": "TJX",
+    "name": "TJX Companies, Inc. (The)",
+    "price": 151.86,
+    "pe_ratio": 29.544748,
+    "debt_equity": 136.307,
+    "profit_margin": 0.09402,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 1.27
+  },
+  {
+    "symbol": "TKO",
+    "name": "TKO Group Holdings, Inc.",
+    "price": 193.55,
+    "pe_ratio": 67.912285,
+    "debt_equity": 59.216,
+    "profit_margin": 0.0433,
+    "sector": "Communication Services",
+    "dividend_yield": 1.59
+  },
+  {
+    "symbol": "TTD",
+    "name": "The Trade Desk, Inc.",
+    "price": 13.405,
+    "pe_ratio": 15.958334,
+    "debt_equity": 16.863,
+    "profit_margin": 0.13608,
+    "sector": "Communication Services",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "TSCO",
+    "name": "Tractor Supply Company",
+    "price": 35.155,
+    "pe_ratio": 18.309896,
+    "debt_equity": 248.71,
+    "profit_margin": 0.06425,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 2.77
+  },
+  {
+    "symbol": "TT",
+    "name": "Trane Technologies plc",
+    "price": 462.04,
+    "pe_ratio": 34.4806,
+    "debt_equity": 53.404,
+    "profit_margin": 0.13278,
+    "sector": "Industrials",
+    "dividend_yield": 0.88
+  },
+  {
+    "symbol": "TDG",
+    "name": "Transdigm Group Incorporated",
+    "price": 1237.685,
+    "pe_ratio": 37.585335,
+    "debt_equity": null,
+    "profit_margin": 0.21277,
+    "sector": "Industrials",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "TRV",
+    "name": "The Travelers Companies, Inc.",
+    "price": 367.265,
+    "pe_ratio": 9.86741,
+    "debt_equity": 27.378,
+    "profit_margin": 0.16951999,
+    "sector": "Financial Services",
+    "dividend_yield": 1.37
+  },
+  {
+    "symbol": "TFC",
+    "name": "Truist Financial Corporation",
+    "price": 52.51,
+    "pe_ratio": 12.071264,
+    "debt_equity": null,
+    "profit_margin": 0.30692,
+    "sector": "Financial Services",
+    "dividend_yield": 3.96
+  },
+  {
+    "symbol": "TYL",
+    "name": "Tyler Technologies, Inc.",
+    "price": 336.5,
+    "pe_ratio": 44.276318,
+    "debt_equity": 47.906,
+    "profit_margin": 0.13361,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "TSN",
+    "name": "Tyson Foods, Inc.",
+    "price": 58.68,
+    "pe_ratio": 36.22222,
+    "debt_equity": 44.025,
+    "profit_margin": 0.01031,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 3.48
+  },
+  {
+    "symbol": "USB",
+    "name": "U.S. Bancorp",
+    "price": 64.715,
+    "pe_ratio": 12.917165,
+    "debt_equity": null,
+    "profit_margin": 0.29896,
+    "sector": "Financial Services",
+    "dividend_yield": 3.21
+  },
+  {
+    "symbol": "UBER",
+    "name": "Uber Technologies, Inc.",
+    "price": 75.53,
+    "pe_ratio": 16.563597,
+    "debt_equity": 51.872,
+    "profit_margin": 0.17345,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "UDR",
+    "name": "UDR, Inc.",
+    "price": 37.245,
+    "pe_ratio": 23.572784,
+    "debt_equity": 156.144,
+    "profit_margin": 0.29563,
+    "sector": "Real Estate",
+    "dividend_yield": 4.65
+  },
+  {
+    "symbol": "ULTA",
+    "name": "Ulta Beauty, Inc.",
+    "price": 518.28,
+    "pe_ratio": 19.41851,
+    "debt_equity": 89.209,
+    "profit_margin": 0.09355,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "UNP",
+    "name": "Union Pacific Corporation",
+    "price": 299.77,
+    "pe_ratio": 24.253237,
+    "debt_equity": 150.772,
+    "profit_margin": 0.28847,
+    "sector": "Industrials",
+    "dividend_yield": 1.89
+  },
+  {
+    "symbol": "UAL",
+    "name": "United Airlines Holdings, Inc.",
+    "price": 119.17,
+    "pe_ratio": 11.147802,
+    "debt_equity": 201.641,
+    "profit_margin": 0.05558,
+    "sector": "Industrials",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "UPS",
+    "name": "United Parcel Service, Inc.",
+    "price": 101.95,
+    "pe_ratio": 18.949814,
+    "debt_equity": 189.9,
+    "profit_margin": 0.050819997,
+    "sector": "Industrials",
+    "dividend_yield": 6.43
+  },
+  {
+    "symbol": "URI",
+    "name": "United Rentals, Inc.",
+    "price": 1122.96,
+    "pe_ratio": 27.007214,
+    "debt_equity": 166.793,
+    "profit_margin": 0.15673,
+    "sector": "Industrials",
+    "dividend_yield": 0.68
+  },
+  {
+    "symbol": "UNH",
+    "name": "UnitedHealth Group Incorporated",
+    "price": 396.01,
+    "pe_ratio": 25.46688,
+    "debt_equity": 69.211,
+    "profit_margin": 0.03135,
+    "sector": "Healthcare",
+    "dividend_yield": 2.35
+  },
+  {
+    "symbol": "UHS",
+    "name": "Universal Health Services, Inc.",
+    "price": 175.23,
+    "pe_ratio": 7.149327,
+    "debt_equity": 68.74,
+    "profit_margin": 0.08424,
+    "sector": "Healthcare",
+    "dividend_yield": 0.47
+  },
+  {
+    "symbol": "VLO",
+    "name": "Valero Energy Corporation",
+    "price": 348.8775,
+    "pe_ratio": 14.542623,
+    "debt_equity": 40.148,
+    "profit_margin": 0.05446,
+    "sector": "Energy",
+    "dividend_yield": 1.38
+  },
+  {
+    "symbol": "VEEV",
+    "name": "Veeva Systems Inc.",
+    "price": 246.235,
+    "pe_ratio": 43.581417,
+    "debt_equity": 1.411,
+    "profit_margin": 0.28370002,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "VTR",
+    "name": "Ventas, Inc.",
+    "price": 91.505,
+    "pe_ratio": 166.37271,
+    "debt_equity": 84.928,
+    "profit_margin": 0.04093,
+    "sector": "Real Estate",
+    "dividend_yield": 2.19
+  },
+  {
+    "symbol": "VLTO",
+    "name": "Veralto Corp",
+    "price": 97.04,
+    "pe_ratio": 24.443325,
+    "debt_equity": 115.978,
+    "profit_margin": 0.17346,
+    "sector": "Industrials",
+    "dividend_yield": 0.54
+  },
+  {
+    "symbol": "VRSN",
+    "name": "VeriSign, Inc.",
+    "price": 279.72,
+    "pe_ratio": 30.338394,
+    "debt_equity": null,
+    "profit_margin": 0.49769002,
+    "sector": "Technology",
+    "dividend_yield": 1.19
+  },
+  {
+    "symbol": "VRSK",
+    "name": "Verisk Analytics, Inc.",
+    "price": 182.25,
+    "pe_ratio": 27.952454,
+    "debt_equity": null,
+    "profit_margin": 0.28237,
+    "sector": "Industrials",
+    "dividend_yield": 1.14
+  },
+  {
+    "symbol": "VZ",
+    "name": "Verizon Communications Inc.",
+    "price": 48.755,
+    "pe_ratio": 12.696615,
+    "debt_equity": 184.081,
+    "profit_margin": 0.11643,
+    "sector": "Communication Services",
+    "dividend_yield": 5.89
+  },
+  {
+    "symbol": "VRTX",
+    "name": "Vertex Pharmaceuticals Incorpor",
+    "price": 528.36,
+    "pe_ratio": 30.772276,
+    "debt_equity": 9.767,
+    "profit_margin": 0.34997,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "VRT",
+    "name": "Vertiv Holdings, LLC",
+    "price": 272.01,
+    "pe_ratio": 61.540726,
+    "debt_equity": 70.166,
+    "profit_margin": 0.15088001,
+    "sector": "Industrials",
+    "dividend_yield": 0.09
+  },
+  {
+    "symbol": "VICI",
+    "name": "VICI Properties Inc.",
+    "price": 26.035,
+    "pe_ratio": 10.091085,
+    "debt_equity": 60.277,
+    "profit_margin": 0.67496,
+    "sector": "Real Estate",
+    "dividend_yield": 6.93
+  },
+  {
+    "symbol": "V",
+    "name": "Visa Inc.",
+    "price": 365.53,
+    "pe_ratio": 31.16198,
+    "debt_equity": 67.821,
+    "profit_margin": 0.50782,
+    "sector": "Financial Services",
+    "dividend_yield": 0.75
+  },
+  {
+    "symbol": "VST",
+    "name": "Vistra Corp.",
+    "price": 139.6496,
+    "pe_ratio": 23.54968,
+    "debt_equity": 373.28,
+    "profit_margin": 0.1155,
+    "sector": "Utilities",
+    "dividend_yield": 0.63
+  },
+  {
+    "symbol": "VMC",
+    "name": "Vulcan Materials Company (Holdi",
+    "price": 271.8,
+    "pe_ratio": 32.051888,
+    "debt_equity": 58.22,
+    "profit_margin": 0.13748,
+    "sector": "Basic Materials",
+    "dividend_yield": 0.75
+  },
+  {
+    "symbol": "WRB",
+    "name": "W.R. Berkley Corporation",
+    "price": 70.38,
+    "pe_ratio": 14.481481,
+    "debt_equity": 31.527,
+    "profit_margin": 0.12943,
+    "sector": "Financial Services",
+    "dividend_yield": 0.57
+  },
+  {
+    "symbol": "GWW",
+    "name": "W.W. Grainger, Inc.",
+    "price": 1314.11,
+    "pe_ratio": 33.46346,
+    "debt_equity": 61.977,
+    "profit_margin": 0.09923001,
+    "sector": "Industrials",
+    "dividend_yield": 0.76
+  },
+  {
+    "symbol": "WAB",
+    "name": "Westinghouse Air Brake Technolo",
+    "price": 294.49,
+    "pe_ratio": 39.63526,
+    "debt_equity": 61.686,
+    "profit_margin": 0.10593,
+    "sector": "Industrials",
+    "dividend_yield": 0.41
+  },
+  {
+    "symbol": "WMT",
+    "name": "Walmart Inc.",
+    "price": 115.73,
+    "pe_ratio": 40.750004,
+    "debt_equity": 74.816,
+    "profit_margin": 0.03135,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 0.87
+  },
+  {
+    "symbol": "DIS",
+    "name": "Walt Disney Company (The)",
+    "price": 104.6301,
+    "pe_ratio": 21.573215,
+    "debt_equity": 39.404,
+    "profit_margin": 0.086990006,
+    "sector": "Communication Services",
+    "dividend_yield": 1.45
+  },
+  {
+    "symbol": "WM",
+    "name": "Waste Management, Inc.",
+    "price": 224.845,
+    "pe_ratio": 59.01444,
+    "debt_equity": 235.301,
+    "profit_margin": 0.11115,
+    "sector": "Industrials",
+    "dividend_yield": 1.58
+  },
+  {
+    "symbol": "WAT",
+    "name": "Waters Corporation",
+    "price": 404.04,
+    "pe_ratio": 102.030304,
+    "debt_equity": 36.045,
+    "profit_margin": 0.03588,
+    "sector": "Healthcare",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "WEC",
+    "name": "WEC Energy Group, Inc.",
+    "price": 110.825,
+    "pe_ratio": 21.519417,
+    "debt_equity": 157.985,
+    "profit_margin": 0.16686001,
+    "sector": "Utilities",
+    "dividend_yield": 3.45
+  },
+  {
+    "symbol": "WFC",
+    "name": "Wells Fargo & Company",
+    "price": 87.33,
+    "pe_ratio": 12.693314,
+    "debt_equity": null,
+    "profit_margin": 0.27232,
+    "sector": "Financial Services",
+    "dividend_yield": 2.28
+  },
+  {
+    "symbol": "WELL",
+    "name": "Welltower Inc.",
+    "price": 235.89,
+    "pe_ratio": 105.30804,
+    "debt_equity": 41.375,
+    "profit_margin": 0.12149999,
+    "sector": "Real Estate",
+    "dividend_yield": 1.44
+  },
+  {
+    "symbol": "WST",
+    "name": "West Pharmaceutical Services, I",
+    "price": 346.3834,
+    "pe_ratio": 44.408127,
+    "debt_equity": 10.585,
+    "profit_margin": 0.1698,
+    "sector": "Healthcare",
+    "dividend_yield": 0.25
+  },
+  {
+    "symbol": "WDC",
+    "name": "Western Digital Corporation",
+    "price": 496.87,
+    "pe_ratio": 18.46414,
+    "debt_equity": 13.436,
+    "profit_margin": 0.72947,
+    "sector": "Technology",
+    "dividend_yield": 0.11
+  },
+  {
+    "symbol": "WY",
+    "name": "Weyerhaeuser Company",
+    "price": 23.6,
+    "pe_ratio": 35.757576,
+    "debt_equity": 57.625,
+    "profit_margin": 0.06888,
+    "sector": "Real Estate",
+    "dividend_yield": 3.49
+  },
+  {
+    "symbol": "WSM",
+    "name": "Williams-Sonoma, Inc.",
+    "price": 242.07,
+    "pe_ratio": 27.137894,
+    "debt_equity": 79.878,
+    "profit_margin": 0.1381,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 1.26
+  },
+  {
+    "symbol": "WMB",
+    "name": "Williams Companies, Inc. (The)",
+    "price": 75.13,
+    "pe_ratio": 29.93227,
+    "debt_equity": 200.371,
+    "profit_margin": 0.24937001,
+    "sector": "Energy",
+    "dividend_yield": 2.86
+  },
+  {
+    "symbol": "WTW",
+    "name": "Willis Towers Watson Public Lim",
+    "price": 332.25,
+    "pe_ratio": 20.585503,
+    "debt_equity": 91.39,
+    "profit_margin": 0.15492,
+    "sector": "Financial Services",
+    "dividend_yield": 1.18
+  },
+  {
+    "symbol": "WDAY",
+    "name": "Workday, Inc.",
+    "price": 193.265,
+    "pe_ratio": 60.207165,
+    "debt_equity": 56.936,
+    "profit_margin": 0.08595,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "WYNN",
+    "name": "Wynn Resorts, Limited",
+    "price": 102.12,
+    "pe_ratio": 24.489208,
+    "debt_equity": null,
+    "profit_margin": 0.060549997,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.97
+  },
+  {
+    "symbol": "XEL",
+    "name": "Xcel Energy Inc.",
+    "price": 79.44,
+    "pe_ratio": 21.764383,
+    "debt_equity": 173.135,
+    "profit_margin": 0.15278,
+    "sector": "Utilities",
+    "dividend_yield": 2.99
+  },
+  {
+    "symbol": "XYL",
+    "name": "Xylem Inc.",
+    "price": 114.21,
+    "pe_ratio": 27.128265,
+    "debt_equity": 28.642,
+    "profit_margin": 0.111549996,
+    "sector": "Industrials",
+    "dividend_yield": 1.46
+  },
+  {
+    "symbol": "YUM",
+    "name": "Yum! Brands, Inc.",
+    "price": 146.145,
+    "pe_ratio": 18.406172,
+    "debt_equity": null,
+    "profit_margin": 0.25406998,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 2.07
+  },
+  {
+    "symbol": "ZBRA",
+    "name": "Zebra Technologies Corporation",
+    "price": 369.03,
+    "pe_ratio": 33.793957,
+    "debt_equity": 86.23,
+    "profit_margin": 0.092180006,
+    "sector": "Technology",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "ZBH",
+    "name": "Zimmer Biomet Holdings, Inc.",
+    "price": 99.72,
+    "pe_ratio": 24.203884,
+    "debt_equity": 60.175,
+    "profit_margin": 0.09481,
+    "sector": "Healthcare",
+    "dividend_yield": 0.98
+  },
+  {
+    "symbol": "ZTS",
+    "name": "Zoetis Inc.",
+    "price": 74.3,
+    "pe_ratio": 12.120718,
+    "debt_equity": 293.996,
+    "profit_margin": 0.27685,
+    "sector": "Healthcare",
+    "dividend_yield": 2.91
+  }
+]

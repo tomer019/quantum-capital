@@ -1,0 +1,452 @@
+[
+  {
+    "symbol": "OR.PA",
+    "name": "L'OREAL",
+    "price": 377.65,
+    "pe_ratio": 32.085808,
+    "debt_equity": 49.316,
+    "profit_margin": 0.13904001,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 1.95
+  },
+  {
+    "symbol": "MC.PA",
+    "name": "LVMH",
+    "price": 450.55,
+    "pe_ratio": 20.535551,
+    "debt_equity": 53.306,
+    "profit_margin": 0.13658,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 2.91
+  },
+  {
+    "symbol": "SAN.PA",
+    "name": "SANOFI",
+    "price": 77.87,
+    "pe_ratio": 24.037037,
+    "debt_equity": 33.89,
+    "profit_margin": 0.08091,
+    "sector": "Healthcare",
+    "dividend_yield": 5.37
+  },
+  {
+    "symbol": "AIR.PA",
+    "name": "AIRBUS SE",
+    "price": 211.45,
+    "pe_ratio": 28.118351,
+    "debt_equity": 54.988,
+    "profit_margin": 0.07714,
+    "sector": "Industrials",
+    "dividend_yield": 1.49
+  },
+  {
+    "symbol": "BNP.PA",
+    "name": "BNP PARIBAS ACT.A",
+    "price": 108.22,
+    "pe_ratio": 9.361591,
+    "debt_equity": null,
+    "profit_margin": 0.26490998,
+    "sector": "Financial Services",
+    "dividend_yield": 5.22
+  },
+  {
+    "symbol": "SU.PA",
+    "name": "SCHNEIDER ELECTRIC SE",
+    "price": 296.35,
+    "pe_ratio": 34.905773,
+    "debt_equity": 84.124,
+    "profit_margin": 0.11270001,
+    "sector": "Industrials",
+    "dividend_yield": 1.36
+  },
+  {
+    "symbol": "DG.PA",
+    "name": "VINCI",
+    "price": 120.25,
+    "pe_ratio": 13.346282,
+    "debt_equity": 120.742,
+    "profit_margin": 0.06645,
+    "sector": "Industrials",
+    "dividend_yield": 4.21
+  },
+  {
+    "symbol": "AI.PA",
+    "name": "AIR LIQUIDE",
+    "price": 167.74,
+    "pe_ratio": 30.169065,
+    "debt_equity": 63.307,
+    "profit_margin": 0.13087,
+    "sector": "Basic Materials",
+    "dividend_yield": 2.02
+  },
+  {
+    "symbol": "RI.PA",
+    "name": "PERNOD RICARD",
+    "price": 67.4,
+    "pe_ratio": 12.035715,
+    "debt_equity": 82.292,
+    "profit_margin": 0.14059,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 6.9
+  },
+  {
+    "symbol": "SGO.PA",
+    "name": "SAINT GOBAIN",
+    "price": 80.2,
+    "pe_ratio": 14.879406,
+    "debt_equity": 66.318,
+    "profit_margin": 0.057779998,
+    "sector": "Industrials",
+    "dividend_yield": 2.83
+  },
+  {
+    "symbol": "SAP.DE",
+    "name": "SAP SE                        I",
+    "price": 181.8,
+    "pe_ratio": 27.21557,
+    "debt_equity": 21.966,
+    "profit_margin": 0.20413,
+    "sector": "Technology",
+    "dividend_yield": 1.39
+  },
+  {
+    "symbol": "SIE.DE",
+    "name": "SIEMENS AG                    N",
+    "price": 277.25,
+    "pe_ratio": 27.669659,
+    "debt_equity": 66.425,
+    "profit_margin": 0.097959995,
+    "sector": "Industrials",
+    "dividend_yield": 1.9
+  },
+  {
+    "symbol": "ALV.DE",
+    "name": "Allianz SE                    v",
+    "price": 441.0,
+    "pe_ratio": 14.468504,
+    "debt_equity": 50.648,
+    "profit_margin": 0.098780006,
+    "sector": "Financial Services",
+    "dividend_yield": 3.9
+  },
+  {
+    "symbol": "MBG.DE",
+    "name": "Mercedes-Benz Group AG        N",
+    "price": 45.035,
+    "pe_ratio": 8.529356,
+    "debt_equity": 110.208,
+    "profit_margin": 0.03885,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 7.69
+  },
+  {
+    "symbol": "BMW.DE",
+    "name": "BAYERISCHE MOTOREN WERKE AG   S",
+    "price": 58.0,
+    "pe_ratio": 5.5822906,
+    "debt_equity": 119.855,
+    "profit_margin": 0.04923,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 7.54
+  },
+  {
+    "symbol": "BAYN.DE",
+    "name": "Bayer AG                      N",
+    "price": 48.47,
+    "pe_ratio": null,
+    "debt_equity": 129.362,
+    "profit_margin": -0.0383,
+    "sector": "Healthcare",
+    "dividend_yield": 0.23
+  },
+  {
+    "symbol": "DTE.DE",
+    "name": "DEUTSCHE TELEKOM AG           N",
+    "price": 28.86,
+    "pe_ratio": 16.213484,
+    "debt_equity": 165.297,
+    "profit_margin": 0.07013,
+    "sector": "Communication Services",
+    "dividend_yield": 3.52
+  },
+  {
+    "symbol": "MUV2.DE",
+    "name": "MUENCHENER RUECKVERS.-GES. AG N",
+    "price": 519.0,
+    "pe_ratio": 9.64684,
+    "debt_equity": 24.378,
+    "profit_margin": 0.11163,
+    "sector": "Financial Services",
+    "dividend_yield": 4.64
+  },
+  {
+    "symbol": "BAS.DE",
+    "name": "BASF SE                       N",
+    "price": 51.37,
+    "pe_ratio": 21.584032,
+    "debt_equity": 71.358,
+    "profit_margin": 0.094239995,
+    "sector": "Basic Materials",
+    "dividend_yield": 4.45
+  },
+  {
+    "symbol": "ADS.DE",
+    "name": "adidas AG                     N",
+    "price": 155.15,
+    "pe_ratio": 19.891024,
+    "debt_equity": 94.127,
+    "profit_margin": 0.052950002,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 1.83
+  },
+  {
+    "symbol": "ASML.AS",
+    "name": "ASML HOLDING",
+    "price": 1559.2,
+    "pe_ratio": 61.26522,
+    "debt_equity": 9.092,
+    "profit_margin": 0.30114,
+    "sector": "Technology",
+    "dividend_yield": 0.48
+  },
+  {
+    "symbol": "PHIA.AS",
+    "name": "KON.PHILIPS N.V.",
+    "price": 23.52,
+    "pe_ratio": 20.63158,
+    "debt_equity": 65.049,
+    "profit_margin": 0.06306,
+    "sector": "Healthcare",
+    "dividend_yield": 3.65
+  },
+  {
+    "symbol": "UNA.AS",
+    "name": "UNILEVER PLC",
+    "price": 53.44,
+    "pe_ratio": 20.633205,
+    "debt_equity": 175.397,
+    "profit_margin": 0.18319,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 3.61
+  },
+  {
+    "symbol": "ITX.MC",
+    "name": "ITX.MC",
+    "price": 57.74,
+    "pe_ratio": 28.58416,
+    "debt_equity": 31.815,
+    "profit_margin": 0.15592,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 1.15
+  },
+  {
+    "symbol": "SAN.MC",
+    "name": "BANCO SANTANDER S.A.",
+    "price": 12.29,
+    "pe_ratio": 14.126436,
+    "debt_equity": null,
+    "profit_margin": 0.33464,
+    "sector": "Financial Services",
+    "dividend_yield": 1.97
+  },
+  {
+    "symbol": "BBVA.MC",
+    "name": "BANCO BILBAO VIZCAYA ARGENTARIA",
+    "price": 24.78,
+    "pe_ratio": 13.111112,
+    "debt_equity": null,
+    "profit_margin": 0.32562,
+    "sector": "Financial Services",
+    "dividend_yield": 3.7
+  },
+  {
+    "symbol": "IBE.MC",
+    "name": "ACCIONES IBERDROLA",
+    "price": 20.13,
+    "pe_ratio": 25.162498,
+    "debt_equity": 100.03,
+    "profit_margin": 0.15883,
+    "sector": "Utilities",
+    "dividend_yield": 3.38
+  },
+  {
+    "symbol": "REP.MC",
+    "name": "REPSOL,  S.A.",
+    "price": 27.58,
+    "pe_ratio": 8.954546,
+    "debt_equity": 44.306,
+    "profit_margin": 0.064330004,
+    "sector": "Energy",
+    "dividend_yield": 4.07
+  },
+  {
+    "symbol": "ENI.MI",
+    "name": "ENI",
+    "price": 24.145,
+    "pe_ratio": 12.575521,
+    "debt_equity": 64.975,
+    "profit_margin": 0.05874,
+    "sector": "Energy",
+    "dividend_yield": 4.5
+  },
+  {
+    "symbol": "ENEL.MI",
+    "name": "ENEL",
+    "price": 9.54,
+    "pe_ratio": 22.714287,
+    "debt_equity": 147.743,
+    "profit_margin": 0.05711,
+    "sector": "Utilities",
+    "dividend_yield": 5.49
+  },
+  {
+    "symbol": "ISP.MI",
+    "name": "INTESA SANPAOLO",
+    "price": 6.872,
+    "pe_ratio": 12.271429,
+    "debt_equity": null,
+    "profit_margin": 0.36964,
+    "sector": "Financial Services",
+    "dividend_yield": 5.52
+  },
+  {
+    "symbol": "UCG.MI",
+    "name": "UNICREDIT",
+    "price": 82.82,
+    "pe_ratio": 11.747518,
+    "debt_equity": null,
+    "profit_margin": 0.43967998,
+    "sector": "Financial Services",
+    "dividend_yield": 3.72
+  },
+  {
+    "symbol": "STLAM.MI",
+    "name": "STELLANTIS",
+    "price": 4.521,
+    "pe_ratio": null,
+    "debt_equity": 84.387,
+    "profit_margin": -0.12104999,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 0.0
+  },
+  {
+    "symbol": "INGA.AS",
+    "name": "ING GROEP N.V.",
+    "price": 30.465,
+    "pe_ratio": 13.188313,
+    "debt_equity": null,
+    "profit_margin": 0.34493,
+    "sector": "Financial Services",
+    "dividend_yield": 3.68
+  },
+  {
+    "symbol": "NOKIA.HE",
+    "name": "Nokia Corporation",
+    "price": 9.17,
+    "pe_ratio": 76.41667,
+    "debt_equity": 15.776,
+    "profit_margin": 0.03472,
+    "sector": "Technology",
+    "dividend_yield": 1.46
+  },
+  {
+    "symbol": "ABI.BR",
+    "name": "AB INBEV",
+    "price": 66.44,
+    "pe_ratio": 16.568579,
+    "debt_equity": 71.88,
+    "profit_margin": 0.14896,
+    "sector": "Consumer Defensive",
+    "dividend_yield": 1.72
+  },
+  {
+    "symbol": "KER.PA",
+    "name": "KERING",
+    "price": 257.45,
+    "pe_ratio": null,
+    "debt_equity": 116.567,
+    "profit_margin": -0.014730001,
+    "sector": "Consumer Cyclical",
+    "dividend_yield": 1.17
+  },
+  {
+    "symbol": "EL.PA",
+    "name": "ESSILORLUXOTTICA",
+    "price": 163.15,
+    "pe_ratio": 30.495327,
+    "debt_equity": 38.359,
+    "profit_margin": 0.085159995,
+    "sector": "Healthcare",
+    "dividend_yield": 2.5
+  },
+  {
+    "symbol": "CS.PA",
+    "name": "AXA",
+    "price": 44.34,
+    "pe_ratio": 11.951483,
+    "debt_equity": 119.437,
+    "profit_margin": 0.10379,
+    "sector": "Financial Services",
+    "dividend_yield": 5.2
+  },
+  {
+    "symbol": "ORA.PA",
+    "name": "ORANGE",
+    "price": 16.115,
+    "pe_ratio": 10.888514,
+    "debt_equity": 161.477,
+    "profit_margin": 0.09983,
+    "sector": "Communication Services",
+    "dividend_yield": 4.63
+  },
+  {
+    "symbol": "ENGI.PA",
+    "name": "ENGIE",
+    "price": 25.74,
+    "pe_ratio": 15.791411,
+    "debt_equity": 143.77,
+    "profit_margin": 0.05989,
+    "sector": "Utilities",
+    "dividend_yield": 5.27
+  },
+  {
+    "symbol": "VIV.PA",
+    "name": "VIVENDI SE",
+    "price": 1.644,
+    "pe_ratio": 82.200005,
+    "debt_equity": 36.82,
+    "profit_margin": 0.06515,
+    "sector": "Communication Services",
+    "dividend_yield": 2.41
+  },
+  {
+    "symbol": "SGO.PA",
+    "name": "SAINT GOBAIN",
+    "price": 80.2,
+    "pe_ratio": 14.879406,
+    "debt_equity": 66.318,
+    "profit_margin": 0.057779998,
+    "sector": "Industrials",
+    "dividend_yield": 2.83
+  },
+  {
+    "symbol": "TTE.PA",
+    "name": "TOTALENERGIES",
+    "price": 78.08,
+    "pe_ratio": 11.315942,
+    "debt_equity": 48.045,
+    "profit_margin": 0.09083,
+    "sector": "Energy",
+    "dividend_yield": 4.74
+  },
+  {
+    "symbol": "CAP.PA",
+    "name": "CAPGEMINI",
+    "price": 108.1,
+    "pe_ratio": 13.735705,
+    "debt_equity": 87.509,
+    "profit_margin": 0.05866,
+    "sector": "Technology",
+    "dividend_yield": 3.2
+  }
+]
