@@ -17,6 +17,10 @@ DATA_FILE = Path(__file__).parent / "data" / "market_data.json"
 # In-memory cache for fast search
 ALL_STOCKS_CACHE = []
 
+# Momentum cache for live yahoo finance data
+MOMENTUM_CACHE = {}
+MOMENTUM_CACHE_TTL = 3600 # 1 hour
+
 def get_all_stocks():
     global ALL_STOCKS_CACHE
     if ALL_STOCKS_CACHE:
