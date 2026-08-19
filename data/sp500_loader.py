@@ -128,3 +128,17 @@ def get_eurostoxx50_tickers() -> list[str]:
         "CS.PA", "ORA.PA", "ENGI.PA", "VIV.PA", "SGO.PA",
         "TTE.PA", "AXA.PA", "EDF.PA", "SG.PA", "CAP.PA"
     ]
+
+def get_russell2000_tickers() -> list[str]:
+    """Returns a curated list of top Russell 2000 (Small/Mid Cap) tickers."""
+    return [
+        "SMCI", "CELH", "RXRX", "MSTR", "ELF", "SOFI", "PLTR", "IONQ", "LCID", 
+        "RIVN", "UPST", "AFRM", "HOOD", "AI", "CVNA", "CHWY", "DKNG", "RBLX", 
+        "PATH", "TOST", "COIN", "U", "SQSP", "DUOL", "MNDY", "GLBE", "FVRR", 
+        "WIX", "PINS", "SNAP", "BYND", "PTON", "ZILL", "OPEN", "RDFN", "PACW", 
+        "WAL", "ZION", "CMA", "KEY", "FHN", "EWBC", "WBS", "BOKF", "CFR",
+        "CROX", "SKX", "YETI", "SHAK", "WING", "TXRH", "PLAY", "CAVA", "SG",
+        "OSCR", "ALGN", "EXAS", "TDOC", "SDGR", "GH", "NTLA", "CRSP", "EDIT",
+        "RUN", "FSLR", "ENPH", "SEDG", "PLUG", "BLDP", "FCEL", "SPWR", "NOVA",
+        "MARA", "RIOT", "CLSK", "HUT", "BITF", "ARGO", "ANY", "MIGI", "WULF"
+    ]

@@ -20,7 +20,7 @@ def get_all_stocks():
     if ALL_STOCKS_CACHE:
         return ALL_STOCKS_CACHE
     all_stocks = []
-    for index_name in ["SP500", "NASDAQ", "TA125", "DJI30", "EUROSTOXX50"]:
+    for index_name in ["SP500", "NASDAQ", "TA125", "DJI30", "EUROSTOXX50", "RUSSELL2000"]:
         all_stocks.extend(load_data_from_file(index_name))
     
     # Deduplicate

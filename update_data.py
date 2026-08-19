@@ -14,7 +14,7 @@ import time
 # Add project root to path
 sys.path.insert(0, str(Path(__file__).parent))
 
-from data.sp500_loader import get_sp500_tickers, get_nasdaq100_tickers, get_ta125_tickers, get_dji30_tickers, get_eurostoxx50_tickers
+from data.sp500_loader import get_sp500_tickers, get_nasdaq100_tickers, get_ta125_tickers, get_dji30_tickers, get_eurostoxx50_tickers, get_russell2000_tickers
 from strategies.value_screener import fetch_fundamentals
 
 DATA_DIR = Path(__file__).parent / "data"
@@ -26,6 +26,7 @@ def main():
         "TA125":       get_ta125_tickers(),
         "DJI30":       get_dji30_tickers(),
         "EUROSTOXX50": get_eurostoxx50_tickers(),
+        "RUSSELL2000": get_russell2000_tickers(),
     }
     
     DATA_DIR.mkdir(exist_ok=True)
