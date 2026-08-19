@@ -1086,7 +1086,7 @@
     "profit_margin": 0.03726,
     "sector": "Industrials",
     "dividend_yield": 1.74,
-    "high_52w": 210.33,
+    "high_52w": 209.73,
     "low_52w": 120.65,
     "target_price": 199.84,
     "recommendation": "BUY"
@@ -4756,8 +4756,8 @@
     "dividend_yield": 4.28,
     "high_52w": 171.48,
     "low_52w": 133.73,
-    "target_price": 158.75,
-    "recommendation": "BUY"
+    "target_price": 155.0,
+    "recommendation": "NONE"
   },
   {
     "symbol": "PFE",
@@ -4770,7 +4770,7 @@
     "dividend_yield": 6.4,
     "high_52w": 28.75,
     "low_52w": 23.58,
-    "target_price": 29.47,
+    "target_price": 28.61,
     "recommendation": "BUY"
   },
   {
@@ -4784,7 +4784,7 @@
     "dividend_yield": 1.14,
     "high_52w": 19.16,
     "low_52w": 14.3,
-    "target_price": 20.34,
+    "target_price": 22.78,
     "recommendation": "BUY"
   },
   {
@@ -4812,7 +4812,7 @@
     "dividend_yield": 2.11,
     "high_52w": 243.6,
     "low_52w": 122.13,
-    "target_price": 255.46,
+    "target_price": 219.84,
     "recommendation": "BUY"
   },
   {
@@ -4826,8 +4826,8 @@
     "dividend_yield": 3.63,
     "high_52w": 111.16,
     "low_52w": 85.32,
-    "target_price": 114.23,
-    "recommendation": "BUY"
+    "target_price": 106.08,
+    "recommendation": "HOLD"
   },
   {
     "symbol": "PNC",
@@ -4840,7 +4840,7 @@
     "dividend_yield": 3.14,
     "high_52w": 258.96,
     "low_52w": 176.88,
-    "target_price": 318.65,
+    "target_price": 277.73,
     "recommendation": "BUY"
   },
   {
@@ -4854,7 +4854,7 @@
     "dividend_yield": 2.61,
     "high_52w": 133.43,
     "low_52w": 93.39,
-    "target_price": 125.97,
+    "target_price": 126.2,
     "recommendation": "BUY"
   },
   {
@@ -4868,7 +4868,7 @@
     "dividend_yield": 3.17,
     "high_52w": 40.11,
     "low_52w": 33.17,
-    "target_price": 41.38,
+    "target_price": 41.36,
     "recommendation": "BUY"
   },
   {
@@ -4882,8 +4882,8 @@
     "dividend_yield": 2.97,
     "high_52w": 116.61,
     "low_52w": 77.34,
-    "target_price": 127.05,
-    "recommendation": "BUY"
+    "target_price": 109.58,
+    "recommendation": "HOLD"
   },
   {
     "symbol": "PG",
@@ -4896,7 +4896,7 @@
     "dividend_yield": 3.04,
     "high_52w": 167.25,
     "low_52w": 137.62,
-    "target_price": 175.41,
+    "target_price": 160.57,
     "recommendation": "BUY"
   },
   {
@@ -4910,8 +4910,8 @@
     "dividend_yield": 0.2,
     "high_52w": 254.93,
     "low_52w": 189.2,
-    "target_price": 238.74,
-    "recommendation": "BUY"
+    "target_price": 229.78,
+    "recommendation": "HOLD"
   },
   {
     "symbol": "PLD",
@@ -4924,7 +4924,7 @@
     "dividend_yield": 3.04,
     "high_52w": 153.35,
     "low_52w": 107.84,
-    "target_price": 175.28,
+    "target_price": 158.31,
     "recommendation": "BUY"
   },
   {
@@ -4938,8 +4938,8 @@
     "dividend_yield": 4.5,
     "high_52w": 127.72,
     "low_52w": 91.89,
-    "target_price": 134.22,
-    "recommendation": "BUY"
+    "target_price": 110.07,
+    "recommendation": "HOLD"
   },
   {
     "symbol": "PEG",
@@ -4952,7 +4952,7 @@
     "dividend_yield": 3.54,
     "high_52w": 87.63,
     "low_52w": 74.2,
-    "target_price": 90.25,
+    "target_price": 85.81,
     "recommendation": "BUY"
   },
   {
@@ -4966,7 +4966,7 @@
     "dividend_yield": 0.0,
     "high_52w": 217.64,
     "low_52w": 108.5,
-    "target_price": 185.84,
+    "target_price": 173.35,
     "recommendation": "BUY"
   },
   {
@@ -4980,8 +4980,8 @@
     "dividend_yield": 3.7,
     "high_52w": 335.55,
     "low_52w": 256.54,
-    "target_price": 408.36,
-    "recommendation": "BUY"
+    "target_price": 337.06,
+    "recommendation": "HOLD"
   },
   {
     "symbol": "PHM",
@@ -4994,7 +4994,7 @@
     "dividend_yield": 0.81,
     "high_52w": 144.5,
     "low_52w": 108.49,
-    "target_price": 144.97,
+    "target_price": 140.62,
     "recommendation": "BUY"
   },
   {
@@ -5008,8 +5008,8 @@
     "dividend_yield": 0.06,
     "high_52w": 788.75,
     "low_52w": 363.01,
-    "target_price": 727.32,
-    "recommendation": "BUY"
+    "target_price": 770.04,
+    "recommendation": "STRONG BUY"
   },
   {
     "symbol": "QCOM",
@@ -5020,8 +5020,10 @@
     "profit_margin": 0.21013,
     "sector": "Technology",
     "dividend_yield": 2.27,
-    "target_price": 183.61,
-    "recommendation": "BUY"
+    "target_price": 193.1,
+    "recommendation": "HOLD",
+    "high_52w": 259.92,
+    "low_52w": 121.99
   },
   {
     "symbol": "DGX",
@@ -5032,8 +5034,10 @@
     "profit_margin": 0.09187,
     "sector": "Healthcare",
     "dividend_yield": 1.46,
-    "target_price": 272.53,
-    "recommendation": "BUY"
+    "target_price": 245.87,
+    "recommendation": "NONE",
+    "high_52w": 240.13,
+    "low_52w": 171.18
   },
   {
     "symbol": "Q",
@@ -5044,8 +5048,10 @@
     "profit_margin": 0.11248,
     "sector": "Technology",
     "dividend_yield": 0.23,
-    "target_price": 152.44,
-    "recommendation": "BUY"
+    "target_price": 176.75,
+    "recommendation": "STRONG BUY",
+    "high_52w": 177.28,
+    "low_52w": 70.5
   },
   {
     "symbol": "RL",
@@ -5056,8 +5062,10 @@
     "profit_margin": 0.117639996,
     "sector": "Consumer Cyclical",
     "dividend_yield": 0.99,
-    "target_price": 435.19,
-    "recommendation": "BUY"
+    "target_price": 446.71,
+    "recommendation": "BUY",
+    "high_52w": 421.6,
+    "low_52w": 283.5
   },
   {
     "symbol": "RJF",
@@ -5068,8 +5076,10 @@
     "profit_margin": 0.15131,
     "sector": "Financial Services",
     "dividend_yield": 1.2,
-    "target_price": 207.35,
-    "recommendation": "BUY"
+    "target_price": 185.92,
+    "recommendation": "NONE",
+    "high_52w": 182.73,
+    "low_52w": 138.82
   },
   {
     "symbol": "RTX",
@@ -5080,8 +5090,10 @@
     "profit_margin": 0.08276,
     "sector": "Industrials",
     "dividend_yield": 1.32,
-    "target_price": 258.14,
-    "recommendation": "BUY"
+    "target_price": 246.76,
+    "recommendation": "BUY",
+    "high_52w": 226.88,
+    "low_52w": 150.61
   },
   {
     "symbol": "O",
@@ -5092,8 +5104,10 @@
     "profit_margin": 0.20898001,
     "sector": "Real Estate",
     "dividend_yield": 5.21,
-    "target_price": 71.69,
-    "recommendation": "BUY"
+    "target_price": 68.21,
+    "recommendation": "BUY",
+    "high_52w": 67.94,
+    "low_52w": 55.86
   },
   {
     "symbol": "REG",
@@ -5104,8 +5118,10 @@
     "profit_margin": 0.32996,
     "sector": "Real Estate",
     "dividend_yield": 3.95,
-    "target_price": 87.62,
-    "recommendation": "BUY"
+    "target_price": 86.72,
+    "recommendation": "BUY",
+    "high_52w": 83.66,
+    "low_52w": 66.86
   },
   {
     "symbol": "REGN",
@@ -5116,8 +5132,10 @@
     "profit_margin": 0.27865,
     "sector": "Healthcare",
     "dividend_yield": 0.47,
-    "target_price": 938.8,
-    "recommendation": "BUY"
+    "target_price": 1020.44,
+    "recommendation": "BUY",
+    "high_52w": 821.11,
+    "low_52w": 541.0
   },
   {
     "symbol": "RF",
@@ -5128,8 +5146,10 @@
     "profit_margin": 0.30837,
     "sector": "Financial Services",
     "dividend_yield": 3.45,
-    "target_price": 36.48,
-    "recommendation": "BUY"
+    "target_price": 32.93,
+    "recommendation": "HOLD",
+    "high_52w": 32.47,
+    "low_52w": 22.7
   },
   {
     "symbol": "RSG",
@@ -5140,8 +5160,10 @@
     "profit_margin": 0.12942,
     "sector": "Industrials",
     "dividend_yield": 1.25,
-    "target_price": 250.58,
-    "recommendation": "BUY"
+    "target_price": 245.92,
+    "recommendation": "BUY",
+    "high_52w": 238.62,
+    "low_52w": 196.41
   },
   {
     "symbol": "RMD",
@@ -5152,8 +5174,10 @@
     "profit_margin": 0.26945,
     "sector": "Healthcare",
     "dividend_yield": 1.2,
-    "target_price": 254.25,
-    "recommendation": "BUY"
+    "target_price": 247.2,
+    "recommendation": "BUY",
+    "high_52w": 293.81,
+    "low_52w": 180.27
   },
   {
     "symbol": "RVTY",
@@ -5164,8 +5188,10 @@
     "profit_margin": 0.08158,
     "sector": "Healthcare",
     "dividend_yield": 0.24,
-    "target_price": 131.78,
-    "recommendation": "BUY"
+    "target_price": 121.07,
+    "recommendation": "BUY",
+    "high_52w": 118.34,
+    "low_52w": 81.22
   },
   {
     "symbol": "HOOD",
@@ -5176,8 +5202,10 @@
     "profit_margin": 0.42011002,
     "sector": "Financial Services",
     "dividend_yield": 0.0,
-    "target_price": 106.74,
-    "recommendation": "BUY"
+    "target_price": 116.02,
+    "recommendation": "BUY",
+    "high_52w": 153.86,
+    "low_52w": 63.51
   },
   {
     "symbol": "ROK",
@@ -5188,8 +5216,10 @@
     "profit_margin": 0.13385001,
     "sector": "Industrials",
     "dividend_yield": 1.24,
-    "target_price": 499.87,
-    "recommendation": "BUY"
+    "target_price": 504.49,
+    "recommendation": "BUY",
+    "high_52w": 497.36,
+    "low_52w": 332.71
   },
   {
     "symbol": "ROL",
@@ -5200,8 +5230,10 @@
     "profit_margin": 0.1355,
     "sector": "Consumer Cyclical",
     "dividend_yield": 2.03,
-    "target_price": 42.01,
-    "recommendation": "BUY"
+    "target_price": 42.47,
+    "recommendation": "BUY",
+    "high_52w": 66.14,
+    "low_52w": 35.83
   },
   {
     "symbol": "ROP",
@@ -5212,8 +5244,10 @@
     "profit_margin": 0.30244,
     "sector": "Technology",
     "dividend_yield": 0.93,
-    "target_price": 458.96,
-    "recommendation": "BUY"
+    "target_price": 498.87,
+    "recommendation": "BUY",
+    "high_52w": 544.94,
+    "low_52w": 305.96
   },
   {
     "symbol": "ROST",
@@ -5224,8 +5258,10 @@
     "profit_margin": 0.097399995,
     "sector": "Consumer Cyclical",
     "dividend_yield": 0.76,
-    "target_price": 273.46,
-    "recommendation": "BUY"
+    "target_price": 265.58,
+    "recommendation": "BUY",
+    "high_52w": 257.0,
+    "low_52w": 143.39
   },
   {
     "symbol": "RCL",
@@ -5236,8 +5272,10 @@
     "profit_margin": 0.23541,
     "sector": "Consumer Cyclical",
     "dividend_yield": 1.66,
-    "target_price": 345.09,
-    "recommendation": "BUY"
+    "target_price": 375.1,
+    "recommendation": "BUY",
+    "high_52w": 366.5,
+    "low_52w": 232.1
   },
   {
     "symbol": "SPGI",
@@ -5248,8 +5286,10 @@
     "profit_margin": 0.30536,
     "sector": "Financial Services",
     "dividend_yield": 0.95,
-    "target_price": 484.77,
-    "recommendation": "BUY"
+    "target_price": 526.93,
+    "recommendation": "BUY",
+    "high_52w": 529.42,
+    "low_52w": 361.03
   },
   {
     "symbol": "CRM",
@@ -5260,8 +5300,10 @@
     "profit_margin": 0.18733,
     "sector": "Technology",
     "dividend_yield": 0.92,
-    "target_price": 227.9,
-    "recommendation": "BUY"
+    "target_price": 242.72,
+    "recommendation": "BUY",
+    "high_52w": 269.11,
+    "low_52w": 146.32
   },
   {
     "symbol": "SNDK",
@@ -5272,8 +5314,10 @@
     "profit_margin": 0.56465,
     "sector": "Technology",
     "dividend_yield": 0.0,
-    "target_price": 1843.14,
-    "recommendation": "BUY"
+    "target_price": 2003.41,
+    "recommendation": "BUY",
+    "high_52w": 2354.39,
+    "low_52w": 43.2
   },
   {
     "symbol": "SBAC",
@@ -5284,8 +5328,10 @@
     "profit_margin": 0.34512,
     "sector": "Real Estate",
     "dividend_yield": 2.75,
-    "target_price": 210.51,
-    "recommendation": "BUY"
+    "target_price": 228.81,
+    "recommendation": "BUY",
+    "high_52w": 225.33,
+    "low_52w": 162.41
   },
   {
     "symbol": "SLB",
@@ -5296,8 +5342,10 @@
     "profit_margin": 0.08527,
     "sector": "Energy",
     "dividend_yield": 2.19,
-    "target_price": 61.35,
-    "recommendation": "BUY"
+    "target_price": 58.81,
+    "recommendation": "BUY",
+    "high_52w": 58.82,
+    "low_52w": 31.64
   },
   {
     "symbol": "STX",
@@ -5308,8 +5356,10 @@
     "profit_margin": 0.26108998,
     "sector": "Technology",
     "dividend_yield": 0.3,
-    "target_price": 1040.15,
-    "recommendation": "BUY"
+    "target_price": 1130.6,
+    "recommendation": "BUY",
+    "high_52w": 1145.0,
+    "low_52w": 152.5
   },
   {
     "symbol": "SRE",
@@ -5320,8 +5370,10 @@
     "profit_margin": 0.16824,
     "sector": "Utilities",
     "dividend_yield": 3.06,
-    "target_price": 100.07,
-    "recommendation": "BUY"
+    "target_price": 104.59,
+    "recommendation": "BUY",
+    "high_52w": 101.04,
+    "low_52w": 78.97
   },
   {
     "symbol": "NOW",
@@ -5332,8 +5384,10 @@
     "profit_margin": 0.11336,
     "sector": "Technology",
     "dividend_yield": 0.0,
-    "target_price": 139.16,
-    "recommendation": "BUY"
+    "target_price": 137.47,
+    "recommendation": "BUY",
+    "high_52w": 194.73,
+    "low_52w": 81.24
   },
   {
     "symbol": "SHW",
@@ -5344,8 +5398,10 @@
     "profit_margin": 0.11013,
     "sector": "Basic Materials",
     "dividend_yield": 0.91,
-    "target_price": 400.07,
-    "recommendation": "BUY"
+    "target_price": 393.86,
+    "recommendation": "BUY",
+    "high_52w": 379.65,
+    "low_52w": 289.86
   },
   {
     "symbol": "SPG",
@@ -5356,8 +5412,10 @@
     "profit_margin": 0.66571,
     "sector": "Real Estate",
     "dividend_yield": 4.01,
-    "target_price": 254.62,
-    "recommendation": "BUY"
+    "target_price": 276.76,
+    "recommendation": "BUY",
+    "high_52w": 238.5,
+    "low_52w": 172.19
   },
   {
     "symbol": "SWKS",

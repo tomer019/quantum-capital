@@ -429,6 +429,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 resultsBody.innerHTML = '<tr><td colspan="8"><div class="empty-state"><div class="empty-state-icon">🔍</div><p>לחץ "הרץ סריקת רובוט" כדי להתחיל</p></div></td></tr>';
             }
         }
+        
+        renderAllocationSummary();
     };
 
     if (btnModeValue)     btnModeValue.addEventListener('click',     () => applyMode('value'));
@@ -473,7 +475,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: JSON.stringify({
                     capital: parseFloat(momentumCapitalInput?.value || 10000),
                     top_n: parseInt(momentumTopN?.value || 10),
-                    index_name: indexSel?.value || 'SP500'
+                    index_name: indexSel?.value || 'SP500',
+                    min_price: parseFloat(document.getElementById('momentum-min-price')?.value || 0.0),
+                    max_price: parseFloat(document.getElementById('momentum-max-price')?.value || 1000000.0)
                 })
             });
             const data = await res.json();
@@ -619,7 +623,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 max_pe: parseFloat(peSlider.value),
                 min_margin: 0.05,
                 min_dividend: dividendSlider ? parseFloat(dividendSlider.value) : 0.0,
-                index_name: indexSelect.value
+                index_name: indexSelect.value,
+                min_price: parseFloat(document.getElementById('min-price-value')?.value || 0.0),
+                max_price: parseFloat(document.getElementById('max-price-value')?.value || 1000000.0)
             };
 
             const response = await fetch('/api/screen', {
@@ -744,7 +750,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const statsDiv = document.getElementById('alloc-stats');
         if (!panel || !grid) return;
 
-        const capital = parseFloat(capitalSlider.value) || 0;
+        let capital = 0;
+        if (currentMode === 'momentum' && momentumCapitalSlider) {
+            capital = parseFloat(momentumCapitalSlider.value) || 0;
+        } else if (capitalSlider) {
+            capital = parseFloat(capitalSlider.value) || 0;
+        }
         if (!currentResults || currentResults.length === 0 || capital <= 0) {
             panel.style.display = 'none';
             return;

@@ -52,6 +52,8 @@ class ScreenerRequest(BaseModel):
     min_margin: float = 0.05
     min_dividend: float = 0.0
     index_name: str = "SP500"
+    min_price: float = 0.0
+    max_price: float = 1000000.0
 
 class PortfolioRequest(BaseModel):
     symbols: list[str]
@@ -76,6 +78,11 @@ def screen_portfolio(req: ScreenerRequest):
             continue
             
         if margin < req.min_margin:
+            continue
+            
+        # Price check
+        price = stock.get("price") or 0.0
+        if price < req.min_price or price > req.max_price:
             continue
             
         # Dividend check
@@ -205,14 +212,19 @@ class MomentumRequest(BaseModel):
     capital: float = 10000.0
     top_n: int = 10
     index_name: str = "SP500"
+    min_price: float = 0.0
+    max_price: float = 1000000.0
 
 @app.post("/api/screen_momentum")
 def screen_momentum(req: MomentumRequest):
     data = load_momentum_from_file(req.index_name)
     if data:
+        # Filter by price
+        filtered_data = [s for s in data if s.get("price", 0) >= req.min_price and s.get("price", 0) <= req.max_price]
+        
         # Sort by highest momentum score
-        data.sort(key=lambda x: x.get("score", 0), reverse=True)
-        top_stocks = data[:req.top_n]
+        filtered_data.sort(key=lambda x: x.get("score", 0), reverse=True)
+        top_stocks = filtered_data[:req.top_n]
         
         allocation_per_stock = req.capital / len(top_stocks) if top_stocks else 0
         total_allocated = 0.0
