@@ -469,7 +469,8 @@ document.addEventListener('DOMContentLoaded', () => {
             renderMomentumTable();
         } catch (err) {
             console.error('Momentum scan error:', err);
-            resultsBody.innerHTML = '<tr><td colspan="11" style="text-align:center; color:red;">שגיאה בסריקה. האם השרת פועל?</td></tr>';
+            resultsBody.innerHTML = '<tr><td colspan="11"><div class="empty-state"><div class="empty-state-icon">⏳</div><p>השרת בענן מתעורר או שואב נתונים היסטוריים...<br><button onclick="runMomentumScan()" class="btn-primary" style="margin-top:10px; padding:6px 14px; width:auto; font-size:13px; background:#F59E0B; color:#000;">נסה שוב 🔄</button></p></div></td></tr>';
+            showToast('השרת שואב נתונים היסטוריים, נסה שוב בעוד מספר שניות', 'info');
         } finally {
             btnM.textContent = '⚡ סרוק מומנטום';
             btnM.disabled = false;
@@ -627,7 +628,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         } catch (error) {
             console.error('Error:', error);
-            resultsBody.innerHTML = '<tr><td colspan="6" style="text-align: center; color: red;">שגיאה בתקשורת עם השרת. האם הנתונים נטענו?</td></tr>';
+            resultsBody.innerHTML = '<tr><td colspan="8"><div class="empty-state"><div class="empty-state-icon">⏳</div><p>השרת בענן מתעורר משינה (Cold Start) או שחלה השהיה קלה ברשת.<br><button onclick="runScan()" class="btn-primary" style="margin-top:10px; padding:6px 14px; width:auto; font-size:13px; background:var(--accent-blue); color:#000;">נסה שוב 🔄</button></p></div></td></tr>';
+            showToast('השרת בענן מתעורר (Cold Start), נסה שוב בעוד מספר שניות', 'info');
         } finally {
             btnScan.textContent = 'הרץ סריקת רובוט 🚀';
             btnScan.disabled = false;
