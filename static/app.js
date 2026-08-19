@@ -704,21 +704,45 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
             let csvContent = "data:text/csv;charset=utf-8,\uFEFF"; // BOM for Hebrew
-            csvContent += "Symbol,Name,Sector,Price,P/E,Profit Margin,Dividend Yield\n";
             
-            currentResults.forEach(s => {
-                const margin = (s.profit_margin * 100).toFixed(2) + '%';
-                const div = s.dividend_yield ? (s.dividend_yield).toFixed(2) + '%' : '0.00%';
-                csvContent += `${s.symbol},"${s.name}",${s.sector},${s.price},${s.pe_ratio.toFixed(2)},${margin},${div}\n`;
-            });
+            if (currentMode === 'momentum') {
+                csvContent += "Symbol,Name,Sector,Price,Monthly Return %,Weekly Return %,Volume Pulse,RSI,Trend,Signal,Score\n";
+                currentResults.forEach(s => {
+                    const sym = s.symbol || '';
+                    const name = (s.name || '').replace(/"/g, '""');
+                    const sector = s.sector || '-';
+                    const price = s.price || 0;
+                    const mRet = s.monthly_return !== undefined ? s.monthly_return : '';
+                    const wRet = s.weekly_return !== undefined ? s.weekly_return : '';
+                    const vol = s.volume_pulse || '';
+                    const rsi = s.rsi || '';
+                    const trend = s.above_ma ? 'Above MA50' : 'Below MA50';
+                    const sig = s.signal || '';
+                    const score = s.score !== undefined ? s.score : '';
+                    csvContent += `${sym},"${name}",${sector},${price},${mRet},${wRet},${vol},${rsi},${trend},${sig},${score}\n`;
+                });
+            } else {
+                csvContent += "Symbol,Name,Sector,Price,P/E,Profit Margin,Dividend Yield\n";
+                currentResults.forEach(s => {
+                    const sym = s.symbol || '';
+                    const name = (s.name || '').replace(/"/g, '""');
+                    const sector = s.sector || '-';
+                    const price = s.price || 0;
+                    const pe = s.pe_ratio !== undefined ? s.pe_ratio.toFixed(2) : '-';
+                    const margin = s.profit_margin !== undefined ? (s.profit_margin * 100).toFixed(2) + '%' : '-';
+                    const div = s.dividend_yield !== undefined ? (s.dividend_yield).toFixed(2) + '%' : '0.00%';
+                    csvContent += `${sym},"${name}",${sector},${price},${pe},${margin},${div}\n`;
+                });
+            }
             
             const encodedUri = encodeURI(csvContent);
             const link = document.createElement("a");
             link.setAttribute("href", encodedUri);
-            link.setAttribute("download", "quantum_screener_results.csv");
+            link.setAttribute("download", `quantum_${currentMode}_results.csv`);
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
+            showToast('הקובץ יוצא בהצלחה לאקסל! 📥', 'success');
         });
     }
 
@@ -732,9 +756,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentSort.asc = !currentSort.asc;
             } else {
                 currentSort.column = column;
-                currentSort.asc = true;
+                // High-first default for scores, returns, dividends, margins
+                if (column === 'score' || column === 'monthly_return' || column === 'weekly_return' || column === 'volume_pulse' || column === 'profit_margin' || column === 'dividend_yield') {
+                    currentSort.asc = false;
+                } else {
+                    currentSort.asc = true;
+                }
             }
-            if (currentMode === 'momentum') renderMomentumTable(currentResults);
+            if (currentMode === 'momentum') renderMomentumTable();
             else renderTable();
         });
     }

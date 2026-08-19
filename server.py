@@ -408,11 +408,19 @@ def get_stock_details(symbol: str):
                 if not math.isnan(row['SMA200']):
                     sma200_data.append({"time": date_str, "value": round(float(row['SMA200']), 2)})
 
-        # Fundamental and Profile data
+        # Fundamental and Profile data with multi-tier fallback
         try:
             info = ticker.info or {}
         except Exception:
             info = {}
+
+        try:
+            finfo = dict(ticker.fast_info) if hasattr(ticker, 'fast_info') else {}
+        except Exception:
+            finfo = {}
+
+        all_local = get_all_stocks()
+        local_s = next((s for s in all_local if s.get("symbol") == sym), {})
 
         def fmt_cap(val):
             if not val or math.isnan(val): return "-"
@@ -421,12 +429,20 @@ def get_stock_details(symbol: str):
             if val >= 1e6: return f"${val/1e6:.2f}M"
             return f"${val:,.0f}"
 
-        cur_price = float(hist['Close'].iloc[-1]) if not hist.empty else float(info.get('currentPrice', 0))
-        prev_close = float(hist['Close'].iloc[-2]) if len(hist) >= 2 else cur_price
+        cur_price = float(hist['Close'].iloc[-1]) if not hist.empty else float(info.get('currentPrice') or finfo.get('lastPrice') or local_s.get('price', 0))
+        prev_close = float(hist['Close'].iloc[-2]) if len(hist) >= 2 else (float(finfo.get('previousClose', 0)) or cur_price)
         change_pct = round(((cur_price / prev_close) - 1) * 100, 2) if prev_close else 0.0
 
         target_price = float(info.get('targetMeanPrice') or 0)
         upside_pct = round(((target_price / cur_price) - 1) * 100, 1) if (target_price and cur_price) else None
+
+        # Resolve stats with fallback
+        raw_mcap = info.get("marketCap") or finfo.get("marketCap") or finfo.get("market_cap")
+        raw_pe = info.get("trailingPE") or local_s.get("pe_ratio")
+        raw_forward_pe = info.get("forwardPE")
+        raw_margin = info.get("profitMargins") or local_s.get("profit_margin")
+        raw_52high = info.get("fiftyTwoWeekHigh") or finfo.get("yearHigh")
+        raw_52low = info.get("fiftyTwoWeekLow") or finfo.get("yearLow")
 
         # Dividend yield formatting
         dr = info.get('dividendRate')
@@ -434,26 +450,28 @@ def get_stock_details(symbol: str):
             div_str = f"{(float(dr) / cur_price) * 100:.2f}%"
         elif info.get('dividendYield') is not None and not math.isnan(info.get('dividendYield')):
             div_str = f"{float(info.get('dividendYield')):.2f}%"
+        elif local_s.get('dividend_yield'):
+            div_str = f"{float(local_s.get('dividend_yield')):.2f}%"
         else:
             div_str = "0.00%"
 
         fundamentals = {
-            "name": info.get("longName") or info.get("shortName") or sym,
-            "sector": info.get("sector", "-"),
-            "industry": info.get("industry", "-"),
+            "name": info.get("longName") or info.get("shortName") or local_s.get("name") or sym,
+            "sector": info.get("sector") or local_s.get("sector") or "-",
+            "industry": info.get("industry") or "-",
             "price": round(cur_price, 2),
             "change_pct": change_pct,
-            "market_cap": fmt_cap(info.get("marketCap")),
-            "pe_ratio": round(float(info.get("trailingPE")), 2) if info.get("trailingPE") else "-",
-            "forward_pe": round(float(info.get("forwardPE")), 2) if info.get("forwardPE") else "-",
-            "profit_margin": f"{float(info.get('profitMargins'))*100:.1f}%" if info.get("profitMargins") else "-",
+            "market_cap": fmt_cap(raw_mcap),
+            "pe_ratio": round(float(raw_pe), 2) if raw_pe and not math.isnan(float(raw_pe)) else "-",
+            "forward_pe": round(float(raw_forward_pe), 2) if raw_forward_pe and not math.isnan(float(raw_forward_pe)) else "-",
+            "profit_margin": f"{float(raw_margin)*100:.1f}%" if raw_margin and not math.isnan(float(raw_margin)) else "-",
             "dividend_yield": div_str,
-            "high_52w": round(float(info.get("fiftyTwoWeekHigh")), 2) if info.get("fiftyTwoWeekHigh") else "-",
-            "low_52w": round(float(info.get("fiftyTwoWeekLow")), 2) if info.get("fiftyTwoWeekLow") else "-",
+            "high_52w": round(float(raw_52high), 2) if raw_52high and not math.isnan(float(raw_52high)) else "-",
+            "low_52w": round(float(raw_52low), 2) if raw_52low and not math.isnan(float(raw_52low)) else "-",
             "target_price": round(target_price, 2) if target_price else "-",
             "upside_pct": upside_pct,
             "recommendation": (info.get("recommendationKey") or "N/A").replace("_", " ").upper(),
-            "debt_to_equity": round(float(info.get("debtToEquity")), 1) if info.get("debtToEquity") else "-"
+            "debt_to_equity": round(float(info.get("debtToEquity")), 1) if info.get("debtToEquity") else (local_s.get("debt_equity") or "-")
         }
 
         # News Extraction
