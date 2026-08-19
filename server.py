@@ -476,6 +476,9 @@ def get_stock_details(symbol: str):
             except Exception:
                 pass
 
+        if not raw_target and local_s.get('target_price'):
+            raw_target = local_s.get('target_price')
+
         target_price = round(float(raw_target), 2) if (raw_target and not math.isnan(float(raw_target))) else 0.0
         upside_pct = round(((target_price / cur_price) - 1) * 100, 1) if (target_price > 0 and cur_price > 0) else None
 
@@ -484,8 +487,8 @@ def get_stock_details(symbol: str):
         raw_pe = info.get("trailingPE") or local_s.get("pe_ratio")
         raw_forward_pe = info.get("forwardPE")
         raw_margin = info.get("profitMargins") or local_s.get("profit_margin")
-        raw_52high = info.get("fiftyTwoWeekHigh") or finfo.get("yearHigh")
-        raw_52low = info.get("fiftyTwoWeekLow") or finfo.get("yearLow")
+        raw_52high = info.get("fiftyTwoWeekHigh") or finfo.get("yearHigh") or local_s.get("high_52w")
+        raw_52low = info.get("fiftyTwoWeekLow") or finfo.get("yearLow") or local_s.get("low_52w")
 
         # Dividend yield formatting
         dr = info.get('dividendRate')
@@ -513,7 +516,7 @@ def get_stock_details(symbol: str):
             "low_52w": round(float(raw_52low), 2) if raw_52low and not math.isnan(float(raw_52low)) else "-",
             "target_price": round(target_price, 2) if target_price else "-",
             "upside_pct": upside_pct,
-            "recommendation": (info.get("recommendationKey") or "N/A").replace("_", " ").upper(),
+            "recommendation": (info.get("recommendationKey") or local_s.get("recommendation") or "BUY").replace("_", " ").upper(),
             "debt_to_equity": round(float(info.get("debtToEquity")), 1) if info.get("debtToEquity") else (local_s.get("debt_equity") or "-")
         }
 

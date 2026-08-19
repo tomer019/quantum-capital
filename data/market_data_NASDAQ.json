@@ -7,7 +7,9 @@
     "debt_equity": 78.445,
     "profit_margin": 0.27618998,
     "sector": "Technology",
-    "dividend_yield": 0.35
+    "dividend_yield": 0.35,
+    "target_price": 356.65,
+    "recommendation": "BUY"
   },
   {
     "symbol": "MSFT",
@@ -17,7 +19,9 @@
     "debt_equity": 29.118,
     "profit_margin": 0.40305,
     "sector": "Technology",
-    "dividend_yield": 0.76
+    "dividend_yield": 0.76,
+    "target_price": 555.01,
+    "recommendation": "BUY"
   },
   {
     "symbol": "AMZN",
@@ -27,7 +31,9 @@
     "debt_equity": 45.617,
     "profit_margin": 0.1744,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 299.4,
+    "recommendation": "BUY"
   },
   {
     "symbol": "NVDA",
@@ -37,7 +43,9 @@
     "debt_equity": 6.555,
     "profit_margin": 0.62966,
     "sector": "Technology",
-    "dividend_yield": 0.44
+    "dividend_yield": 0.44,
+    "target_price": 252.83,
+    "recommendation": "BUY"
   },
   {
     "symbol": "META",
@@ -47,7 +55,9 @@
     "debt_equity": 42.997,
     "profit_margin": 0.29834998,
     "sector": "Communication Services",
-    "dividend_yield": 0.37
+    "dividend_yield": 0.37,
+    "target_price": 626.57,
+    "recommendation": "BUY"
   },
   {
     "symbol": "AVGO",
@@ -57,7 +67,9 @@
     "debt_equity": 74.018,
     "profit_margin": 0.38848,
     "sector": "Technology",
-    "dividend_yield": 0.66
+    "dividend_yield": 0.66,
+    "target_price": 435.92,
+    "recommendation": "BUY"
   },
   {
     "symbol": "GOOGL",
@@ -67,7 +79,9 @@
     "debt_equity": 18.859,
     "profit_margin": 0.54771,
     "sector": "Communication Services",
-    "dividend_yield": 0.26
+    "dividend_yield": 0.26,
+    "target_price": 394.36,
+    "recommendation": "BUY"
   },
   {
     "symbol": "GOOG",
@@ -77,7 +91,9 @@
     "debt_equity": 18.859,
     "profit_margin": 0.54771,
     "sector": "Communication Services",
-    "dividend_yield": 0.26
+    "dividend_yield": 0.26,
+    "target_price": 391.57,
+    "recommendation": "BUY"
   },
   {
     "symbol": "TSLA",
@@ -87,7 +103,9 @@
     "debt_equity": 18.373,
     "profit_margin": 0.03671,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 386.28,
+    "recommendation": "BUY"
   },
   {
     "symbol": "COST",
@@ -97,7 +115,9 @@
     "debt_equity": 60.257,
     "profit_margin": 0.0301,
     "sector": "Consumer Defensive",
-    "dividend_yield": 0.62
+    "dividend_yield": 0.62,
+    "target_price": 1110.28,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ADBE",
@@ -107,7 +127,9 @@
     "debt_equity": 61.443,
     "profit_margin": 0.28689,
     "sector": "Technology",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 305.43,
+    "recommendation": "BUY"
   },
   {
     "symbol": "AMD",
@@ -117,7 +139,9 @@
     "debt_equity": 6.361,
     "profit_margin": 0.15577,
     "sector": "Technology",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 551.93,
+    "recommendation": "BUY"
   },
   {
     "symbol": "PEP",
@@ -127,7 +151,9 @@
     "debt_equity": 238.949,
     "profit_margin": 0.10785,
     "sector": "Consumer Defensive",
-    "dividend_yield": 4.28
+    "dividend_yield": 4.28,
+    "target_price": 161.57,
+    "recommendation": "BUY"
   },
   {
     "symbol": "CSCO",
@@ -137,7 +163,9 @@
     "debt_equity": 58.731,
     "profit_margin": 0.20951,
     "sector": "Technology",
-    "dividend_yield": 1.49
+    "dividend_yield": 1.49,
+    "target_price": 128.62,
+    "recommendation": "BUY"
   },
   {
     "symbol": "TMUS",
@@ -147,7 +175,9 @@
     "debt_equity": 214.035,
     "profit_margin": 0.11455,
     "sector": "Communication Services",
-    "dividend_yield": 2.27
+    "dividend_yield": 2.27,
+    "target_price": 210.66,
+    "recommendation": "BUY"
   },
   {
     "symbol": "CMCSA",
@@ -157,7 +187,9 @@
     "debt_equity": 100.474,
     "profit_margin": 0.08966,
     "sector": "Communication Services",
-    "dividend_yield": 5.16
+    "dividend_yield": 5.16,
+    "target_price": 30.08,
+    "recommendation": "BUY"
   },
   {
     "symbol": "TXN",
@@ -167,7 +199,9 @@
     "debt_equity": 78.036,
     "profit_margin": 0.31111,
     "sector": "Technology",
-    "dividend_yield": 2.01
+    "dividend_yield": 2.01,
+    "target_price": 311.36,
+    "recommendation": "BUY"
   },
   {
     "symbol": "QCOM",
@@ -177,7 +211,9 @@
     "debt_equity": 55.21,
     "profit_margin": 0.21013,
     "sector": "Technology",
-    "dividend_yield": 2.27
+    "dividend_yield": 2.27,
+    "target_price": 183.91,
+    "recommendation": "BUY"
   },
   {
     "symbol": "AMGN",
@@ -187,7 +223,9 @@
     "debt_equity": 490.281,
     "profit_margin": 0.22951001,
     "sector": "Healthcare",
-    "dividend_yield": 2.4
+    "dividend_yield": 2.4,
+    "target_price": 490.16,
+    "recommendation": "BUY"
   },
   {
     "symbol": "INTU",
@@ -197,7 +235,9 @@
     "debt_equity": 33.448,
     "profit_margin": 0.21907,
     "sector": "Technology",
-    "dividend_yield": 1.43
+    "dividend_yield": 1.43,
+    "target_price": 407.42,
+    "recommendation": "BUY"
   },
   {
     "symbol": "HON",
@@ -207,7 +247,9 @@
     "debt_equity": 185.369,
     "profit_margin": 0.21581,
     "sector": "Industrials",
-    "dividend_yield": 1.22
+    "dividend_yield": 1.22,
+    "target_price": 262.11,
+    "recommendation": "BUY"
   },
   {
     "symbol": "AMAT",
@@ -217,7 +259,9 @@
     "debt_equity": 25.537,
     "profit_margin": 0.30052,
     "sector": "Technology",
-    "dividend_yield": 0.4
+    "dividend_yield": 0.4,
+    "target_price": 583.64,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ISRG",
@@ -227,7 +271,9 @@
     "debt_equity": null,
     "profit_margin": 0.28445998,
     "sector": "Healthcare",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 456.1,
+    "recommendation": "BUY"
   },
   {
     "symbol": "SBUX",
@@ -237,7 +283,9 @@
     "debt_equity": null,
     "profit_margin": 0.05172,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 2.3
+    "dividend_yield": 2.3,
+    "target_price": 123.21,
+    "recommendation": "BUY"
   },
   {
     "symbol": "BKNG",
@@ -247,7 +295,9 @@
     "debt_equity": null,
     "profit_margin": 0.25527,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 0.82
+    "dividend_yield": 0.82,
+    "target_price": 242.18,
+    "recommendation": "BUY"
   },
   {
     "symbol": "MDLZ",
@@ -257,7 +307,9 @@
     "debt_equity": 82.643,
     "profit_margin": 0.08862001,
     "sector": "Consumer Defensive",
-    "dividend_yield": 3.22
+    "dividend_yield": 3.22,
+    "target_price": 72.33,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ADP",
@@ -267,7 +319,9 @@
     "debt_equity": 91.436,
     "profit_margin": 0.20109,
     "sector": "Technology",
-    "dividend_yield": 2.56
+    "dividend_yield": 2.56,
+    "target_price": 312.05,
+    "recommendation": "BUY"
   },
   {
     "symbol": "LRCX",
@@ -277,7 +331,9 @@
     "debt_equity": 33.049,
     "profit_margin": 0.31272,
     "sector": "Technology",
-    "dividend_yield": 0.3
+    "dividend_yield": 0.3,
+    "target_price": 372.6,
+    "recommendation": "BUY"
   },
   {
     "symbol": "VRTX",
@@ -287,7 +343,9 @@
     "debt_equity": 9.767,
     "profit_margin": 0.34997,
     "sector": "Healthcare",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 607.89,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ADI",
@@ -297,7 +355,9 @@
     "debt_equity": 25.81,
     "profit_margin": 0.26007998,
     "sector": "Technology",
-    "dividend_yield": 1.13
+    "dividend_yield": 1.13,
+    "target_price": 428.14,
+    "recommendation": "BUY"
   },
   {
     "symbol": "REGN",
@@ -307,7 +367,9 @@
     "debt_equity": 8.535,
     "profit_margin": 0.27865,
     "sector": "Healthcare",
-    "dividend_yield": 0.47
+    "dividend_yield": 0.47,
+    "target_price": 938.83,
+    "recommendation": "BUY"
   },
   {
     "symbol": "MU",
@@ -317,7 +379,9 @@
     "debt_equity": 6.33,
     "profit_margin": 0.55906,
     "sector": "Technology",
-    "dividend_yield": 0.05
+    "dividend_yield": 0.05,
+    "target_price": 1075.82,
+    "recommendation": "BUY"
   },
   {
     "symbol": "PANW",
@@ -327,7 +391,9 @@
     "debt_equity": 7.698,
     "profit_margin": 0.07947,
     "sector": "Technology",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 429.47,
+    "recommendation": "BUY"
   },
   {
     "symbol": "SNPS",
@@ -337,7 +403,9 @@
     "debt_equity": 35.574,
     "profit_margin": 0.089090005,
     "sector": "Technology",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 468.43,
+    "recommendation": "BUY"
   },
   {
     "symbol": "KLAC",
@@ -347,7 +415,9 @@
     "debt_equity": 96.88,
     "profit_margin": 0.35574,
     "sector": "Technology",
-    "dividend_yield": 0.45
+    "dividend_yield": 0.45,
+    "target_price": 222.01,
+    "recommendation": "BUY"
   },
   {
     "symbol": "MELI",
@@ -357,7 +427,9 @@
     "debt_equity": 168.586,
     "profit_margin": 0.052950002,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 2065.0,
+    "recommendation": "BUY"
   },
   {
     "symbol": "CDNS",
@@ -367,7 +439,9 @@
     "debt_equity": 38.661,
     "profit_margin": 0.23605,
     "sector": "Technology",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 366.17,
+    "recommendation": "BUY"
   },
   {
     "symbol": "PYPL",
@@ -377,7 +451,9 @@
     "debt_equity": 71.751,
     "profit_margin": 0.14364,
     "sector": "Financial Services",
-    "dividend_yield": 0.93
+    "dividend_yield": 0.93,
+    "target_price": 69.9,
+    "recommendation": "BUY"
   },
   {
     "symbol": "CSX",
@@ -387,7 +463,9 @@
     "debt_equity": 138.068,
     "profit_margin": 0.22208999,
     "sector": "Industrials",
-    "dividend_yield": 1.11
+    "dividend_yield": 1.11,
+    "target_price": 57.84,
+    "recommendation": "BUY"
   },
   {
     "symbol": "MAR",
@@ -397,7 +475,9 @@
     "debt_equity": null,
     "profit_margin": 0.35029998,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 0.82
+    "dividend_yield": 0.82,
+    "target_price": 412.7,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ASML",
@@ -407,7 +487,9 @@
     "debt_equity": 9.092,
     "profit_margin": 0.30114,
     "sector": "Technology",
-    "dividend_yield": 0.48
+    "dividend_yield": 0.48,
+    "target_price": 2060.19,
+    "recommendation": "BUY"
   },
   {
     "symbol": "CTAS",
@@ -417,7 +499,9 @@
     "debt_equity": 52.646,
     "profit_margin": 0.17754,
     "sector": "Industrials",
-    "dividend_yield": 1.05
+    "dividend_yield": 1.05,
+    "target_price": 230.16,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ORLY",
@@ -427,7 +511,9 @@
     "debt_equity": null,
     "profit_margin": 0.1427,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 105.45,
+    "recommendation": "BUY"
   },
   {
     "symbol": "NXPI",
@@ -437,7 +523,9 @@
     "debt_equity": 93.325,
     "profit_margin": 0.22564,
     "sector": "Technology",
-    "dividend_yield": 1.74
+    "dividend_yield": 1.74,
+    "target_price": 260.24,
+    "recommendation": "BUY"
   },
   {
     "symbol": "MNST",
@@ -447,7 +535,9 @@
     "debt_equity": 0.992,
     "profit_margin": 0.23079,
     "sector": "Consumer Defensive",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 54.39,
+    "recommendation": "BUY"
   },
   {
     "symbol": "WDAY",
@@ -457,7 +547,9 @@
     "debt_equity": 56.936,
     "profit_margin": 0.08595,
     "sector": "Technology",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 222.51,
+    "recommendation": "BUY"
   },
   {
     "symbol": "FTNT",
@@ -467,7 +559,9 @@
     "debt_equity": 36.194,
     "profit_margin": 0.28173,
     "sector": "Technology",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 181.9,
+    "recommendation": "BUY"
   },
   {
     "symbol": "KDP",
@@ -477,7 +571,9 @@
     "debt_equity": 99.649,
     "profit_margin": 0.07103,
     "sector": "Consumer Defensive",
-    "dividend_yield": 3.04
+    "dividend_yield": 3.04,
+    "target_price": 35.61,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ABNB",
@@ -487,7 +583,9 @@
     "debt_equity": 32.004,
     "profit_margin": 0.2045,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 212.46,
+    "recommendation": "BUY"
   },
   {
     "symbol": "CHTR",
@@ -497,7 +595,9 @@
     "debt_equity": 441.578,
     "profit_margin": 0.09052,
     "sector": "Communication Services",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 174.21,
+    "recommendation": "BUY"
   },
   {
     "symbol": "PCAR",
@@ -507,7 +607,9 @@
     "debt_equity": 72.91,
     "profit_margin": 0.09003,
     "sector": "Industrials",
-    "dividend_yield": 1.07
+    "dividend_yield": 1.07,
+    "target_price": 147.84,
+    "recommendation": "BUY"
   },
   {
     "symbol": "MCHP",
@@ -517,7 +619,9 @@
     "debt_equity": 83.688,
     "profit_margin": 0.0934,
     "sector": "Technology",
-    "dividend_yield": 2.27
+    "dividend_yield": 2.27,
+    "target_price": 88.78,
+    "recommendation": "BUY"
   },
   {
     "symbol": "AEP",
@@ -527,7 +631,9 @@
     "debt_equity": 160.789,
     "profit_margin": 0.13781999,
     "sector": "Utilities",
-    "dividend_yield": 3.0
+    "dividend_yield": 3.0,
+    "target_price": 145.35,
+    "recommendation": "BUY"
   },
   {
     "symbol": "PAYX",
@@ -537,7 +643,9 @@
     "debt_equity": 123.967,
     "profit_margin": 0.26633,
     "sector": "Technology",
-    "dividend_yield": 4.02
+    "dividend_yield": 4.02,
+    "target_price": 139.39,
+    "recommendation": "BUY"
   },
   {
     "symbol": "DXCM",
@@ -547,7 +655,9 @@
     "debt_equity": 53.346,
     "profit_margin": 0.20118,
     "sector": "Healthcare",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 104.39,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ROST",
@@ -557,7 +667,9 @@
     "debt_equity": 74.911,
     "profit_margin": 0.097399995,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 0.76
+    "dividend_yield": 0.76,
+    "target_price": 273.18,
+    "recommendation": "BUY"
   },
   {
     "symbol": "LULU",
@@ -567,7 +679,9 @@
     "debt_equity": 44.264,
     "profit_margin": 0.13029,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 137.94,
+    "recommendation": "BUY"
   },
   {
     "symbol": "EXC",
@@ -577,7 +691,9 @@
     "debt_equity": 177.362,
     "profit_margin": 0.10989001,
     "sector": "Utilities",
-    "dividend_yield": 3.69
+    "dividend_yield": 3.69,
+    "target_price": 52.31,
+    "recommendation": "BUY"
   },
   {
     "symbol": "BIIB",
@@ -587,7 +703,9 @@
     "debt_equity": 44.329,
     "profit_margin": 0.083229996,
     "sector": "Healthcare",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 245.42,
+    "recommendation": "BUY"
   },
   {
     "symbol": "AZN",
@@ -597,7 +715,9 @@
     "debt_equity": 64.225,
     "profit_margin": 0.17021999,
     "sector": "Healthcare",
-    "dividend_yield": 2.04
+    "dividend_yield": 2.04,
+    "target_price": 184.28,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ODFL",
@@ -607,7 +727,9 @@
     "debt_equity": 0.44,
     "profit_margin": 0.19443001,
     "sector": "Industrials",
-    "dividend_yield": 0.55
+    "dividend_yield": 0.55,
+    "target_price": 239.03,
+    "recommendation": "BUY"
   },
   {
     "symbol": "FAST",
@@ -617,7 +739,9 @@
     "debt_equity": 10.851,
     "profit_margin": 0.15454,
     "sector": "Industrials",
-    "dividend_yield": 1.87
+    "dividend_yield": 1.87,
+    "target_price": 59.19,
+    "recommendation": "BUY"
   },
   {
     "symbol": "XEL",
@@ -627,7 +751,9 @@
     "debt_equity": 173.135,
     "profit_margin": 0.15278,
     "sector": "Utilities",
-    "dividend_yield": 2.99
+    "dividend_yield": 2.99,
+    "target_price": 91.41,
+    "recommendation": "BUY"
   },
   {
     "symbol": "VRSK",
@@ -637,7 +763,9 @@
     "debt_equity": null,
     "profit_margin": 0.28237,
     "sector": "Industrials",
-    "dividend_yield": 1.14
+    "dividend_yield": 1.14,
+    "target_price": 209.47,
+    "recommendation": "BUY"
   },
   {
     "symbol": "CPRT",
@@ -647,7 +775,9 @@
     "debt_equity": 1.059,
     "profit_margin": 0.33481997,
     "sector": "Industrials",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 37.01,
+    "recommendation": "BUY"
   },
   {
     "symbol": "CTSH",
@@ -657,7 +787,9 @@
     "debt_equity": 14.479,
     "profit_margin": 0.10258,
     "sector": "Technology",
-    "dividend_yield": 2.33
+    "dividend_yield": 2.33,
+    "target_price": 67.31,
+    "recommendation": "BUY"
   },
   {
     "symbol": "EA",
@@ -667,7 +799,9 @@
     "debt_equity": 26.43,
     "profit_margin": 0.13803001,
     "sector": "Communication Services",
-    "dividend_yield": 0.0036000002
+    "dividend_yield": 0.0036000002,
+    "target_price": 241.15,
+    "recommendation": "BUY"
   },
   {
     "symbol": "SIRI",
@@ -677,6 +811,8 @@
     "debt_equity": 81.105,
     "profit_margin": 0.102290004,
     "sector": "Communication Services",
-    "dividend_yield": 3.71
+    "dividend_yield": 3.71,
+    "target_price": 33.02,
+    "recommendation": "BUY"
   }
 ]

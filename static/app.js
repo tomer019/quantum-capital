@@ -361,6 +361,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <th data-sort="pe_ratio" class="sortable" title="מכפיל רווח: מחיר חלקי רווח למניה. ככל שנמוך יותר, המניה זולה יותר">P/E ↕</th>
         <th data-sort="profit_margin" class="sortable" title="שולי רווח נקי: אחוז הרווח הנקי מתוך סך ההכנסות">שולי רווח ↕</th>
         <th data-sort="dividend_yield" class="sortable" title="תשואת דיבידנד שנתית באחוזים">דיבידנד ↕</th>
+        <th data-sort="shares_to_buy" class="sortable" title="כמות מניות מומלצת לקנייה לחלוקת הון שווה">הקצאה ↕</th>
         <th>מעקב</th>`;
 
     const MOMENTUM_HEADERS = `
@@ -374,6 +375,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <th data-sort="rsi" class="sortable" title="מדד עוצמה יחסית (14 יום). מעל 70 = קניית יתר, מתחת 30 = מכירת יתר">RSI ↕</th>
         <th data-sort="above_ma" class="sortable" title="האם המחיר מעל ממוצע נע 50 יום (טרנד חיובי)">טרנד ↕</th>
         <th data-sort="score" class="sortable" title="ציון עוצמת המומנטום המשוקלל">סיגנל ↕</th>
+        <th data-sort="shares_to_buy" class="sortable" title="כמות מניות מומלצת לקנייה לחלוקת הון שווה">הקצאה ↕</th>
         <th>מעקב</th>`;
 
     const applyMode = (mode) => {
@@ -472,6 +474,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('results-count').textContent = `${stocks.length} מניות עם מומנטום חזק`;
 
             renderMomentumTable();
+            renderAllocationSummary();
         } catch (err) {
             console.error('Momentum scan error:', err);
             resultsBody.innerHTML = '<tr><td colspan="11"><div class="empty-state"><div class="empty-state-icon">⏳</div><p>השרת בענן מתעורר או שואב נתונים היסטוריים...<br><button onclick="runMomentumScan()" class="btn-primary" style="margin-top:10px; padding:6px 14px; width:auto; font-size:13px; background:#F59E0B; color:#000;">נסה שוב 🔄</button></p></div></td></tr>';
@@ -546,6 +549,12 @@ document.addEventListener('DOMContentLoaded', () => {
             };
             const sig = signalMap[stock.signal] || signalMap.moderate;
 
+            // Calculate allocation
+            const capital = parseFloat(capitalSlider.value) || 0;
+            const perStock = capital / (currentResults.length || 1);
+            const sharesToBuy = Math.floor(perStock / (stock.price || 1));
+            const allocVal = (sharesToBuy * (stock.price || 0)).toLocaleString('en-US', {minimumFractionDigits:0, maximumFractionDigits:0});
+
             const tr = document.createElement('tr');
             tr.innerHTML = `
                 <td style="font-weight:500; color:var(--accent-blue);" dir="ltr">${stock.symbol}</td>
@@ -558,6 +567,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td dir="ltr" style="${rsiStyle}; font-weight:500;">${rsi}</td>
                 <td>${trend}</td>
                 <td style="font-weight:600; color:${sig.color}; font-size:13px;">${sig.emoji} ${sig.label}</td>
+                <td dir="ltr"><span class="shares-badge" style="background: rgba(0, 184, 255, 0.12); border: 1px solid rgba(0, 184, 255, 0.25); color: #00B8FF; font-weight: 700; padding: 3px 8px; border-radius: 6px; font-size: 12px;">${sharesToBuy} יח'</span> <span style="font-size: 11px; color: var(--text-secondary);">($${allocVal})</span></td>
                 <td>
                     <button onclick="event.stopPropagation(); toggleWatchlist('${stock.symbol}')"
                         style="background:none;border:none;cursor:pointer;color:${starColor};font-size:18px;"
@@ -626,6 +636,7 @@ document.addEventListener('DOMContentLoaded', () => {
             resultsCount.textContent = `נמצאו ${currentResults.length} מניות מנצחות`;
 
             renderTable();
+            renderAllocationSummary();
 
             if (data.results.length === 0) {
                 resultsBody.innerHTML = '<tr><td colspan="6" style="text-align: center;">לא נמצאו מניות שעומדות בקריטריונים</td></tr>';
@@ -680,6 +691,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const isStarred = wl.includes(stock.symbol);
             const starColor = isStarred ? '#FFD700' : '#4B5563';
 
+            // Calculate allocation
+            const capital = parseFloat(capitalSlider.value) || 0;
+            const perStock = capital / (currentResults.length || 1);
+            const sharesToBuy = Math.floor(perStock / (stock.price || 1));
+            const allocVal = (sharesToBuy * (stock.price || 0)).toLocaleString('en-US', {minimumFractionDigits:0, maximumFractionDigits:0});
+
             const tr = document.createElement('tr');
             tr.innerHTML = `
                 <td style="font-weight: 500; color: var(--accent-blue);" class="clickable-symbol" dir="ltr">${stock.symbol}</td>
@@ -689,6 +706,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td dir="ltr" class="${peClass}">${stock.pe_ratio.toFixed(1)}</td>
                 <td dir="ltr" class="${marginClass}">${(stock.profit_margin * 100).toFixed(1)}%</td>
                 <td dir="ltr">${divYield}</td>
+                <td dir="ltr"><span class="shares-badge" style="background: rgba(0, 184, 255, 0.12); border: 1px solid rgba(0, 184, 255, 0.25); color: #00B8FF; font-weight: 700; padding: 3px 8px; border-radius: 6px; font-size: 12px;">${sharesToBuy} יח'</span> <span style="font-size: 11px; color: var(--text-secondary);">($${allocVal})</span></td>
                 <td>
                     <button onclick="event.stopPropagation(); toggleWatchlist('${stock.symbol}')" style="background:none; border:none; cursor:pointer; color:${starColor}; font-size:18px;" title="הוסף למעקב">${isStarred ? '★' : '☆'}</button>
                 </td>
@@ -699,6 +717,50 @@ document.addEventListener('DOMContentLoaded', () => {
             
             resultsBody.appendChild(tr);
         });    };
+
+    // ─── ALLOCATION SUMMARY RENDERER ─────────────────────────────────────────
+    const renderAllocationSummary = () => {
+        const panel = document.getElementById('allocation-summary');
+        const grid = document.getElementById('alloc-grid');
+        const statsDiv = document.getElementById('alloc-stats');
+        if (!panel || !grid) return;
+
+        const capital = parseFloat(capitalSlider.value) || 0;
+        if (!currentResults || currentResults.length === 0 || capital <= 0) {
+            panel.style.display = 'none';
+            return;
+        }
+
+        const perStock = capital / currentResults.length;
+        let totalInvested = 0;
+        const cards = [];
+
+        currentResults.forEach(stock => {
+            const price = stock.price || 0;
+            if (price <= 0) return;
+            const shares = Math.floor(perStock / price);
+            const invested = shares * price;
+            totalInvested += invested;
+            const pctOfCapital = ((invested / capital) * 100).toFixed(1);
+            cards.push(`
+                <div style="display:flex; align-items:center; gap:10px; padding:8px 12px; background:var(--bg-card); border:1px solid var(--border-color); border-radius:8px; font-size:13px;">
+                    <span style="font-weight:700; color:var(--accent-blue); min-width:60px;" dir="ltr">${stock.symbol}</span>
+                    <span style="color:var(--text-primary); font-weight:600;" dir="ltr">${shares} מניות</span>
+                    <span style="color:var(--text-secondary); margin-right:auto;" dir="ltr">$${invested.toLocaleString('en-US', {minimumFractionDigits:0, maximumFractionDigits:0})}</span>
+                    <span style="color:var(--text-secondary); font-size:11px;" dir="ltr">${pctOfCapital}%</span>
+                </div>
+            `);
+        });
+
+        const remaining = capital - totalInvested;
+        statsDiv.innerHTML = `
+            <span title="הון כולל להשקעה">💵 הון: <b style="color:var(--text-primary);">$${capital.toLocaleString()}</b></span>
+            <span title="סה\"כ מושקע בפועל">📊 מושקע: <b style="color:#00E676;">$${totalInvested.toLocaleString('en-US', {minimumFractionDigits:0, maximumFractionDigits:0})}</b></span>
+            <span title="עודף לא מושקע (שארית חלוקה)">🏦 עודף: <b style="color:#F59E0B;">$${remaining.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2})}</b></span>
+        `;
+        grid.innerHTML = cards.join('');
+        panel.style.display = 'block';
+    };
 
     // Export to CSV
     const btnExportCsv = document.getElementById('btn-export-csv');

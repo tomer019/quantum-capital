@@ -7,7 +7,9 @@
     "debt_equity": 49.316,
     "profit_margin": 0.13904001,
     "sector": "Consumer Defensive",
-    "dividend_yield": 1.95
+    "dividend_yield": 1.95,
+    "target_price": 434.3,
+    "recommendation": "BUY"
   },
   {
     "symbol": "MC.PA",
@@ -17,7 +19,9 @@
     "debt_equity": 53.306,
     "profit_margin": 0.13658,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 2.91
+    "dividend_yield": 2.91,
+    "target_price": 518.13,
+    "recommendation": "BUY"
   },
   {
     "symbol": "SAN.PA",
@@ -27,7 +31,9 @@
     "debt_equity": 33.89,
     "profit_margin": 0.08091,
     "sector": "Healthcare",
-    "dividend_yield": 5.37
+    "dividend_yield": 5.37,
+    "target_price": 89.55,
+    "recommendation": "BUY"
   },
   {
     "symbol": "AIR.PA",
@@ -37,7 +43,9 @@
     "debt_equity": 54.988,
     "profit_margin": 0.07714,
     "sector": "Industrials",
-    "dividend_yield": 1.49
+    "dividend_yield": 1.49,
+    "target_price": 243.17,
+    "recommendation": "BUY"
   },
   {
     "symbol": "BNP.PA",
@@ -47,7 +55,9 @@
     "debt_equity": null,
     "profit_margin": 0.26490998,
     "sector": "Financial Services",
-    "dividend_yield": 5.22
+    "dividend_yield": 5.22,
+    "target_price": 124.45,
+    "recommendation": "BUY"
   },
   {
     "symbol": "SU.PA",
@@ -57,7 +67,9 @@
     "debt_equity": 84.124,
     "profit_margin": 0.11270001,
     "sector": "Industrials",
-    "dividend_yield": 1.36
+    "dividend_yield": 1.36,
+    "target_price": 340.8,
+    "recommendation": "BUY"
   },
   {
     "symbol": "DG.PA",
@@ -67,7 +79,9 @@
     "debt_equity": 120.742,
     "profit_margin": 0.06645,
     "sector": "Industrials",
-    "dividend_yield": 4.21
+    "dividend_yield": 4.21,
+    "target_price": 138.29,
+    "recommendation": "BUY"
   },
   {
     "symbol": "AI.PA",
@@ -77,7 +91,9 @@
     "debt_equity": 63.307,
     "profit_margin": 0.13087,
     "sector": "Basic Materials",
-    "dividend_yield": 2.02
+    "dividend_yield": 2.02,
+    "target_price": 192.9,
+    "recommendation": "BUY"
   },
   {
     "symbol": "RI.PA",
@@ -87,7 +103,9 @@
     "debt_equity": 82.292,
     "profit_margin": 0.14059,
     "sector": "Consumer Defensive",
-    "dividend_yield": 6.9
+    "dividend_yield": 6.9,
+    "target_price": 77.51,
+    "recommendation": "BUY"
   },
   {
     "symbol": "SGO.PA",
@@ -97,7 +115,9 @@
     "debt_equity": 66.318,
     "profit_margin": 0.057779998,
     "sector": "Industrials",
-    "dividend_yield": 2.83
+    "dividend_yield": 2.83,
+    "target_price": 92.23,
+    "recommendation": "BUY"
   },
   {
     "symbol": "SAP.DE",
@@ -107,7 +127,9 @@
     "debt_equity": 21.966,
     "profit_margin": 0.20413,
     "sector": "Technology",
-    "dividend_yield": 1.39
+    "dividend_yield": 1.39,
+    "target_price": 209.07,
+    "recommendation": "BUY"
   },
   {
     "symbol": "SIE.DE",
@@ -117,7 +139,9 @@
     "debt_equity": 66.425,
     "profit_margin": 0.097959995,
     "sector": "Industrials",
-    "dividend_yield": 1.9
+    "dividend_yield": 1.9,
+    "target_price": 318.84,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ALV.DE",
@@ -127,7 +151,9 @@
     "debt_equity": 50.648,
     "profit_margin": 0.098780006,
     "sector": "Financial Services",
-    "dividend_yield": 3.9
+    "dividend_yield": 3.9,
+    "target_price": 507.15,
+    "recommendation": "BUY"
   },
   {
     "symbol": "MBG.DE",
@@ -137,7 +163,9 @@
     "debt_equity": 110.208,
     "profit_margin": 0.03885,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 7.69
+    "dividend_yield": 7.69,
+    "target_price": 51.79,
+    "recommendation": "BUY"
   },
   {
     "symbol": "BMW.DE",
@@ -147,7 +175,9 @@
     "debt_equity": 119.855,
     "profit_margin": 0.04923,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 7.54
+    "dividend_yield": 7.54,
+    "target_price": 66.7,
+    "recommendation": "BUY"
   },
   {
     "symbol": "BAYN.DE",
@@ -157,7 +187,9 @@
     "debt_equity": 129.362,
     "profit_margin": -0.0383,
     "sector": "Healthcare",
-    "dividend_yield": 0.23
+    "dividend_yield": 0.23,
+    "target_price": 55.74,
+    "recommendation": "BUY"
   },
   {
     "symbol": "DTE.DE",
@@ -167,7 +199,9 @@
     "debt_equity": 165.297,
     "profit_margin": 0.07013,
     "sector": "Communication Services",
-    "dividend_yield": 3.52
+    "dividend_yield": 3.52,
+    "target_price": 33.19,
+    "recommendation": "BUY"
   },
   {
     "symbol": "MUV2.DE",
@@ -177,7 +211,9 @@
     "debt_equity": 24.378,
     "profit_margin": 0.11163,
     "sector": "Financial Services",
-    "dividend_yield": 4.64
+    "dividend_yield": 4.64,
+    "target_price": 596.85,
+    "recommendation": "BUY"
   },
   {
     "symbol": "BAS.DE",
@@ -187,7 +223,9 @@
     "debt_equity": 71.358,
     "profit_margin": 0.094239995,
     "sector": "Basic Materials",
-    "dividend_yield": 4.45
+    "dividend_yield": 4.45,
+    "target_price": 59.08,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ADS.DE",
@@ -197,7 +235,9 @@
     "debt_equity": 94.127,
     "profit_margin": 0.052950002,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 1.83
+    "dividend_yield": 1.83,
+    "target_price": 178.42,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ASML.AS",
@@ -207,7 +247,9 @@
     "debt_equity": 9.092,
     "profit_margin": 0.30114,
     "sector": "Technology",
-    "dividend_yield": 0.48
+    "dividend_yield": 0.48,
+    "target_price": 1793.08,
+    "recommendation": "BUY"
   },
   {
     "symbol": "PHIA.AS",
@@ -217,7 +259,9 @@
     "debt_equity": 65.049,
     "profit_margin": 0.06306,
     "sector": "Healthcare",
-    "dividend_yield": 3.65
+    "dividend_yield": 3.65,
+    "target_price": 27.05,
+    "recommendation": "BUY"
   },
   {
     "symbol": "UNA.AS",
@@ -227,7 +271,9 @@
     "debt_equity": 175.397,
     "profit_margin": 0.18319,
     "sector": "Consumer Defensive",
-    "dividend_yield": 3.61
+    "dividend_yield": 3.61,
+    "target_price": 61.46,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ITX.MC",
@@ -237,7 +283,9 @@
     "debt_equity": 31.815,
     "profit_margin": 0.15592,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 1.15
+    "dividend_yield": 1.15,
+    "target_price": 66.4,
+    "recommendation": "BUY"
   },
   {
     "symbol": "SAN.MC",
@@ -247,7 +295,9 @@
     "debt_equity": null,
     "profit_margin": 0.33464,
     "sector": "Financial Services",
-    "dividend_yield": 1.97
+    "dividend_yield": 1.97,
+    "target_price": 14.13,
+    "recommendation": "BUY"
   },
   {
     "symbol": "BBVA.MC",
@@ -257,7 +307,9 @@
     "debt_equity": null,
     "profit_margin": 0.32562,
     "sector": "Financial Services",
-    "dividend_yield": 3.7
+    "dividend_yield": 3.7,
+    "target_price": 28.5,
+    "recommendation": "BUY"
   },
   {
     "symbol": "IBE.MC",
@@ -267,7 +319,9 @@
     "debt_equity": 100.03,
     "profit_margin": 0.15883,
     "sector": "Utilities",
-    "dividend_yield": 3.38
+    "dividend_yield": 3.38,
+    "target_price": 23.15,
+    "recommendation": "BUY"
   },
   {
     "symbol": "REP.MC",
@@ -277,7 +331,9 @@
     "debt_equity": 44.306,
     "profit_margin": 0.064330004,
     "sector": "Energy",
-    "dividend_yield": 4.07
+    "dividend_yield": 4.07,
+    "target_price": 31.72,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ENI.MI",
@@ -287,7 +343,9 @@
     "debt_equity": 64.975,
     "profit_margin": 0.05874,
     "sector": "Energy",
-    "dividend_yield": 4.5
+    "dividend_yield": 4.5,
+    "target_price": 27.77,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ENEL.MI",
@@ -297,7 +355,9 @@
     "debt_equity": 147.743,
     "profit_margin": 0.05711,
     "sector": "Utilities",
-    "dividend_yield": 5.49
+    "dividend_yield": 5.49,
+    "target_price": 10.97,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ISP.MI",
@@ -307,7 +367,9 @@
     "debt_equity": null,
     "profit_margin": 0.36964,
     "sector": "Financial Services",
-    "dividend_yield": 5.52
+    "dividend_yield": 5.52,
+    "target_price": 7.9,
+    "recommendation": "BUY"
   },
   {
     "symbol": "UCG.MI",
@@ -317,7 +379,9 @@
     "debt_equity": null,
     "profit_margin": 0.43967998,
     "sector": "Financial Services",
-    "dividend_yield": 3.72
+    "dividend_yield": 3.72,
+    "target_price": 95.24,
+    "recommendation": "BUY"
   },
   {
     "symbol": "STLAM.MI",
@@ -327,7 +391,9 @@
     "debt_equity": 84.387,
     "profit_margin": -0.12104999,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 5.2,
+    "recommendation": "BUY"
   },
   {
     "symbol": "INGA.AS",
@@ -337,7 +403,9 @@
     "debt_equity": null,
     "profit_margin": 0.34493,
     "sector": "Financial Services",
-    "dividend_yield": 3.68
+    "dividend_yield": 3.68,
+    "target_price": 35.03,
+    "recommendation": "BUY"
   },
   {
     "symbol": "NOKIA.HE",
@@ -347,7 +415,9 @@
     "debt_equity": 15.776,
     "profit_margin": 0.03472,
     "sector": "Technology",
-    "dividend_yield": 1.46
+    "dividend_yield": 1.46,
+    "target_price": 10.55,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ABI.BR",
@@ -357,7 +427,9 @@
     "debt_equity": 71.88,
     "profit_margin": 0.14896,
     "sector": "Consumer Defensive",
-    "dividend_yield": 1.72
+    "dividend_yield": 1.72,
+    "target_price": 76.41,
+    "recommendation": "BUY"
   },
   {
     "symbol": "KER.PA",
@@ -367,7 +439,9 @@
     "debt_equity": 116.567,
     "profit_margin": -0.014730001,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 1.17
+    "dividend_yield": 1.17,
+    "target_price": 296.07,
+    "recommendation": "BUY"
   },
   {
     "symbol": "EL.PA",
@@ -377,7 +451,9 @@
     "debt_equity": 38.359,
     "profit_margin": 0.085159995,
     "sector": "Healthcare",
-    "dividend_yield": 2.5
+    "dividend_yield": 2.5,
+    "target_price": 187.62,
+    "recommendation": "BUY"
   },
   {
     "symbol": "CS.PA",
@@ -387,7 +463,9 @@
     "debt_equity": 119.437,
     "profit_margin": 0.10379,
     "sector": "Financial Services",
-    "dividend_yield": 5.2
+    "dividend_yield": 5.2,
+    "target_price": 50.99,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ORA.PA",
@@ -397,7 +475,9 @@
     "debt_equity": 161.477,
     "profit_margin": 0.09983,
     "sector": "Communication Services",
-    "dividend_yield": 4.63
+    "dividend_yield": 4.63,
+    "target_price": 18.53,
+    "recommendation": "BUY"
   },
   {
     "symbol": "ENGI.PA",
@@ -407,7 +487,9 @@
     "debt_equity": 143.77,
     "profit_margin": 0.05989,
     "sector": "Utilities",
-    "dividend_yield": 5.27
+    "dividend_yield": 5.27,
+    "target_price": 29.6,
+    "recommendation": "BUY"
   },
   {
     "symbol": "VIV.PA",
@@ -417,7 +499,9 @@
     "debt_equity": 36.82,
     "profit_margin": 0.06515,
     "sector": "Communication Services",
-    "dividend_yield": 2.41
+    "dividend_yield": 2.41,
+    "target_price": 1.89,
+    "recommendation": "BUY"
   },
   {
     "symbol": "SGO.PA",
@@ -427,7 +511,9 @@
     "debt_equity": 66.318,
     "profit_margin": 0.057779998,
     "sector": "Industrials",
-    "dividend_yield": 2.83
+    "dividend_yield": 2.83,
+    "target_price": 92.23,
+    "recommendation": "BUY"
   },
   {
     "symbol": "TTE.PA",
@@ -437,7 +523,9 @@
     "debt_equity": 48.045,
     "profit_margin": 0.09083,
     "sector": "Energy",
-    "dividend_yield": 4.74
+    "dividend_yield": 4.74,
+    "target_price": 89.79,
+    "recommendation": "BUY"
   },
   {
     "symbol": "CAP.PA",
@@ -447,6 +535,8 @@
     "debt_equity": 87.509,
     "profit_margin": 0.05866,
     "sector": "Technology",
-    "dividend_yield": 3.2
+    "dividend_yield": 3.2,
+    "target_price": 124.31,
+    "recommendation": "BUY"
   }
 ]

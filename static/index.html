@@ -111,6 +111,15 @@
                             </tbody>
                         </table>
                     </div>
+
+                    <!-- Allocation Summary Panel -->
+                    <div id="allocation-summary" style="display: none; margin-top: 12px; padding: 14px 18px; background: rgba(0, 184, 255, 0.06); border: 1px solid rgba(0, 184, 255, 0.18); border-radius: 10px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <h3 style="margin: 0; font-size: 15px; color: var(--accent-blue);">💰 חלוקת הון מומלצת</h3>
+                            <div id="alloc-stats" style="display: flex; gap: 14px; font-size: 13px; color: var(--text-secondary);"></div>
+                        </div>
+                        <div id="alloc-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 8px;"></div>
+                    </div>
                 </div>
 
                 <!-- Right Column (Controls) -->

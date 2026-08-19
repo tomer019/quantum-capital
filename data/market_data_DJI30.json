@@ -7,7 +7,9 @@
     "debt_equity": 78.445,
     "profit_margin": 0.27618998,
     "sector": "Technology",
-    "dividend_yield": 0.35
+    "dividend_yield": 0.35,
+    "target_price": 356.53,
+    "recommendation": "BUY"
   },
   {
     "symbol": "AMGN",
@@ -17,7 +19,9 @@
     "debt_equity": 490.281,
     "profit_margin": 0.22951001,
     "sector": "Healthcare",
-    "dividend_yield": 2.4
+    "dividend_yield": 2.4,
+    "target_price": 489.07,
+    "recommendation": "BUY"
   },
   {
     "symbol": "AXP",
@@ -27,7 +31,9 @@
     "debt_equity": 172.38,
     "profit_margin": 0.16141,
     "sector": "Financial Services",
-    "dividend_yield": 1.13
+    "dividend_yield": 1.13,
+    "target_price": 389.3,
+    "recommendation": "BUY"
   },
   {
     "symbol": "BA",
@@ -37,7 +43,9 @@
     "debt_equity": 790.875,
     "profit_margin": 0.025910001,
     "sector": "Industrials",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 256.52,
+    "recommendation": "BUY"
   },
   {
     "symbol": "CAT",
@@ -47,7 +55,9 @@
     "debt_equity": 232.783,
     "profit_margin": 0.14511,
     "sector": "Industrials",
-    "dividend_yield": 0.74
+    "dividend_yield": 0.74,
+    "target_price": 967.0,
+    "recommendation": "BUY"
   },
   {
     "symbol": "CRM",
@@ -57,7 +67,9 @@
     "debt_equity": 124.282,
     "profit_margin": 0.18733,
     "sector": "Technology",
-    "dividend_yield": 0.92
+    "dividend_yield": 0.92,
+    "target_price": 225.56,
+    "recommendation": "BUY"
   },
   {
     "symbol": "CSCO",
@@ -67,7 +79,9 @@
     "debt_equity": 58.731,
     "profit_margin": 0.20951,
     "sector": "Technology",
-    "dividend_yield": 1.49
+    "dividend_yield": 1.49,
+    "target_price": 128.35,
+    "recommendation": "BUY"
   },
   {
     "symbol": "CVX",
@@ -77,7 +91,9 @@
     "debt_equity": 18.959,
     "profit_margin": 0.09834,
     "sector": "Energy",
-    "dividend_yield": 3.51
+    "dividend_yield": 3.51,
+    "target_price": 236.6,
+    "recommendation": "BUY"
   },
   {
     "symbol": "DIS",
@@ -87,7 +103,9 @@
     "debt_equity": 39.404,
     "profit_margin": 0.086990006,
     "sector": "Communication Services",
-    "dividend_yield": 1.45
+    "dividend_yield": 1.45,
+    "target_price": 119.54,
+    "recommendation": "BUY"
   },
   {
     "symbol": "DOW",
@@ -97,7 +115,9 @@
     "debt_equity": 111.913,
     "profit_margin": -0.03129,
     "sector": "Basic Materials",
-    "dividend_yield": 4.47
+    "dividend_yield": 4.47,
+    "target_price": 35.87,
+    "recommendation": "BUY"
   },
   {
     "symbol": "GS",
@@ -107,7 +127,9 @@
     "debt_equity": 725.381,
     "profit_margin": 0.31039,
     "sector": "Financial Services",
-    "dividend_yield": 1.9
+    "dividend_yield": 1.9,
+    "target_price": 1196.54,
+    "recommendation": "BUY"
   },
   {
     "symbol": "HD",
@@ -117,7 +139,9 @@
     "debt_equity": 459.356,
     "profit_margin": 0.08411,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 2.76
+    "dividend_yield": 2.76,
+    "target_price": 388.11,
+    "recommendation": "BUY"
   },
   {
     "symbol": "HON",
@@ -127,7 +151,9 @@
     "debt_equity": 185.369,
     "profit_margin": 0.21581,
     "sector": "Industrials",
-    "dividend_yield": 1.22
+    "dividend_yield": 1.22,
+    "target_price": 261.87,
+    "recommendation": "BUY"
   },
   {
     "symbol": "IBM",
@@ -137,7 +163,9 @@
     "debt_equity": 188.97,
     "profit_margin": 0.15522,
     "sector": "Technology",
-    "dividend_yield": 2.95
+    "dividend_yield": 2.95,
+    "target_price": 267.57,
+    "recommendation": "BUY"
   },
   {
     "symbol": "INTC",
@@ -147,7 +175,9 @@
     "debt_equity": 48.997,
     "profit_margin": -0.19794,
     "sector": "Technology",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 111.19,
+    "recommendation": "BUY"
   },
   {
     "symbol": "JNJ",
@@ -157,7 +187,9 @@
     "debt_equity": 57.709,
     "profit_margin": 0.21482,
     "sector": "Healthcare",
-    "dividend_yield": 2.04
+    "dividend_yield": 2.04,
+    "target_price": 311.78,
+    "recommendation": "BUY"
   },
   {
     "symbol": "JPM",
@@ -167,7 +199,9 @@
     "debt_equity": null,
     "profit_margin": 0.34921002,
     "sector": "Financial Services",
-    "dividend_yield": 1.66
+    "dividend_yield": 1.66,
+    "target_price": 417.74,
+    "recommendation": "BUY"
   },
   {
     "symbol": "KO",
@@ -177,7 +211,9 @@
     "debt_equity": 115.519,
     "profit_margin": 0.28558,
     "sector": "Consumer Defensive",
-    "dividend_yield": 2.44
+    "dividend_yield": 2.44,
+    "target_price": 102.14,
+    "recommendation": "BUY"
   },
   {
     "symbol": "MCD",
@@ -187,7 +223,9 @@
     "debt_equity": null,
     "profit_margin": 0.3172,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 2.8
+    "dividend_yield": 2.8,
+    "target_price": 307.04,
+    "recommendation": "BUY"
   },
   {
     "symbol": "MMM",
@@ -197,7 +235,9 @@
     "debt_equity": 437.937,
     "profit_margin": 0.11902001,
     "sector": "Industrials",
-    "dividend_yield": 1.73
+    "dividend_yield": 1.73,
+    "target_price": 208.08,
+    "recommendation": "BUY"
   },
   {
     "symbol": "MRK",
@@ -207,7 +247,9 @@
     "debt_equity": 128.408,
     "profit_margin": 0.047659997,
     "sector": "Healthcare",
-    "dividend_yield": 2.5
+    "dividend_yield": 2.5,
+    "target_price": 155.45,
+    "recommendation": "BUY"
   },
   {
     "symbol": "MSFT",
@@ -217,7 +259,9 @@
     "debt_equity": 29.118,
     "profit_margin": 0.40305,
     "sector": "Technology",
-    "dividend_yield": 0.76
+    "dividend_yield": 0.76,
+    "target_price": 553.87,
+    "recommendation": "BUY"
   },
   {
     "symbol": "NKE",
@@ -227,7 +271,9 @@
     "debt_equity": 74.289,
     "profit_margin": 0.066989996,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 4.2
+    "dividend_yield": 4.2,
+    "target_price": 46.07,
+    "recommendation": "BUY"
   },
   {
     "symbol": "PG",
@@ -237,7 +283,9 @@
     "debt_equity": 64.49,
     "profit_margin": 0.18437,
     "sector": "Consumer Defensive",
-    "dividend_yield": 3.04
+    "dividend_yield": 3.04,
+    "target_price": 164.97,
+    "recommendation": "BUY"
   },
   {
     "symbol": "TRV",
@@ -247,7 +295,9 @@
     "debt_equity": 27.378,
     "profit_margin": 0.16951999,
     "sector": "Financial Services",
-    "dividend_yield": 1.37
+    "dividend_yield": 1.37,
+    "target_price": 423.12,
+    "recommendation": "BUY"
   },
   {
     "symbol": "UNH",
@@ -257,7 +307,9 @@
     "debt_equity": 69.211,
     "profit_margin": 0.03135,
     "sector": "Healthcare",
-    "dividend_yield": 2.35
+    "dividend_yield": 2.35,
+    "target_price": 453.02,
+    "recommendation": "BUY"
   },
   {
     "symbol": "V",
@@ -267,7 +319,9 @@
     "debt_equity": 67.821,
     "profit_margin": 0.50782,
     "sector": "Financial Services",
-    "dividend_yield": 0.75
+    "dividend_yield": 0.75,
+    "target_price": 418.89,
+    "recommendation": "BUY"
   },
   {
     "symbol": "VZ",
@@ -277,7 +331,9 @@
     "debt_equity": 184.081,
     "profit_margin": 0.11643,
     "sector": "Communication Services",
-    "dividend_yield": 5.89
+    "dividend_yield": 5.89,
+    "target_price": 55.82,
+    "recommendation": "BUY"
   },
   {
     "symbol": "WMT",
@@ -287,7 +343,9 @@
     "debt_equity": 74.816,
     "profit_margin": 0.03135,
     "sector": "Consumer Defensive",
-    "dividend_yield": 0.87
+    "dividend_yield": 0.87,
+    "target_price": 132.48,
+    "recommendation": "BUY"
   },
   {
     "symbol": "AMZN",
@@ -297,6 +355,8 @@
     "debt_equity": 45.617,
     "profit_margin": 0.1744,
     "sector": "Consumer Cyclical",
-    "dividend_yield": 0.0
+    "dividend_yield": 0.0,
+    "target_price": 298.37,
+    "recommendation": "BUY"
   }
 ]
