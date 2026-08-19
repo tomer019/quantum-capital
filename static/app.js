@@ -502,7 +502,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const renderMomentumTable = () => {
+    function renderMomentumTable() {
         const stocks = currentResults;
         resultsBody.innerHTML = '';
         if (stocks.length === 0) {
@@ -676,7 +676,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnScan.addEventListener('click', runScan);
     
-    const renderTable = () => {
+    function renderTable() {
         resultsBody.innerHTML = '';
         if (currentResults.length === 0) {
             resultsBody.innerHTML = '<tr><td colspan="8"><div class="empty-state"><div class="empty-state-icon">🔍</div><p>לא נמצאו מניות שעומדות בקריטריונים</p></div></td></tr>';
@@ -744,7 +744,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });    };
 
     // ─── ALLOCATION SUMMARY RENDERER ─────────────────────────────────────────
-    const renderAllocationSummary = () => {
+    function renderAllocationSummary() {
         const panel = document.getElementById('allocation-summary');
         const grid = document.getElementById('alloc-grid');
         const statsDiv = document.getElementById('alloc-stats');
