@@ -18,7 +18,9 @@
 ### 🤖 1. Multi-Strategy Algorithmic Screener
 - **Fundamental Value Strategy:** Screens undervalued, profitable enterprises using inverse P/E, profit margins, and dividend yields.
 - **Quantitative Momentum Strategy:** Detects short-to-medium breakouts using Rate of Change (Monthly & Weekly returns), institutional volume spikes (Volume Pulse), and 50-day SMA trend filtering.
-- **Multi-Index Support:** Screen S&P 500, Nasdaq 100, and Tel Aviv 125 with dynamic capital allocation calculations.
+- **Multi-Index Support:** Screen S&P 500, Nasdaq 100, Russell 2000 (Small Caps), and Tel Aviv 125 with dynamic capital allocation calculations.
+- **Advanced Price & Liquidity Filters:** Custom Min/Max price boundaries to filter out penny stocks or focus on specific brackets.
+- **Dynamic Live Fallback System:** When static index data is unavailable, the backend gracefully falls back to a live, multi-threaded Yahoo Finance fetch with TTL caching.
 - **1-Click Portfolio Sync:** Directly import screened stock allocations into the virtual trading dashboard.
 
 ### 🧪 2. Historical Backtest Lab & Tear Sheet Generator
