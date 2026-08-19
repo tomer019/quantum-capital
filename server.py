@@ -9,6 +9,7 @@ import yfinance as yf
 from backtester import run_portfolio_backtest, generate_tear_sheet_html
 import time
 from datetime import datetime, timedelta
+import math
 
 app = FastAPI(title="Robot Portfolio API")
 
@@ -286,6 +287,9 @@ def screen_momentum(req: MomentumRequest):
                     "timestamp": now_ts
                 }
 
+        print(f"DEBUG: symbols count: {len(symbols)}")
+        print(f"DEBUG: hist empty? {hist.empty}")
+
         if hist.empty:
             return {"results": [], "allocation_per_stock": 0, "total_allocated": 0}
 
@@ -308,6 +312,10 @@ def screen_momentum(req: MomentumRequest):
 
                 current_price = float(close.iloc[-1])
                 if math.isnan(current_price) or current_price <= 0:
+                    continue
+                    
+                # Price filter
+                if current_price < req.min_price or current_price > req.max_price:
                     continue
 
                 idx_1m = max(0, len(close) - 22)
