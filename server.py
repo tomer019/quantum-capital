@@ -474,15 +474,40 @@ def get_stock_details(symbol: str):
             "debt_to_equity": round(float(info.get("debtToEquity")), 1) if info.get("debtToEquity") else (local_s.get("debt_equity") or "-")
         }
 
-        # News Extraction
-        raw_news = ticker.news or []
+        # Safe News Extraction (Never crash on None or unusual structures)
         news_data = []
-        for item in raw_news[:4]:
-            title = item.get("title", "") or item.get("content", {}).get("title", "")
-            publisher = item.get("publisher", "") or item.get("provider", "") or "News"
-            link = item.get("link", "") or item.get("content", {}).get("clickThroughUrl", {}).get("url", "#")
-            if title:
-                news_data.append({"title": title, "publisher": publisher, "link": link})
+        try:
+            raw_news = ticker.news or []
+            for item in raw_news[:4]:
+                if not isinstance(item, dict):
+                    continue
+                title = item.get("title") or ""
+                content = item.get("content")
+                if not title and isinstance(content, dict):
+                    title = content.get("title", "")
+                
+                publisher = item.get("publisher") or item.get("provider") or ""
+                if not publisher and isinstance(content, dict):
+                    pub_obj = content.get("provider")
+                    if isinstance(pub_obj, dict):
+                        publisher = pub_obj.get("displayName", "News")
+                    elif pub_obj:
+                        publisher = str(pub_obj)
+                if not publisher:
+                    publisher = "News"
+                    
+                link = item.get("link") or ""
+                if not link and isinstance(content, dict):
+                    url_obj = content.get("clickThroughUrl")
+                    if isinstance(url_obj, dict):
+                        link = url_obj.get("url", "#")
+                if not link:
+                    link = "#"
+
+                if title:
+                    news_data.append({"title": title, "publisher": publisher, "link": link})
+        except Exception:
+            pass
 
         return {
             "symbol": sym,
