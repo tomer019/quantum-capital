@@ -290,6 +290,14 @@ h1 {
 }
 
 /* Tables */
+.sector-badge {
+    white-space: nowrap;
+    display: inline-block;
+}
+.shares-badge {
+    white-space: nowrap;
+    display: inline-block;
+}
 .table-container {
     overflow-x: auto;
     overflow-y: auto;
