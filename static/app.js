@@ -567,7 +567,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td dir="ltr" style="${rsiStyle}; font-weight:500;">${rsi}</td>
                 <td>${trend}</td>
                 <td style="font-weight:600; color:${sig.color}; font-size:13px;">${sig.emoji} ${sig.label}</td>
-                <td dir="ltr"><span class="shares-badge" style="background: rgba(0, 184, 255, 0.12); border: 1px solid rgba(0, 184, 255, 0.25); color: #00B8FF; font-weight: 700; padding: 3px 8px; border-radius: 6px; font-size: 12px;">${sharesToBuy} יח'</span> <span style="font-size: 11px; color: var(--text-secondary);">($${allocVal})</span></td>
+                <td dir="ltr" style="line-height: 1.4; vertical-align: middle;">
+                    <span class="shares-badge" style="display: block; background: rgba(0, 184, 255, 0.12); border: 1px solid rgba(0, 184, 255, 0.25); color: #00B8FF; font-weight: 700; padding: 2px 6px; border-radius: 4px; font-size: 12px; margin-bottom: 2px; text-align: center;">${sharesToBuy} יח'</span>
+                    <span style="display: block; font-size: 11px; color: var(--text-secondary); text-align: center;">($${allocVal})</span>
+                </td>
                 <td>
                     <button onclick="event.stopPropagation(); toggleWatchlist('${stock.symbol}')"
                         style="background:none;border:none;cursor:pointer;color:${starColor};font-size:18px;"
@@ -706,7 +709,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td dir="ltr" class="${peClass}">${stock.pe_ratio.toFixed(1)}</td>
                 <td dir="ltr" class="${marginClass}">${(stock.profit_margin * 100).toFixed(1)}%</td>
                 <td dir="ltr">${divYield}</td>
-                <td dir="ltr"><span class="shares-badge" style="background: rgba(0, 184, 255, 0.12); border: 1px solid rgba(0, 184, 255, 0.25); color: #00B8FF; font-weight: 700; padding: 3px 8px; border-radius: 6px; font-size: 12px;">${sharesToBuy} יח'</span> <span style="font-size: 11px; color: var(--text-secondary);">($${allocVal})</span></td>
+                <td dir="ltr" style="line-height: 1.4; vertical-align: middle;">
+                    <span class="shares-badge" style="display: block; background: rgba(0, 184, 255, 0.12); border: 1px solid rgba(0, 184, 255, 0.25); color: #00B8FF; font-weight: 700; padding: 2px 6px; border-radius: 4px; font-size: 12px; margin-bottom: 2px; text-align: center;">${sharesToBuy} יח'</span>
+                    <span style="display: block; font-size: 11px; color: var(--text-secondary); text-align: center;">($${allocVal})</span>
+                </td>
                 <td>
                     <button onclick="event.stopPropagation(); toggleWatchlist('${stock.symbol}')" style="background:none; border:none; cursor:pointer; color:${starColor}; font-size:18px;" title="הוסף למעקב">${isStarred ? '★' : '☆'}</button>
                 </td>
