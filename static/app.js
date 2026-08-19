@@ -843,17 +843,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    navWatchlist.addEventListener('click', (e) => {
-        if (e) e.preventDefault();
-        navScreener.classList.remove('active');
-        navDashboard.classList.remove('active');
-        navWatchlist.classList.add('active');
-        viewScreener.style.display = 'none';
-        viewDashboard.style.display = 'none';
-        viewWatchlist.style.display = 'block';
-        localStorage.setItem('quantum_active_tab', 'watchlist');
-        refreshWatchlist();
-    });
+    if (navWatchlist) navWatchlist.addEventListener('click', (e) => { if (e) e.preventDefault(); switchView('watchlist'); });
 
     // ==========================================
     // DASHBOARD & PORTFOLIO LOGIC
@@ -872,28 +862,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let portfolioPrices = {};
     let portfolioChart = null;
 
-    navDashboard.addEventListener('click', (e) => {
-        if (e) e.preventDefault();
-        navScreener.classList.remove('active');
-        navWatchlist.classList.remove('active');
-        navDashboard.classList.add('active');
-        viewScreener.style.display = 'none';
-        viewWatchlist.style.display = 'none';
-        viewDashboard.style.display = 'block';
-        localStorage.setItem('quantum_active_tab', 'dashboard');
-        refreshDashboard();
-    });
-
-    navScreener.addEventListener('click', (e) => {
-        if (e) e.preventDefault();
-        navDashboard.classList.remove('active');
-        navWatchlist.classList.remove('active');
-        navScreener.classList.add('active');
-        viewDashboard.style.display = 'none';
-        viewWatchlist.style.display = 'none';
-        viewScreener.style.display = 'block';
-        localStorage.setItem('quantum_active_tab', 'screener');
-    });
+    if (navDashboard) navDashboard.addEventListener('click', (e) => { if (e) e.preventDefault(); switchView('dashboard'); });
+    if (navScreener) navScreener.addEventListener('click', (e) => { if (e) e.preventDefault(); switchView('screener'); });
 
     // Autocomplete Logic
     const autocompleteInput = document.getElementById('add-symbol');
@@ -1166,7 +1136,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (tabName === 'dashboard') {
             navDashboard.classList.add('active');
             viewDashboard.style.display = 'block';
-            renderPortfolio();
+            refreshDashboard();
         } else if (tabName === 'watchlist') {
             navWatchlist.classList.add('active');
             viewWatchlist.style.display = 'block';
@@ -1179,6 +1149,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     btChart.applyOptions({ width: btChartContainer.clientWidth });
                 }
             }, 100);
+            if (!lastBacktestData) runBacktest();
         } else {
             navScreener.classList.add('active');
             viewScreener.style.display = 'block';
