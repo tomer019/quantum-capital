@@ -452,6 +452,53 @@ def get_stock_details(symbol: str):
         all_local = get_all_stocks()
         local_s = next((s for s in all_local if s.get("symbol") == sym), {})
 
+        def generate_ai_summary(fund, local_data):
+            pe = fund.get("pe_ratio", "-")
+            margin = fund.get("profit_margin", "-")
+            upside = fund.get("upside_pct")
+            rec = fund.get("recommendation", "BUY")
+            name = fund.get("name", sym).split()[0].replace(',', '')
+            
+            rsi = local_data.get("rsi")
+            monthly_ret = local_data.get("monthly_return")
+            
+            summary = f"🧠 ניתוח AI מבוסס נתונים: "
+            
+            # Valuation
+            if pe != "-" and float(pe) < 15:
+                summary += f"חברת {name} נסחרת בתמחור ערך אטרקטיבי (מכפיל {pe}), "
+            elif pe != "-" and float(pe) > 35:
+                summary += f"חברת {name} מתומחרת בצפי צמיחה גבוה (מכפיל {pe}), "
+            else:
+                summary += f"{name} נסחרת במכפיל סביר לתעשייה, "
+            
+            # Profitability
+            if margin != "-" and float(margin.replace("%", "")) > 20:
+                summary += f"ומציגה שולי רווח חזקים מאוד של {margin}. "
+            elif margin != "-" and float(margin.replace("%", "")) > 0:
+                summary += f"עם רווחיות חיובית של {margin}. "
+            else:
+                summary += "אך ללא רווחיות נטו כרגע. "
+                
+            # Technical Momentum
+            if rsi:
+                if rsi > 70:
+                    summary += f"מבחינה טכנית המומנטום חזק אך נמצא בטריטוריית קניית יתר (RSI {rsi}). "
+                elif rsi < 35:
+                    summary += f"טכנית, המניה עשויה להיות באזור מכירת יתר (הזדמנות איסוף). "
+                elif monthly_ret and monthly_ret > 5:
+                    summary += "המומנטום בחודש האחרון חיובי במיוחד ומעיד על כניסת כספים. "
+                    
+            # Analyst Sentiment
+            if upside and upside > 5:
+                summary += f"הקונצנזוס בוול-סטריט הוא ״{rec}״ עם צפי לעלייה של {upside}% בשנה הקרובה."
+            elif upside and upside < 0:
+                summary += f"עם זאת, האנליסטים סבורים שהיא מתומחרת במלואה כרגע."
+            else:
+                summary += f"קונצנזוס האנליסטים הנוכחי הוא ״{rec}״."
+                
+            return summary
+
         def fmt_cap(val):
             if not val or math.isnan(val): return "-"
             if val >= 1e12: return f"${val/1e12:.2f}T"
@@ -558,6 +605,7 @@ def get_stock_details(symbol: str):
         return {
             "symbol": sym,
             "fundamentals": fundamentals,
+            "ai_summary": generate_ai_summary(fundamentals, local_s),
             "chart": {
                 "candlesticks": candlesticks,
                 "volumes": volumes,

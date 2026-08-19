@@ -123,16 +123,20 @@ document.addEventListener('DOMContentLoaded', () => {
             let addedCount = 0;
             currentResults.forEach(s => {
                 const shares = s.shares_to_buy > 0 ? s.shares_to_buy : 10;
+                const buyPrice = s.price || 0;
                 const existing = port.find(p => p.symbol === s.symbol);
                 if (existing) {
+                    const oldTotal = existing.qty * (existing.avgPrice || buyPrice);
+                    const newTotal = shares * buyPrice;
                     existing.qty += shares;
+                    existing.avgPrice = (oldTotal + newTotal) / existing.qty;
                 } else {
-                    port.push({ symbol: s.symbol, qty: shares });
+                    port.push({ symbol: s.symbol, qty: shares, avgPrice: buyPrice });
                 }
                 addedCount++;
             });
             localStorage.setItem('quantum_portfolio', JSON.stringify(port));
-            showToast(`יוצאו בהצלחה ${addedCount} מניות לתיק האישי!`, 'success');
+            showToast(`נוספו ${addedCount} מניות לתיק האישי! 💼`, 'success');
             refreshDashboard();
             switchView('dashboard');
         });
@@ -188,6 +192,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const isUp = f.change_pct >= 0;
             modalChange.textContent = `${isUp ? '+' : ''}${f.change_pct}%`;
             modalChange.className = isUp ? 'text-good' : 'text-bad';
+
+            const aiContainer = document.getElementById('modal-ai-summary-container');
+            const aiText = document.getElementById('modal-ai-text');
+            if (data.ai_summary) {
+                aiText.textContent = data.ai_summary;
+                aiContainer.style.display = 'block';
+            } else {
+                aiContainer.style.display = 'none';
+            }
 
             // Fundamental Stats Matrix
             document.getElementById('stat-mcap').textContent = f.market_cap || "-";
@@ -1051,11 +1064,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
+            const buyPrice = prices[symbol].price || 0;
             const existing = portfolio.find(p => p.symbol === symbol);
             if (existing) {
+                const oldTotal = existing.qty * (existing.avgPrice || buyPrice);
+                const newTotal = qty * buyPrice;
                 existing.qty += qty;
+                existing.avgPrice = (oldTotal + newTotal) / existing.qty;
             } else {
-                portfolio.push({ symbol, qty });
+                portfolio.push({ symbol, qty, avgPrice: buyPrice });
             }
 
             localStorage.setItem('quantum_portfolio', JSON.stringify(portfolio));
@@ -1156,13 +1173,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const refreshDashboard = async () => {
         portfolio = JSON.parse(localStorage.getItem('quantum_portfolio')) || [];
         if (portfolio.length === 0) {
-            portfolioBody.innerHTML = '<tr><td colspan="6"><div class="empty-state"><div class="empty-state-icon">📂</div><p>התיק שלך ריק. הוסף מניות או ייבא מתוצאות הסורק!</p></div></td></tr>';
+            portfolioBody.innerHTML = '<tr><td colspan="8"><div class="empty-state"><div class="empty-state-icon">📂</div><p>התיק שלך ריק. הוסף מניות או ייבא מתוצאות הסורק!</p></div></td></tr>';
             document.getElementById('dash-total-value').textContent = '$0.00';
             if (portfolioChart) portfolioChart.destroy();
             return;
         }
 
-        portfolioBody.innerHTML = '<tr><td colspan="6" style="text-align: center;">טוען מחירים חיים במקביל...</td></tr>';
+        portfolioBody.innerHTML = '<tr><td colspan="8" style="text-align: center;">טוען מחירים חיים במקביל...</td></tr>';
         await fetchPortfolioPrices();
 
         let totalValue = 0;
@@ -1178,9 +1195,13 @@ document.addEventListener('DOMContentLoaded', () => {
         portfolioBody.innerHTML = '';
 
         // Second pass: render rows with percentages and inline quantity editor
+        let totalCost = 0;
         portfolio.forEach(p => {
             const price = portfolioPrices[p.symbol] || 0;
             const value = price * p.qty;
+            const avgPrice = p.avgPrice || price; // Fallback to current if missing
+            const cost = avgPrice * p.qty;
+            totalCost += cost;
             
             if (value > 0) {
                 labels.push(p.symbol);
@@ -1188,6 +1209,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             const percentage = totalValue > 0 ? ((value / totalValue) * 100).toFixed(1) + '%' : '0%';
+            
+            const pnl = value - cost;
+            const pnlPct = cost > 0 ? (pnl / cost) * 100 : 0;
+            const pnlClass = pnl >= 0 ? 'text-good' : 'text-bad';
+            const pnlSign = pnl >= 0 ? '+' : '';
+            
+            const pnlStr = `<span class="${pnlClass}">${pnlSign}$${Math.abs(pnl).toFixed(2)} (${pnlSign}${pnlPct.toFixed(1)}%)</span>`;
 
             const tr = document.createElement('tr');
             tr.innerHTML = `
@@ -1195,15 +1223,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td dir="ltr">
                     <input type="number" class="manual-input" style="width: 75px; text-align: center; padding: 4px 6px; font-weight: 700; background: rgba(0,0,0,0.3);" value="${p.qty}" min="1" step="1" onchange="updateStockQty('${p.symbol}', this.value)" title="שנה כמות מניות להקצאה מותאמת אישית">
                 </td>
+                <td dir="ltr">$${avgPrice.toFixed(2)}</td>
                 <td dir="ltr">${price > 0 ? '$' + price.toFixed(2) : 'N/A'}</td>
                 <td dir="ltr">${value > 0 ? '$' + value.toFixed(2) : 'N/A'}</td>
+                <td dir="ltr" style="font-weight: bold;">${pnlStr}</td>
                 <td dir="ltr" style="font-weight: bold; color: var(--accent-green);">${percentage}</td>
                 <td><button onclick="removeStock('${p.symbol}')" style="background:none; border:none; color:#FF3366; cursor:pointer;" title="הסר מהתיק">❌</button></td>
             `;
             portfolioBody.appendChild(tr);
         });
-
-        dashTotalValue.textContent = formatMoney(totalValue);
+        
+        // Update top-level dashboard values
+        const totalPnl = totalValue - totalCost;
+        const totalPnlPct = totalCost > 0 ? (totalPnl / totalCost) * 100 : 0;
+        const totalPnlClass = totalPnl >= 0 ? 'text-good' : 'text-bad';
+        const totalPnlSign = totalPnl >= 0 ? '+' : '';
+        
+        dashTotalValue.innerHTML = `${formatMoney(totalValue)} <span class="${totalPnlClass}" style="font-size: 16px; margin-left: 12px; display: inline-block;">${totalPnlSign}${formatMoney(Math.abs(totalPnl))} (${totalPnlSign}${totalPnlPct.toFixed(2)}%)</span>`;
+        
         updateChart(labels, values);
     };
 

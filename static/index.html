@@ -260,14 +260,16 @@
                                     <tr>
                                         <th>מניה</th>
                                         <th>כמות</th>
+                                        <th>מחיר קנייה (ממוצע)</th>
                                         <th>מחיר עדכני</th>
                                         <th>שווי כולל</th>
+                                        <th>רווח/הפסד (P&L)</th>
                                         <th>% מהתיק</th>
                                         <th>פעולה</th>
                                     </tr>
                                 </thead>
                                 <tbody id="portfolio-body">
-                                    <tr><td colspan="6"><div class="empty-state"><div class="empty-state-icon">📂</div><p>התיק שלך ריק. הוסף מניות מהתפריט משמאל!</p></div></td></tr>
+                                    <tr><td colspan="8"><div class="empty-state"><div class="empty-state-icon">📂</div><p>התיק שלך ריק. הוסף מניות מהתפריט משמאל!</p></div></td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -485,7 +487,14 @@
                     <button class="btn-primary" id="btn-modal-watchlist" style="background: var(--bg-main); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.3); width: auto; padding: 8px 14px; font-size: 13px;">⭐ שמור למעקב</button>
                 </div>
             </div>
-            
+            <!-- AI Summary Box -->
+            <div id="modal-ai-summary-container" style="background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.3); border-radius: 8px; padding: 12px 16px; margin-bottom: 20px; color: #E5E7EB; font-size: 14px; line-height: 1.5; display: none;">
+                <div style="font-weight: 700; color: #A78BFA; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+                    <span style="font-size: 16px;">✨</span> ניתוח שווי ומומנטום
+                </div>
+                <div id="modal-ai-text" style="color: var(--text-secondary);"></div>
+            </div>
+
             <!-- Modal Body: 2 Columns (Chart + Metrics) -->
             <div style="display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 20px;">
                 
